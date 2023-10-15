@@ -2,6 +2,7 @@ import { Terminal } from 'lucide-react'
 import { Alert, AlertDescription, AlertTitle } from '../@/components/ui/alert'
 import { Button } from '../@/components/ui/button'
 import styles from './page.module.css'
+import { DataTableDemo } from '../components/table/table'
 
 export default function Page(): JSX.Element {
     return (
@@ -18,6 +19,7 @@ export default function Page(): JSX.Element {
                     You can add components to your app using the cli.
                 </AlertDescription>
             </Alert>
+            <DataTableDemo />
         </main>
     )
 }
