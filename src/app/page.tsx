@@ -1,9 +1,9 @@
-import { Button } from '@/components/ui/button';
+import { MainList } from '@/components/home';
 
 export default function Home() {
     return (
-        <div>
-            <Button>Click me</Button>
+        <div className="bg-muted">
+            <MainList />
         </div>
     );
 }
