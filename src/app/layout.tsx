@@ -18,7 +18,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
     return (
         <html lang="en">
             <body className={inter.className}>
-                <div className="bg-gray-800 px-4 pt-8">{children}</div>
+                <div className="box-border h-screen bg-gray-800 px-4">
+                    {children}
+                </div>
             </body>
         </html>
     );

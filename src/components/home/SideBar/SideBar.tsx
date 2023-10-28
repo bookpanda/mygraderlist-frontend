@@ -3,7 +3,7 @@ import { CourseIcon } from './CourseIcon';
 
 export const SideBar = () => {
     return (
-        <RoundDiv className="h-[90%] space-y-3 overflow-scroll p-3">
+        <RoundDiv className="space-y-3 overflow-scroll p-3">
             <CourseIcon />
             <CourseIcon />
             <CourseIcon />
