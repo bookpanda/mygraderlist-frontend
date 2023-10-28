@@ -1,9 +1,10 @@
-import { MainList } from '@/components/home';
+import { MainList, SideBar } from '@/components/home';
 
 export default function Home() {
     return (
-        <div className="bg-muted">
+        <div className="flex space-x-2 bg-muted">
             <MainList />
+            <SideBar />
         </div>
     );
 }
