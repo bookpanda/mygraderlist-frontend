@@ -48,6 +48,12 @@ module.exports = {
                 green: {
                     DEFAULT: '#1DB954',
                 },
+                gray: {
+                    text: '#A7A7A7',
+                    400: '#252525',
+                    600: '#121212',
+                    800: '#000000',
+                },
             },
             borderRadius: {
                 lg: 'var(--radius)',
