@@ -6,5 +6,9 @@ interface RoundBoxProps extends PropsWithChildren {
 }
 
 export const RoundDiv: FC<RoundBoxProps> = ({ className, children }) => {
-    return <div className={clsx('rounded-xl p-4', className)}>{children}</div>;
+    return (
+        <div className={clsx('rounded-lg bg-gray-400 p-4', className)}>
+            {children}
+        </div>
+    );
 };

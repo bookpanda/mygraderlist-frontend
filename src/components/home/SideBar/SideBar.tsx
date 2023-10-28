@@ -1,9 +1,25 @@
 import { RoundDiv } from '@/components/custom';
+import { CourseIcon } from './CourseIcon';
 
 export const SideBar = () => {
     return (
-        <RoundDiv className="rounded-xl bg-pink-100 p-4">
-            <h1>MainList</h1>
+        <RoundDiv className="h-[90%] space-y-3 overflow-scroll p-3">
+            <CourseIcon />
+            <CourseIcon />
+            <CourseIcon />
+            <CourseIcon />
+            <CourseIcon />
+            <CourseIcon />
+            <CourseIcon />
+            <CourseIcon />
+            <CourseIcon />
+            <CourseIcon />
+            <CourseIcon />
+            <CourseIcon />
+            <CourseIcon />
+            <CourseIcon />
+            <CourseIcon />
+            <CourseIcon />
         </RoundDiv>
     );
 };
