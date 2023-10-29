@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export const CourseIcon = () => {
     return (
-        <RoundDiv className="p-1">
+        <RoundDiv className="p-0">
             <Image
                 src={dataStructure}
                 alt="data-struct"

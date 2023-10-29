@@ -2,7 +2,7 @@ import { Button } from '@ui/button';
 
 export const MainList = () => {
     return (
-        <div className="h-full w-full overflow-auto rounded-t-xl bg-gray-400 p-4">
+        <div className="no-scrollbar h-full w-full overflow-auto rounded-t-xl bg-gray-400 p-4">
             <h1>MainList</h1>
             <Button className="bg-primary">primary</Button>
             <Button className="bg-secondary">primary</Button>
