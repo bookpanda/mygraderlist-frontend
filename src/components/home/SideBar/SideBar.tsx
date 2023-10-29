@@ -1,9 +1,8 @@
-import { RoundDiv } from '@/components/custom';
 import { CourseIcon } from './CourseIcon';
 
 export const SideBar = () => {
     return (
-        <RoundDiv className="space-y-3 overflow-scroll p-3">
+        <div className="space-y-3 overflow-scroll rounded-t-lg bg-gray-400 p-1">
             <CourseIcon />
             <CourseIcon />
             <CourseIcon />
@@ -20,6 +19,6 @@ export const SideBar = () => {
             <CourseIcon />
             <CourseIcon />
             <CourseIcon />
-        </RoundDiv>
+        </div>
     );
 };

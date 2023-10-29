@@ -2,8 +2,8 @@ import { Footer, MainList, SideBar } from '@/components/home';
 
 export default function Home() {
     return (
-        <div className="flex h-screen flex-col justify-between pt-8">
-            <div className="flex h-[88%] space-x-2 bg-muted">
+        <div className="h-screen w-full bg-muted pt-8">
+            <div className="flex h-full justify-between space-x-2">
                 <SideBar />
                 <MainList />
             </div>
