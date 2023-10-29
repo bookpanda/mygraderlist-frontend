@@ -46,18 +46,23 @@ export const Sort = () => {
                                 defaultValue={field.value}
                             >
                                 <FormControl>
-                                    <SelectTrigger className="w-[180px]">
-                                        <SelectValue placeholder="Select Sort" />
+                                    <SelectTrigger className="w-[100px] border-0 bg-transparent text-gray-text">
+                                        <SelectValue />
                                     </SelectTrigger>
                                 </FormControl>
                                 <SelectContent>
                                     {sortOptions.map((option) => (
                                         <SelectItem
                                             key={option}
-                                            className="text-green"
+                                            className={
+                                                field.value === option
+                                                    ? 'text-green'
+                                                    : ''
+                                            }
                                             value={option}
                                         >
-                                            {option}
+                                            {option.charAt(0).toUpperCase() +
+                                                option.slice(1)}
                                         </SelectItem>
                                     ))}
                                 </SelectContent>
