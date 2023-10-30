@@ -1,18 +1,21 @@
 [
     {
-        "id": "1",
+        "id": 1,
+        "code": "a",
         "name": "a",
         "score": 2,
         "difficulty": 5
     },
     {
-        "id": "1",
+        "id": 2,
+        "code": "a",
         "name": "a",
         "score": 2,
         "difficulty": 5
     },
     {
-        "id": "1",
+        "id": 3,
+        "code": "da",
         "name": "a",
         "score": 2,
         "difficulty": 5

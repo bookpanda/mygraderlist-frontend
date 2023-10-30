@@ -1,5 +1,6 @@
 export type Problem = {
-    id: string;
+    id: number;
+    code: string;
     name: string;
     score: number;
     difficulty: number;
