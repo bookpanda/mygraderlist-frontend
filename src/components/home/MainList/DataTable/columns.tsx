@@ -43,10 +43,24 @@ export const columns: ColumnDef<Problem>[] = [
     },
     {
         accessorKey: 'score',
-        header: 'Score',
+        header: () => <p className="font-light text-gray-text">Score</p>,
+        cell: ({ row }) => {
+            return (
+                <Text variant="p2" className="text-gray-text">
+                    <b>{row.original.score}</b>
+                </Text>
+            );
+        },
     },
     {
         accessorKey: 'difficulty',
-        header: 'Difficulty',
+        header: () => <p className="font-light text-gray-text">Difficulty</p>,
+        cell: ({ row }) => {
+            return (
+                <Text variant="p2" className="text-gray-text">
+                    <b>{row.original.difficulty}</b>
+                </Text>
+            );
+        },
     },
 ];

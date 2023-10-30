@@ -5,7 +5,7 @@ import data from '@pubic/data.json';
 
 export const MainList = () => {
     return (
-        <div className="no-scrollbar h-full w-full overflow-auto rounded-t-xl bg-gray-400 ">
+        <div className="no-scrollbar h-full w-full overflow-auto rounded-t-xl bg-gray-600 ">
             <Header />
             <div className="p-4">
                 <DataTable columns={columns} data={data} />
