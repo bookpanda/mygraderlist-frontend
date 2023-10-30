@@ -24,7 +24,9 @@ export const columns: ColumnDef<Problem>[] = [
                         <b>{row.original.id}</b>
                     </Text>
                     <Image
-                        src={require('@images/courses/dataStruct.png')}
+                        src={require(
+                            `@images/courses/${row.original.course}/${row.original.group}/${row.original.code}.webp`
+                        )}
                         width={45}
                         style={{ objectFit: 'cover' }}
                         alt={row.original.code}

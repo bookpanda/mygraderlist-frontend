@@ -1,22 +1,28 @@
 [
     {
         "id": 1,
-        "code": "a",
-        "name": "a",
+        "course": "2110211",
+        "group": "ex",
+        "code": "ex00e1",
+        "name": "Time After",
         "score": 2,
         "difficulty": 5
     },
     {
         "id": 2,
-        "code": "a",
-        "name": "a",
+        "course": "2110211",
+        "group": "ex",
+        "code": "ex00e2",
+        "name": "Min Max",
         "score": 2,
         "difficulty": 5
     },
     {
-        "id": 3,
-        "code": "da",
-        "name": "a",
+        "id": 2,
+        "course": "2110211",
+        "group": "ex",
+        "code": "ex00e2",
+        "name": "Min Max",
         "score": 2,
         "difficulty": 5
     }
