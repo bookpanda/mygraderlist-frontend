@@ -18,11 +18,74 @@
         "difficulty": 5
     },
     {
-        "id": 2,
+        "id": 3,
         "course": "2110211",
-        "group": "ex",
-        "code": "ex00e2",
-        "name": "Min Max",
+        "group": "ds",
+        "code": "ds00_reverse",
+        "name": "Reverse Vector 1",
+        "score": 2,
+        "difficulty": 5
+    },
+    {
+        "id": 4,
+        "course": "2110211",
+        "group": "d57",
+        "code": "d57_q0_remove_even",
+        "name": "Remove Even",
+        "score": 2,
+        "difficulty": 5
+    },
+    {
+        "id": 5,
+        "course": "2110211",
+        "group": "d62",
+        "code": "d62_q1c_vector_op",
+        "name": "Vector Operation",
+        "score": 2,
+        "difficulty": 5
+    },
+    {
+        "id": 6,
+        "course": "2110211",
+        "group": "d62",
+        "code": "d62_q1a_punch",
+        "name": "Vector Punch",
+        "score": 2,
+        "difficulty": 5
+    },
+    {
+        "id": 7,
+        "course": "2110211",
+        "group": "ds",
+        "code": "ds01_pair_sum",
+        "name": "Pair Sum",
+        "score": 2,
+        "difficulty": 5
+    },
+    {
+        "id": 8,
+        "course": "2110211",
+        "group": "ds",
+        "code": "ds00_reverse2",
+        "name": "Reverse Vector 2",
+        "score": 2,
+        "difficulty": 5
+    },
+    {
+        "id": 9,
+        "course": "2110211",
+        "group": "d59",
+        "code": "d59_q0_vector_swap",
+        "name": "Vector Swap",
+        "score": 2,
+        "difficulty": 5
+    },
+    {
+        "id": 10,
+        "course": "2110211",
+        "group": "ds",
+        "code": "ds02_intersection",
+        "name": "Intersection",
         "score": 2,
         "difficulty": 5
     }
