@@ -1,5 +1,7 @@
-import { Button } from '@ui/button';
+import { DataTable } from './DataTable/DataTable';
+import { columns } from './DataTable/columns';
 import { Header } from './Header/Header';
+import data from '@pubic/data.json';
 
 export const MainList = () => {
     return (
@@ -7,13 +9,7 @@ export const MainList = () => {
             <Header />
             <div className="p-4">
                 <h1>MainList</h1>
-                <Button className="bg-primary">primary</Button>
-                <Button className="bg-secondary">primary</Button>
-                <Button className="bg-destructive">destructive</Button>
-                <Button className="bg-muted">muted</Button>
-                <Button className="bg-accent">accent</Button>
-                <Button className="bg-popover">popover</Button>
-                <Button className="bg-card">card</Button>
+                <DataTable columns={columns} data={data} />
                 <div className="h-80 bg-red-100">a</div>
                 <div className="h-80 bg-red-100">a</div>
                 <div className="h-80 bg-red-100">a</div>
