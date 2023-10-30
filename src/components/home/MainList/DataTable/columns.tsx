@@ -7,22 +7,22 @@ import Image from 'next/image';
 
 export const columns: ColumnDef<Problem>[] = [
     {
-        accessorKey: 'id',
-        header: () => <p className="font-light text-gray-text">#</p>,
-        cell: ({ row }) => {
-            return (
-                <Text variant="p1" className="font-light text-gray-text">
-                    <b>{row.original.id}</b>
-                </Text>
-            );
-        },
-    },
-    {
         accessorKey: 'name',
-        header: () => <p className="font-light text-gray-text">Name</p>,
+        header: () => (
+            <div className="flex space-x-3">
+                <p className="mx-3 font-light text-gray-text">#</p>
+                <p className="font-light text-gray-text">Name</p>
+            </div>
+        ),
         cell: ({ row }) => {
             return (
-                <div className="flex space-x-3">
+                <div className="flex items-center space-x-3">
+                    <Text
+                        variant="p1"
+                        className="mx-3 font-light text-gray-text"
+                    >
+                        <b>{row.original.id}</b>
+                    </Text>
                     <Image
                         src={require('@images/courses/dataStruct.png')}
                         width={45}
@@ -46,8 +46,8 @@ export const columns: ColumnDef<Problem>[] = [
         header: () => <p className="font-light text-gray-text">Score</p>,
         cell: ({ row }) => {
             return (
-                <Text variant="p2" className="text-gray-text">
-                    <b>{row.original.score}</b>
+                <Text variant="p1" className="text-gray-text">
+                    {row.original.score}
                 </Text>
             );
         },
@@ -57,8 +57,8 @@ export const columns: ColumnDef<Problem>[] = [
         header: () => <p className="font-light text-gray-text">Difficulty</p>,
         cell: ({ row }) => {
             return (
-                <Text variant="p2" className="text-gray-text">
-                    <b>{row.original.difficulty}</b>
+                <Text variant="p1" className="text-gray-text">
+                    {row.original.difficulty}
                 </Text>
             );
         },
