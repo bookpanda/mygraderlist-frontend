@@ -137,7 +137,7 @@
     {
         "id": 16,
         "course": "2110211",
-        "group": "",
+        "group": "ex",
         "code": "ex00e3",
         "name": "Check Mapping",
         "score": 2,
@@ -362,7 +362,7 @@
     {
         "id": 41,
         "course": "2110211",
-        "group": "",
+        "group": "d66",
         "code": "d66_q1a_topsale",
         "name": "Top Sale",
         "score": 2,
@@ -371,7 +371,7 @@
     {
         "id": 42,
         "course": "2110211",
-        "group": "",
+        "group": "d66",
         "code": "d66_q1a_booking",
         "name": "Booking",
         "score": 2,
@@ -416,7 +416,7 @@
     {
         "id": 47,
         "course": "2110211",
-        "group": "",
+        "group": "d62",
         "code": "d62_q2a_iterator_check",
         "name": "Iterator Check",
         "score": 2,
@@ -1001,7 +1001,7 @@
     {
         "id": 112,
         "course": "2110211",
-        "group": "",
+        "group": "d57",
         "code": "d57_q3_zuma",
         "name": "Zuma",
         "score": 2,
