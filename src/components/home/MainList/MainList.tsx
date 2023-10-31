@@ -9,7 +9,6 @@ export const MainList = () => {
             <Header />
             <div className="p-4">
                 <DataTable columns={columns} data={data} />
-                <div className="h-80 bg-red-100">a</div>
             </div>
         </div>
     );

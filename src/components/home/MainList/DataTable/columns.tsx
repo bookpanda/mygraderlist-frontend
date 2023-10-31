@@ -26,7 +26,9 @@ export const columns: ColumnDef<Problem>[] = [
                     <Image
                         src={
                             row.original.group === ''
-                                ? require('@images/courses/2110211/icon.webp')
+                                ? require(
+                                      `@images/courses/${row.original.course}/icon.webp`
+                                  )
                                 : require(
                                       `@images/courses/${row.original.course}/${row.original.group}/${row.original.code}.webp`
                                   )

@@ -758,7 +758,7 @@
     {
         "id": 85,
         "course": "2110211",
-        "group": "",
+        "group": "d66",
         "code": "d66_q2a_vector_range_erase",
         "name": "Vector Range Erase",
         "score": 2,
@@ -767,7 +767,7 @@
     {
         "id": 86,
         "course": "2110211",
-        "group": "",
+        "group": "d66",
         "code": "d66_q2a_stack_vertical_split",
         "name": "Stack Vertical Split",
         "score": 2,
