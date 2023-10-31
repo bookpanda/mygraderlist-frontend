@@ -16,28 +16,26 @@ export const columns: ColumnDef<Problem>[] = [
         ),
         cell: ({ row }) => {
             return (
-                <div className="flex items-center space-x-3">
-                    <div className="flex w-[8%] items-center justify-between">
-                        <Text
-                            variant="p1"
-                            className="mx-3 font-light text-gray-text"
-                        >
-                            <b>{row.original.id}</b>
-                        </Text>
-                        <Image
-                            src={
-                                row.original.group === ''
-                                    ? require('@images/courses/2110211/icon.webp')
-                                    : require(
-                                          `@images/courses/${row.original.course}/${row.original.group}/${row.original.code}.webp`
-                                      )
-                            }
-                            width={45}
-                            style={{ objectFit: 'cover' }}
-                            alt={row.original.code}
-                        />
-                    </div>
-                    <div className="text-left font-medium">
+                <div className="flex items-center space-x-3 bg-green-100">
+                    <Text
+                        variant="p1"
+                        className="mx-3 w-3 font-light text-gray-text"
+                    >
+                        <b>{row.original.id}</b>
+                    </Text>
+                    <Image
+                        src={
+                            row.original.group === ''
+                                ? require('@images/courses/2110211/icon.webp')
+                                : require(
+                                      `@images/courses/${row.original.course}/${row.original.group}/${row.original.code}.webp`
+                                  )
+                        }
+                        width={45}
+                        style={{ objectFit: 'cover' }}
+                        alt={row.original.code}
+                    />
+                    <div>
                         <Text variant="p2" className="text-white">
                             <b>{row.original.name}</b>
                         </Text>
