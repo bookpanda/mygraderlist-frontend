@@ -128,7 +128,7 @@
     {
         "id": 15,
         "course": "2110211",
-        "group": "",
+        "group": "d58",
         "code": "d58_q0_rating",
         "name": "CUCAS Rating",
         "score": 2,
@@ -326,7 +326,7 @@
     {
         "id": 37,
         "course": "2110211",
-        "group": "",
+        "group": "d65",
         "code": "d65_q1c_ice_cream",
         "name": "Ice Cream",
         "score": 2,
@@ -524,7 +524,7 @@
     {
         "id": 59,
         "course": "2110211",
-        "group": "",
+        "group": "d65",
         "code": "d65_q2b_some_move",
         "name": "Vector Some Move",
         "score": 2,
@@ -614,7 +614,7 @@
     {
         "id": 69,
         "course": "2110211",
-        "group": "",
+        "group": "d64",
         "code": "d64_q3a_queue_check",
         "name": "Queue Check",
         "score": 2,
@@ -776,7 +776,7 @@
     {
         "id": 87,
         "course": "2110211",
-        "group": "",
+        "group": "d66",
         "code": "d66_q1b_car_brake",
         "name": "Car Brake",
         "score": 2,
@@ -947,7 +947,7 @@
     {
         "id": 106,
         "course": "2110263",
-        "group": "",
+        "group": "diglab",
         "code": "diglab_07_04",
         "name": "Digital: Simulation 07 - 04",
         "score": 2,
@@ -956,7 +956,7 @@
     {
         "id": 107,
         "course": "2110263",
-        "group": "",
+        "group": "diglab",
         "code": "diglab_07_03",
         "name": "Digital: Simulation 07 - 03",
         "score": 2,
@@ -1037,7 +1037,7 @@
     {
         "id": 116,
         "course": "2110211",
-        "group": "",
+        "group": "d59",
         "code": "d59_q3_list_split",
         "name": "List Split",
         "score": 2,
@@ -1064,7 +1064,7 @@
     {
         "id": 119,
         "course": "2110211",
-        "group": "",
+        "group": "d60",
         "code": "d60_q3_lremove_all",
         "name": "List Remove All",
         "score": 2,
