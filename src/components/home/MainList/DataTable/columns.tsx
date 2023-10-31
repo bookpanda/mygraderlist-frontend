@@ -16,7 +16,7 @@ export const columns: ColumnDef<Problem>[] = [
         ),
         cell: ({ row }) => {
             return (
-                <div className="flex items-center space-x-3 bg-green-100">
+                <div className="flex items-center space-x-3">
                     <Text
                         variant="p1"
                         className="mx-3 w-3 font-light text-gray-text"
