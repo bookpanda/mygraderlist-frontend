@@ -938,7 +938,7 @@
     {
         "id": 105,
         "course": "2110263",
-        "group": "",
+        "group": "diglab",
         "code": "diglab_07_05",
         "name": "Digital: Simulation 07 - 05",
         "score": 2,
@@ -1091,7 +1091,7 @@
     {
         "id": 122,
         "course": "2110211",
-        "group": "",
+        "group": "d57",
         "code": "d57_q1_dense",
         "name": "Dense Graph",
         "score": 2,
