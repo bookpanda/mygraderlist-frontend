@@ -101,7 +101,7 @@
     {
         "id": 12,
         "course": "2110211",
-        "group": "",
+        "group": "d62",
         "code": "d62_q1c_vector_intersection",
         "name": "Vector Intersection",
         "score": 2,
@@ -110,7 +110,7 @@
     {
         "id": 13,
         "course": "2110211",
-        "group": "",
+        "group": "d62",
         "code": "d62_q1b_grandfather",
         "name": "Grandfather",
         "score": 2,
@@ -119,7 +119,7 @@
     {
         "id": 14,
         "course": "2110211",
-        "group": "",
+        "group": "d62",
         "code": "d62_q1a_vote",
         "name": "Vote",
         "score": 2,
@@ -155,7 +155,7 @@
     {
         "id": 18,
         "course": "2110211",
-        "group": "",
+        "group": "d57",
         "code": "d57_q0_histogram",
         "name": "Histogram",
         "score": 2,
@@ -263,7 +263,7 @@
     {
         "id": 30,
         "course": "2110211",
-        "group": "",
+        "group": "d57",
         "code": "d57_q1_postfix",
         "name": "Evaluate Postfix",
         "score": 2,
@@ -272,7 +272,7 @@
     {
         "id": 31,
         "course": "2110211",
-        "group": "",
+        "group": "d65",
         "code": "d65_q1a_delivery",
         "name": "Food Delivery",
         "score": 2,
@@ -344,7 +344,7 @@
     {
         "id": 39,
         "course": "2110211",
-        "group": "",
+        "group": "d65",
         "code": "d65_q1b_sparse_vector",
         "name": "4: Sparse Vector",
         "score": 2,
@@ -389,7 +389,7 @@
     {
         "id": 44,
         "course": "2110211",
-        "group": "",
+        "group": "d65",
         "code": "d65_q2a_no_move",
         "name": "2: Vector No Move",
         "score": 2,
@@ -821,7 +821,7 @@
     {
         "id": 92,
         "course": "2110211",
-        "group": "",
+        "group": "ds",
         "code": "ds03_heap_erase",
         "name": "Heap Erase",
         "score": 2,
@@ -1019,7 +1019,7 @@
     {
         "id": 114,
         "course": "2110211",
-        "group": "",
+        "group": "d63",
         "code": "d63_q4b_list_extract",
         "name": "List Extract",
         "score": 2,
@@ -1073,7 +1073,7 @@
     {
         "id": 120,
         "course": "2110211",
-        "group": "",
+        "group": "d57",
         "code": "d57_q3_shift",
         "name": "Shift",
         "score": 2,
@@ -1082,7 +1082,7 @@
     {
         "id": 121,
         "course": "2110211",
-        "group": "",
+        "group": "d57",
         "code": "d57_q1_sparse",
         "name": "Sparse Graph",
         "score": 2,
@@ -1118,7 +1118,7 @@
     {
         "id": 125,
         "course": "2110263",
-        "group": "",
+        "group": "diglab",
         "code": "diglab_08_03",
         "name": "Digital: Simulation 08 - 03",
         "score": 2,

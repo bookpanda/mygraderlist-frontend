@@ -36,6 +36,7 @@ export const columns: ColumnDef<Problem>[] = [
                         width={45}
                         style={{ objectFit: 'cover' }}
                         alt={row.original.code}
+                        unoptimized
                     />
                     <div>
                         <Text variant="p2" className="text-white">
