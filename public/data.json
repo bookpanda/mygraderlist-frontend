@@ -92,7 +92,7 @@
     {
         "id": 11,
         "course": "2110211",
-        "group": "",
+        "group": "ds",
         "code": "ds01_most",
         "name": "Most Frequent Word",
         "score": 2,
@@ -164,7 +164,7 @@
     {
         "id": 19,
         "course": "2110211",
-        "group": "",
+        "group": "d63",
         "code": "d63_qx_inside_interval",
         "name": "Inside Interval",
         "score": 2,
@@ -218,7 +218,7 @@
     {
         "id": 25,
         "course": "2110211",
-        "group": "",
+        "group": "d63",
         "code": "d63_q1a_multi_insert",
         "name": "Multi Insert",
         "score": 2,
@@ -236,7 +236,7 @@
     {
         "id": 27,
         "course": "2110211",
-        "group": "",
+        "group": "d64",
         "code": "d64_q1b_moving_median",
         "name": "Moving Median",
         "score": 2,
@@ -434,7 +434,7 @@
     {
         "id": 49,
         "course": "2110211",
-        "group": "",
+        "group": "d57",
         "code": "d57_q1_vequal",
         "name": "Vector Equality",
         "score": 2,
@@ -443,7 +443,7 @@
     {
         "id": 50,
         "course": "2110211",
-        "group": "",
+        "group": "d63",
         "code": "d63_q2b_vector_compress",
         "name": "Vector Compress",
         "score": 2,
@@ -470,7 +470,7 @@
     {
         "id": 53,
         "course": "2110211",
-        "group": "",
+        "group": "d61",
         "code": "d61_q1_ordered_set",
         "name": "Ordered Set",
         "score": 2,
@@ -488,7 +488,7 @@
     {
         "id": 55,
         "course": "2110211",
-        "group": "",
+        "group": "d59",
         "code": "d59_q1_range_insert",
         "name": "Range Insert",
         "score": 2,
@@ -659,7 +659,7 @@
     {
         "id": 74,
         "course": "2110211",
-        "group": "",
+        "group": "d61",
         "code": "d61_q1_append",
         "name": "Append",
         "score": 2,
@@ -686,8 +686,8 @@
     {
         "id": 77,
         "course": "2110211",
-        "group": "",
-        "code": "",
+        "group": "d59",
+        "code": "d59_q2_queue_equality",
         "name": "Queue Equality",
         "score": 2,
         "difficulty": 5
@@ -794,7 +794,7 @@
     {
         "id": 89,
         "course": "2110211",
-        "group": "",
+        "group": "d62",
         "code": "d62_q3a_heap_node_relation",
         "name": "Heap Node Relation",
         "score": 2,
@@ -857,7 +857,7 @@
     {
         "id": 96,
         "course": "2110211",
-        "group": "",
+        "group": "ds",
         "code": "ds03_heap_order",
         "name": "Heap Ordering",
         "score": 2,
@@ -884,7 +884,7 @@
     {
         "id": 99,
         "course": "2110211",
-        "group": "",
+        "group": "d65",
         "code": "d65_q3a_heap_relation_2",
         "name": "Heap Node Relation 2",
         "score": 2,
