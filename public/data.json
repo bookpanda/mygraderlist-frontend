@@ -182,7 +182,7 @@
     {
         "id": 21,
         "course": "2110211",
-        "group": "",
+        "group": "d60",
         "code": "d60_q0_v2m",
         "name": "Vector to Map",
         "score": 2,
@@ -209,7 +209,7 @@
     {
         "id": 24,
         "course": "2110211",
-        "group": "",
+        "group": "d63",
         "code": "d63_q1b_list_erase",
         "name": "Vector List Erase",
         "score": 2,
@@ -227,7 +227,7 @@
     {
         "id": 26,
         "course": "2110211",
-        "group": "",
+        "group": "d64",
         "code": "d64_q1b_password",
         "name": "Password",
         "score": 2,
@@ -254,7 +254,7 @@
     {
         "id": 29,
         "course": "2110211",
-        "group": "",
+        "group": "d59",
         "code": "d59_q0_stack_concat",
         "name": "Stack Concatenate",
         "score": 2,
@@ -452,7 +452,7 @@
     {
         "id": 51,
         "course": "2110211",
-        "group": "",
+        "group": "d62",
         "code": "d62_q2c_vector_swap",
         "name": "Swap Vector",
         "score": 2,
@@ -461,7 +461,7 @@
     {
         "id": 52,
         "course": "2110211",
-        "group": "",
+        "group": "d62",
         "code": "d62_q2b_vector_insert_many",
         "name": "Insert Many",
         "score": 2,
@@ -560,7 +560,7 @@
     {
         "id": 63,
         "course": "2110211",
-        "group": "",
+        "group": "d64",
         "code": "d64_q2b_stack_distribute",
         "name": "Stack Distribute",
         "score": 2,
@@ -1109,7 +1109,7 @@
     {
         "id": 124,
         "course": "2110263",
-        "group": "",
+        "group": "diglab",
         "code": "diglab_08_04",
         "name": "Digital: Simulation 08 - 04",
         "score": 2,
