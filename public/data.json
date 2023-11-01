@@ -146,7 +146,7 @@
     {
         "id": 17,
         "course": "2110211",
-        "group": "",
+        "group": "d63",
         "code": "d63_q1b_interval_count",
         "name": "Interval Count",
         "score": 2,
@@ -191,7 +191,7 @@
     {
         "id": 22,
         "course": "2110211",
-        "group": "",
+        "group": "d65",
         "code": "d65_q1a_multiply",
         "name": "Member Multiply",
         "score": 2,
@@ -533,7 +533,7 @@
     {
         "id": 60,
         "course": "2110211",
-        "group": "",
+        "group": "d63",
         "code": "d63_q2b_stack_reserve",
         "name": "Stack Reserve Compare",
         "score": 2,
@@ -542,7 +542,7 @@
     {
         "id": 61,
         "course": "2110211",
-        "group": "",
+        "group": "d62",
         "code": "d62_q2b_stack_deep_push",
         "name": "Stack Deep Push",
         "score": 2,
@@ -587,7 +587,7 @@
     {
         "id": 66,
         "course": "2110211",
-        "group": "",
+        "group": "d65",
         "code": "d65_q2a_mitosis",
         "name": "1: Stack Mitosis",
         "score": 2,
@@ -893,7 +893,7 @@
     {
         "id": 100,
         "course": "2110211",
-        "group": "",
+        "group": "d63",
         "code": "d63_q3b_heap_change",
         "name": "Heap Change Value",
         "score": 2,
@@ -902,7 +902,7 @@
     {
         "id": 101,
         "course": "2110211",
-        "group": "",
+        "group": "d63",
         "code": "d63_q3a_rank_in_heap",
         "name": "Rank in Heap",
         "score": 2,
