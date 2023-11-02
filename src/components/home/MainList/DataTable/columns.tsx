@@ -7,22 +7,28 @@ import Image from 'next/image';
 
 export const columns: ColumnDef<Problem>[] = [
     {
+        accessorKey: 'id',
+        header: () => <p className="mx-3 font-light text-gray-text">#</p>,
+        cell: ({ row }) => {
+            return (
+                <div className="flex w-3 items-center space-x-3">
+                    <Text variant="p1" className="mx-3 w-3 font-light">
+                        <b>{row.original.id}</b>
+                    </Text>
+                </div>
+            );
+        },
+    },
+    {
         accessorKey: 'name',
         header: () => (
             <div className="flex space-x-3">
-                <p className="mx-3 font-light text-gray-text">#</p>
                 <p className="font-light text-gray-text">Name</p>
             </div>
         ),
         cell: ({ row }) => {
             return (
                 <div className="flex items-center space-x-3">
-                    <Text
-                        variant="p1"
-                        className="mx-3 w-3 font-light text-gray-text"
-                    >
-                        <b>{row.original.id}</b>
-                    </Text>
                     <Image
                         src={
                             row.original.group === ''
@@ -39,7 +45,7 @@ export const columns: ColumnDef<Problem>[] = [
                         unoptimized
                     />
                     <div>
-                        <Text variant="p2" className="text-white">
+                        <Text variant="p2">
                             <b>{row.original.name}</b>
                         </Text>
                         <Text variant="p3" className="text-gray-text">

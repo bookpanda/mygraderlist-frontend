@@ -18,6 +18,7 @@ import {
 } from '@/components/ui/table';
 import { useHomeContext } from '@/context/HomeContext';
 import { Problem } from '@/types/problem';
+import clsx from 'clsx';
 
 interface DataTableProps<TData, TValue> {
     columns: ColumnDef<TData, TValue>[];
@@ -28,8 +29,9 @@ export function DataTable<TData, TValue>({
     columns,
     data,
 }: DataTableProps<TData, TValue>) {
-    const { setFooter } = useHomeContext();
+    const { setFooter, footer } = useHomeContext();
     const handleClick = (row: Row<TData>) => {
+        console.log(row.getAllCells()[0].getContext());
         const data = row.getAllCells()[0].getContext().cell.row
             .original as Problem;
         setFooter({
@@ -71,23 +73,49 @@ export function DataTable<TData, TValue>({
                 </TableHeader>
                 <TableBody>
                     {table.getRowModel().rows?.length ? (
-                        table.getRowModel().rows.map((row) => (
-                            <TableRow
-                                key={row.id}
-                                data-state={row.getIsSelected() && 'selected'}
-                                className="border-0 hover:bg-gray-hl"
-                                onClick={() => handleClick(row)}
-                            >
-                                {row.getVisibleCells().map((cell) => (
-                                    <TableCell key={cell.id}>
-                                        {flexRender(
-                                            cell.column.columnDef.cell,
-                                            cell.getContext()
-                                        )}
-                                    </TableCell>
-                                ))}
-                            </TableRow>
-                        ))
+                        table.getRowModel().rows.map((row) => {
+                            const data = row.original as Problem;
+                            return (
+                                <TableRow
+                                    key={row.id}
+                                    data-state={
+                                        row.getIsSelected() && 'selected'
+                                    }
+                                    className="border-0 hover:bg-gray-hl"
+                                    onClick={() => handleClick(row)}
+                                >
+                                    {row.getVisibleCells().map((cell) => {
+                                        const id = cell.id.split('_')[1];
+                                        let className = '';
+                                        if (id === 'id') {
+                                            className = clsx(
+                                                'w-3',
+                                                data.code === footer?.code
+                                                    ? 'text-green'
+                                                    : 'text-gray-text'
+                                            );
+                                        } else if (id === 'name') {
+                                            className = clsx(
+                                                data.code === footer?.code
+                                                    ? 'text-green'
+                                                    : 'text-white'
+                                            );
+                                        }
+                                        return (
+                                            <TableCell
+                                                key={cell.id}
+                                                className={className}
+                                            >
+                                                {flexRender(
+                                                    cell.column.columnDef.cell,
+                                                    cell.getContext()
+                                                )}
+                                            </TableCell>
+                                        );
+                                    })}
+                                </TableRow>
+                            );
+                        })
                     ) : (
                         <TableRow>
                             <TableCell
