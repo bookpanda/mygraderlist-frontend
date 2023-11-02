@@ -200,7 +200,7 @@
     {
         "id": 23,
         "course": "2110211",
-        "group": "",
+        "group": "d64",
         "code": "d64_q1a_card_battle",
         "name": "Card Battle",
         "score": 2,
@@ -353,7 +353,7 @@
     {
         "id": 40,
         "course": "2110211",
-        "group": "",
+        "group": "d63",
         "code": "d63_q2a_pair_gte",
         "name": "Pair GTE",
         "score": 2,
@@ -380,7 +380,7 @@
     {
         "id": 43,
         "course": "2110211",
-        "group": "",
+        "group": "ds",
         "code": "ds02_is_reverse",
         "name": "Is Reverse?",
         "score": 2,
@@ -398,7 +398,7 @@
     {
         "id": 45,
         "course": "2110211",
-        "group": "",
+        "group": "d63",
         "code": "d63_q2a_vector_mirror",
         "name": "Vector Mirror",
         "score": 2,
@@ -407,7 +407,7 @@
     {
         "id": 46,
         "course": "2110211",
-        "group": "",
+        "group": "d62",
         "code": "d62_q2c_wasted_space",
         "name": "Wasted Space",
         "score": 2,
@@ -479,7 +479,7 @@
     {
         "id": 54,
         "course": "2110211",
-        "group": "",
+        "group": "d60",
         "code": "d60_q1_v_uniq",
         "name": "Vector Unique",
         "score": 2,
@@ -497,7 +497,7 @@
     {
         "id": 56,
         "course": "2110211",
-        "group": "",
+        "group": "d64",
         "code": "d64_q2c_vector_less",
         "name": "Vector less",
         "score": 2,
@@ -506,7 +506,7 @@
     {
         "id": 57,
         "course": "2110211",
-        "group": "",
+        "group": "d64",
         "code": "d64_q2b_vector_rotate",
         "name": "Vector Rotate",
         "score": 2,
@@ -515,7 +515,7 @@
     {
         "id": 58,
         "course": "2110211",
-        "group": "",
+        "group": "d64",
         "code": "d64_q2a_vector_block_swap",
         "name": "Vector Block Swap",
         "score": 2,
@@ -551,7 +551,7 @@
     {
         "id": 62,
         "course": "2110211",
-        "group": "",
+        "group": "d59",
         "code": "d59_q1_pop_many",
         "name": "Pop Many",
         "score": 2,
@@ -569,7 +569,7 @@
     {
         "id": 64,
         "course": "2110211",
-        "group": "",
+        "group": "d57",
         "code": "d57_q1_sbv2",
         "name": "Stack by Vector 2",
         "score": 2,
@@ -578,7 +578,7 @@
     {
         "id": 65,
         "course": "2110211",
-        "group": "",
+        "group": "d57",
         "code": "d57_q1_sbv",
         "name": "Stack by Vector",
         "score": 2,
@@ -596,7 +596,7 @@
     {
         "id": 67,
         "course": "2110211",
-        "group": "",
+        "group": "d64",
         "code": "d64_q2c_stack_move_insert",
         "name": "Move Insert Stack",
         "score": 2,
@@ -605,7 +605,7 @@
     {
         "id": 68,
         "course": "2110211",
-        "group": "",
+        "group": "d64",
         "code": "d64_q2a_stack_from_set",
         "name": "Stack From Set",
         "score": 2,
@@ -623,7 +623,7 @@
     {
         "id": 70,
         "course": "2110211",
-        "group": "",
+        "group": "d63",
         "code": "d63_q3b_queue_b2f",
         "name": "Queue Back to Front",
         "score": 2,
@@ -632,7 +632,7 @@
     {
         "id": 71,
         "course": "2110211",
-        "group": "",
+        "group": "d63",
         "code": "d63_q3a_queue_m2b",
         "name": "Queue Move to Back",
         "score": 2,
@@ -641,7 +641,7 @@
     {
         "id": 72,
         "course": "2110211",
-        "group": "",
+        "group": "d62",
         "code": "d62_q3b_queue_m2f",
         "name": "Queue Move to Front",
         "score": 2,
@@ -650,7 +650,7 @@
     {
         "id": 73,
         "course": "2110211",
-        "group": "",
+        "group": "d62",
         "code": "d62_q2a_multi_count",
         "name": "Multi Count",
         "score": 2,
@@ -668,7 +668,7 @@
     {
         "id": 75,
         "course": "2110211",
-        "group": "",
+        "group": "d60",
         "code": "d60_q2_split_queue",
         "name": "Split Queue",
         "score": 2,
@@ -677,7 +677,7 @@
     {
         "id": 76,
         "course": "2110211",
-        "group": "",
+        "group": "d60",
         "code": "d60_q1_qat",
         "name": "Queue At",
         "score": 2,
@@ -695,7 +695,7 @@
     {
         "id": 78,
         "course": "2110211",
-        "group": "",
+        "group": "d58",
         "code": "d58_q1_to_vector",
         "name": "Queue to Vector",
         "score": 2,
@@ -704,7 +704,7 @@
     {
         "id": 79,
         "course": "2110211",
-        "group": "",
+        "group": "d65",
         "code": "d65_q3b_queue_total_reverse",
         "name": "Queue Total Reverse",
         "score": 2,
@@ -713,7 +713,7 @@
     {
         "id": 80,
         "course": "2110211",
-        "group": "",
+        "group": "d65",
         "code": "d65_q3a_queue_min",
         "name": "Queue Min Element",
         "score": 2,
@@ -722,7 +722,7 @@
     {
         "id": 81,
         "course": "2110211",
-        "group": "",
+        "group": "d65",
         "code": "d65_q2b_split_stack",
         "name": "Split Stack",
         "score": 2,
@@ -731,7 +731,7 @@
     {
         "id": 82,
         "course": "2110211",
-        "group": "",
+        "group": "d64",
         "code": "d64_q3b_queue_reverse",
         "name": "Queue Reverse",
         "score": 2,
@@ -740,7 +740,7 @@
     {
         "id": 83,
         "course": "2110263",
-        "group": "",
+        "group": "diglab",
         "code": "diglab_03_01",
         "name": "Digital: Simulation 03 - 01",
         "score": 2,
@@ -749,7 +749,7 @@
     {
         "id": 84,
         "course": "2110263",
-        "group": "",
+        "group": "diglab",
         "code": "diglab_01_01",
         "name": "Digital: Simulation 01 - 01",
         "score": 2,
@@ -785,7 +785,7 @@
     {
         "id": 88,
         "course": "2110211",
-        "group": "",
+        "group": "d62",
         "code": "d62_q3b_kheap_height",
         "name": "K-ary Heap Height",
         "score": 2,
@@ -803,7 +803,7 @@
     {
         "id": 90,
         "course": "2110211",
-        "group": "",
+        "group": "d60",
         "code": "d60_q2_heap_height",
         "name": "Heap Height",
         "score": 2,
@@ -812,7 +812,7 @@
     {
         "id": 91,
         "course": "2110211",
-        "group": "",
+        "group": "d57",
         "code": "d57_q2_kheap",
         "name": "K-Ary Heap",
         "score": 2,
@@ -830,7 +830,7 @@
     {
         "id": 93,
         "course": "2110211",
-        "group": "",
+        "group": "d62",
         "code": "d62_q3a_heap_descendant",
         "name": "Heap Descendant",
         "score": 2,
@@ -839,7 +839,7 @@
     {
         "id": 94,
         "course": "2110211",
-        "group": "",
+        "group": "d59",
         "code": "d59_q2_heap_find",
         "name": "Heap Find",
         "score": 2,
@@ -848,7 +848,7 @@
     {
         "id": 95,
         "course": "2110211",
-        "group": "",
+        "group": "d58",
         "code": "d58_q2_hequal",
         "name": "Heap Equality",
         "score": 2,
@@ -866,7 +866,7 @@
     {
         "id": 97,
         "course": "2110211",
-        "group": "",
+        "group": "d58",
         "code": "d58_q2_custom",
         "name": "Custom Order",
         "score": 2,
@@ -875,7 +875,7 @@
     {
         "id": 98,
         "course": "2110211",
-        "group": "",
+        "group": "d57",
         "code": "d57_q2_heap_order2",
         "name": "Heap Ordering 2",
         "score": 2,
@@ -911,7 +911,7 @@
     {
         "id": 102,
         "course": "2110211",
-        "group": "",
+        "group": "d65",
         "code": "d65_q3b_heap_check",
         "name": "Heap Check",
         "score": 2,
@@ -920,7 +920,7 @@
     {
         "id": 103,
         "course": "2110211",
-        "group": "",
+        "group": "d64",
         "code": "d64_q3b_heap_level",
         "name": "Heap Level",
         "score": 2,
@@ -929,7 +929,7 @@
     {
         "id": 104,
         "course": "2110211",
-        "group": "",
+        "group": "d64",
         "code": "d64_q3a_heap_kth",
         "name": "Heap K-th",
         "score": 2,
@@ -965,7 +965,7 @@
     {
         "id": 108,
         "course": "2110263",
-        "group": "",
+        "group": "diglab",
         "code": "diglab_07_02",
         "name": "Digital: Simulation 07 - 02",
         "score": 2,
@@ -974,7 +974,7 @@
     {
         "id": 109,
         "course": "2110263",
-        "group": "",
+        "group": "diglab",
         "code": "diglab_07_01",
         "name": "Digital: Simulation 07 - 01",
         "score": 2,
@@ -983,7 +983,7 @@
     {
         "id": 110,
         "course": "2110211",
-        "group": "",
+        "group": "d63",
         "code": "d63_q4a_list_reverse",
         "name": "List Reverse",
         "score": 2,
@@ -992,7 +992,7 @@
     {
         "id": 111,
         "course": "2110211",
-        "group": "",
+        "group": "d58",
         "code": "d58_q3_list_replace",
         "name": "List Replace",
         "score": 2,
@@ -1010,7 +1010,7 @@
     {
         "id": 113,
         "course": "2110211",
-        "group": "",
+        "group": "d64",
         "code": "d64_q4a_list_merge",
         "name": "List Merge",
         "score": 2,
@@ -1028,7 +1028,7 @@
     {
         "id": 115,
         "course": "2110211",
-        "group": "",
+        "group": "d61",
         "code": "d61_q2_splitlist",
         "name": "Split List",
         "score": 2,
@@ -1046,7 +1046,7 @@
     {
         "id": 117,
         "course": "2110211",
-        "group": "",
+        "group": "ds",
         "code": "ds04_playlist",
         "name": "Playlist Management",
         "score": 2,
@@ -1055,7 +1055,7 @@
     {
         "id": 118,
         "course": "2110211",
-        "group": "",
+        "group": "d65",
         "code": "d65_q4a_list_check",
         "name": "List check",
         "score": 2,
@@ -1100,7 +1100,7 @@
     {
         "id": 123,
         "course": "2110263",
-        "group": "",
+        "group": "diglab",
         "code": "diglab_08_05",
         "name": "Digital: Simulation 08 - 05",
         "score": 2,
@@ -1127,7 +1127,7 @@
     {
         "id": 126,
         "course": "2110263",
-        "group": "",
+        "group": "diglab",
         "code": "diglab_08_02",
         "name": "Digital: Simulation 08 - 02",
         "score": 2,
@@ -1136,7 +1136,7 @@
     {
         "id": 127,
         "course": "2110263",
-        "group": "",
+        "group": "diglab",
         "code": "diglab_08_01",
         "name": "Digital: Simulation 08 - 01",
         "score": 2,
