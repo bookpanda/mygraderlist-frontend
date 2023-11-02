@@ -89,7 +89,7 @@ export function DataTable<TData, TValue>({
                                         let className = '';
                                         if (id === 'id') {
                                             className = clsx(
-                                                'w-3',
+                                                'w-1',
                                                 data.code === footer?.code
                                                     ? 'text-green'
                                                     : 'text-gray-text'

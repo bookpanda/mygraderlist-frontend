@@ -11,8 +11,8 @@ export const columns: ColumnDef<Problem>[] = [
         header: () => <p className="mx-3 font-light text-gray-text">#</p>,
         cell: ({ row }) => {
             return (
-                <div className="flex w-3 items-center space-x-3">
-                    <Text variant="p1" className="mx-3 w-3 font-light">
+                <div className="w-1">
+                    <Text variant="p1" className="mx-3 font-light">
                         <b>{row.original.id}</b>
                     </Text>
                 </div>
