@@ -2,6 +2,7 @@
 
 import {
     ColumnDef,
+    Row,
     flexRender,
     getCoreRowModel,
     useReactTable,
@@ -15,6 +16,8 @@ import {
     TableHeader,
     TableRow,
 } from '@/components/ui/table';
+import { useHomeContext } from '@/context/HomeContext';
+import { Problem } from '@/types/problem';
 
 interface DataTableProps<TData, TValue> {
     columns: ColumnDef<TData, TValue>[];
@@ -25,6 +28,16 @@ export function DataTable<TData, TValue>({
     columns,
     data,
 }: DataTableProps<TData, TValue>) {
+    const { setFooter } = useHomeContext();
+    const handleClick = (row: Row<TData>) => {
+        const data = row.getAllCells()[0].getContext().cell.row
+            .original as Problem;
+        setFooter({
+            name: data.name,
+            code: data.code,
+            image: `images/courses/${data.course}/${data.group}/${data.code}.webp`,
+        });
+    };
     const table = useReactTable({
         data,
         columns,
@@ -63,6 +76,7 @@ export function DataTable<TData, TValue>({
                                 key={row.id}
                                 data-state={row.getIsSelected() && 'selected'}
                                 className="border-0 hover:bg-gray-hl"
+                                onClick={() => handleClick(row)}
                             >
                                 {row.getVisibleCells().map((cell) => (
                                     <TableCell key={cell.id}>

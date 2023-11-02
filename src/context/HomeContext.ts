@@ -1,15 +1,19 @@
-import { createContext, useContext } from 'react';
+import { Dispatch, SetStateAction, createContext, useContext } from 'react';
 
-export interface Footer {}
+export interface Footer {
+    name: string;
+    code: string;
+    image: string;
+}
 
 export interface HomeContextProps {
     footer: Footer | null;
-    setFooter: (id: string) => void;
+    setFooter: Dispatch<SetStateAction<Footer | null>>;
 }
 
 export const HomeContext = createContext<HomeContextProps>({
     footer: null,
-    setFooter: (id: string) => {},
+    setFooter: () => {},
 });
 
-export const useAppContext = () => useContext(HomeContext);
+export const useHomeContext = () => useContext(HomeContext);

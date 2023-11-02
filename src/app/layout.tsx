@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import '@styles/globals.css';
 import React from 'react';
+import { HomeContextProvider } from '@/context/HomeProvider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,12 +17,14 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
     return (
-        <html lang="en">
-            <body className={inter.className}>
-                <div className="box-border h-screen w-screen bg-gray-800 px-4">
-                    {children}
-                </div>
-            </body>
-        </html>
+        <HomeContextProvider>
+            <html lang="en">
+                <body className={inter.className}>
+                    <div className="box-border h-screen w-screen bg-gray-800 px-4">
+                        {children}
+                    </div>
+                </body>
+            </html>
+        </HomeContextProvider>
     );
 }
