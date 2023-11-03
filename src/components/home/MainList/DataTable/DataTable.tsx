@@ -16,7 +16,7 @@ import {
     TableHeader,
     TableRow,
 } from '@/components/ui/table';
-import { useHomeContext } from '@/context/HomeContext';
+import { useDataContext } from '@/context/DataContext';
 import { Problem } from '@/types/problem';
 import clsx from 'clsx';
 
@@ -29,7 +29,7 @@ export function DataTable<TData, TValue>({
     columns,
     data,
 }: DataTableProps<TData, TValue>) {
-    const { setFooter, footer } = useHomeContext();
+    const { setFooter, footer } = useDataContext();
     const handleClick = (row: Row<TData>) => {
         console.log(row.getAllCells()[0].getContext());
         const data = row.getAllCells()[0].getContext().cell.row

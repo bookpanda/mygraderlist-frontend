@@ -1,11 +1,11 @@
 'use client';
 
 import { Text } from '@/components/custom';
-import { useHomeContext } from '@/context/HomeContext';
+import { useDataContext } from '@/context/DataContext';
 import Image from 'next/image';
 
 export const Footer = () => {
-    const { footer } = useHomeContext();
+    const { footer } = useDataContext();
     return (
         <div className="absolute bottom-0 left-0 z-10 flex w-full bg-gray-800 p-4">
             {footer?.image && (

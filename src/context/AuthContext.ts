@@ -6,14 +6,14 @@ export interface Footer {
     image: string;
 }
 
-export interface HomeContextProps {
+export interface AuthContextProps {
     footer: Footer | null;
     setFooter: Dispatch<SetStateAction<Footer | null>>;
 }
 
-export const HomeContext = createContext<HomeContextProps>({
+export const AuthContext = createContext<AuthContextProps>({
     footer: null,
     setFooter: () => {},
 });
 
-export const useHomeContext = () => useContext(HomeContext);
+export const useHomeContext = () => useContext(AuthContext);
