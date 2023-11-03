@@ -8,9 +8,17 @@ export const Footer = () => {
     const { footer } = useDataContext();
     return (
         <div className="absolute bottom-0 left-0 z-10 flex w-full bg-gray-800 p-4">
-            {footer?.image && (
+            {footer && (
                 <Image
-                    src={footer.image}
+                    src={
+                        footer.group === ''
+                            ? require(
+                                  `@images/courses/${footer.course}/icon.webp`
+                              )
+                            : require(
+                                  `@images/courses/${footer.course}/${footer.group}/${footer.code}.webp`
+                              )
+                    }
                     width={60}
                     height={60}
                     style={{ objectFit: 'cover', borderRadius: '8%' }}

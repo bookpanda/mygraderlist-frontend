@@ -1,13 +1,13 @@
 'use client';
 
 import { PropsWithChildren, useEffect, useState } from 'react';
-import { Footer, DataContext } from './DataContext';
+import { DataContext } from './DataContext';
 import { Course, Problem } from '@/types/problem';
 import problemsData from '@pubic/problems.json';
 import coursesData from '@pubic/courses.json';
 
 export const DataContextProvider = ({ children }: PropsWithChildren) => {
-    const [footer, setFooter] = useState<Footer | null>(null);
+    const [footer, setFooter] = useState<Problem | null>(null);
     const [problems, setProblems] = useState<Problem[] | null>(null);
     const [courses, setCourses] = useState<Course[] | null>(null);
     const [currentCourse, setCurrentCourse] = useState<string>('');

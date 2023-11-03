@@ -1,15 +1,9 @@
 import { Course, Problem } from '@/types/problem';
 import { Dispatch, SetStateAction, createContext, useContext } from 'react';
 
-export interface Footer {
-    name: string;
-    code: string;
-    image: string;
-}
-
 export interface DataContextProps {
-    footer: Footer | null;
-    setFooter: Dispatch<SetStateAction<Footer | null>>;
+    footer: Problem | null;
+    setFooter: Dispatch<SetStateAction<Problem | null>>;
     problems: Problem[] | null;
     courses: Course[] | null;
     currentCourse: string;

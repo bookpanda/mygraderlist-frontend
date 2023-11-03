@@ -33,11 +33,7 @@ export function DataTable<TData, TValue>({
     const handleClick = (row: Row<TData>) => {
         const data = row.getAllCells()[0].getContext().cell.row
             .original as Problem;
-        setFooter({
-            name: data.name,
-            code: data.code,
-            image: `images/courses/${data.course}/${data.group}/${data.code}.webp`,
-        });
+        setFooter(data);
     };
     const table = useReactTable({
         data,
