@@ -10,14 +10,25 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
     const [footer, setFooter] = useState<Footer | null>(null);
     const [problems, setProblems] = useState<Problem[] | null>(null);
     const [courses, setCourses] = useState<Course[] | null>(null);
+    const [currentCourse, setCurrentCourse] = useState<string>('');
 
     useEffect(() => {
         setProblems(problemsData);
         setCourses(coursesData);
+        setCurrentCourse('2110211');
     }, []);
 
     return (
-        <DataContext.Provider value={{ footer, setFooter, problems, courses }}>
+        <DataContext.Provider
+            value={{
+                footer,
+                setFooter,
+                problems,
+                courses,
+                currentCourse,
+                setCurrentCourse,
+            }}
+        >
             {children}
         </DataContext.Provider>
     );

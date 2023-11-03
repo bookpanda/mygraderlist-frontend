@@ -12,6 +12,8 @@ export interface DataContextProps {
     setFooter: Dispatch<SetStateAction<Footer | null>>;
     problems: Problem[] | null;
     courses: Course[] | null;
+    currentCourse: string;
+    setCurrentCourse: Dispatch<SetStateAction<string>>;
 }
 
 export const DataContext = createContext<DataContextProps>({
@@ -19,6 +21,8 @@ export const DataContext = createContext<DataContextProps>({
     setFooter: () => {},
     problems: null,
     courses: null,
+    currentCourse: '',
+    setCurrentCourse: () => {},
 });
 
 export const useDataContext = () => useContext(DataContext);
