@@ -2,11 +2,13 @@
     {
         "id": 1,
         "course": "2110211",
-        "name": "Data Structure"
+        "name": "Data Structure",
+        "color": "#0285c7"
     },
     {
         "id": 2,
         "course": "2110263",
-        "name": "Digital Logic Lab"
+        "name": "Digital Logic Lab",
+        "color": "#854d0e"
     }
 ]

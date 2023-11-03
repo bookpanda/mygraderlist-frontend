@@ -4,12 +4,20 @@ import { useDataContext } from '@/context/DataContext';
 import { DataTable } from './DataTable/DataTable';
 import { columns } from './DataTable/columns';
 import { Header } from './Header/Header';
+import clsx from 'clsx';
 
 export const MainList = () => {
-    const { problems, currentCourse } = useDataContext();
+    const { problems, currentCourse, courses } = useDataContext();
     const currentProblems = problems?.filter((p) => p.course === currentCourse);
+    const c = courses?.find((c) => c.course === currentCourse);
     return (
-        <div className="no-scrollbar h-full w-full overflow-auto rounded-t-xl bg-gray-600 ">
+        <div className="no-scrollbar relative h-full w-full overflow-auto rounded-t-xl bg-gray-600">
+            <div
+                className="absolute h-2/3 w-full bg-gradient-to-b"
+                style={{
+                    backgroundImage: `linear-gradient(to bottom, ${c?.color}, ${c?.color}00)`,
+                }}
+            />
             <Header />
             <div className="p-4">
                 {currentProblems && (

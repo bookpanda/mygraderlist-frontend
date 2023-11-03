@@ -80,7 +80,7 @@ export function DataTable<TData, TValue>({
                                     data-state={
                                         row.getIsSelected() && 'selected'
                                     }
-                                    className="border-0 hover:bg-gray-hl"
+                                    className="border-0 hover:bg-gray-hl/50"
                                     onClick={() => handleClick(row)}
                                 >
                                     {row.getVisibleCells().map((cell) => {

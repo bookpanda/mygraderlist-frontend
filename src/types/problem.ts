@@ -12,4 +12,5 @@ export type Course = {
     id: number;
     course: string;
     name: string;
+    color: string;
 };
