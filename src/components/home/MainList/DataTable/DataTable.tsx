@@ -31,7 +31,6 @@ export function DataTable<TData, TValue>({
 }: DataTableProps<TData, TValue>) {
     const { setFooter, footer } = useDataContext();
     const handleClick = (row: Row<TData>) => {
-        console.log(row.getAllCells()[0].getContext());
         const data = row.getAllCells()[0].getContext().cell.row
             .original as Problem;
         setFooter({

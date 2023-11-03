@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "course": "2110211",
+        "name": "Data Structure"
+    },
+    {
+        "id": 2,
+        "course": "2110263",
+        "name": "Digital Logic Lab"
+    }
+]

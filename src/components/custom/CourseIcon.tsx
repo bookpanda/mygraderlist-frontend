@@ -5,12 +5,14 @@ import Image from 'next/image';
 import { FC } from 'react';
 
 interface CourseIconProps {
+    course: string;
     className?: string;
     width?: number;
     height?: number;
 }
 
 export const CourseIcon: FC<CourseIconProps> = ({
+    course,
     className,
     width,
     height,
@@ -18,7 +20,7 @@ export const CourseIcon: FC<CourseIconProps> = ({
     return (
         <RoundDiv className={clsx('rounded-lg bg-gray-400 p-0', className)}>
             <Image
-                src={dataStructure}
+                src={require(`@images/courses/${course}/icon.webp`)}
                 alt="data-struct"
                 width={width ?? 60}
                 height={height ?? 60}

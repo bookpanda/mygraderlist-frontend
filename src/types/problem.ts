@@ -7,3 +7,9 @@ export type Problem = {
     score: number;
     difficulty: number;
 };
+
+export type Course = {
+    id: number;
+    course: string;
+    name: string;
+};
