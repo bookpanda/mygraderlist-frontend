@@ -13,7 +13,7 @@ export const columns: ColumnDef<Problem>[] = [
             return (
                 <div className="w-1">
                     <Text variant="p1" className="mx-3 font-light">
-                        <b>{row.original.id}</b>
+                        <b>{row.getVisibleCells()[0].id.split('_')[0]}</b>
                     </Text>
                 </div>
             );
