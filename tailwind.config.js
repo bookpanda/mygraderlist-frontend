@@ -46,7 +46,7 @@ module.exports = {
                     foreground: 'hsl(var(--card-foreground))',
                 },
                 green: {
-                    DEFAULT: '#1DB954',
+                    DEFAULT: '#11d656',
                 },
                 gray: {
                     text: '#A7A7A7',

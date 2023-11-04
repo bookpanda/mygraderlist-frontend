@@ -6,7 +6,10 @@
         "code": "ex00e1",
         "name": "Time After",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 2,
@@ -15,7 +18,10 @@
         "code": "ex00e2",
         "name": "Min Max",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 3,
@@ -24,7 +30,10 @@
         "code": "ds00_reverse",
         "name": "Reverse Vector 1",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 4,
@@ -33,7 +42,10 @@
         "code": "d57_q0_remove_even",
         "name": "Remove Even",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 5,
@@ -42,7 +54,10 @@
         "code": "d62_q1c_vector_op",
         "name": "Vector Operation",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 6,
@@ -51,7 +66,10 @@
         "code": "d62_q1a_punch",
         "name": "Vector Punch",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 7,
@@ -60,7 +78,10 @@
         "code": "ds01_pair_sum",
         "name": "Pair Sum",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 8,
@@ -69,7 +90,10 @@
         "code": "ds00_reverse2",
         "name": "Reverse Vector 2",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 9,
@@ -78,7 +102,10 @@
         "code": "d59_q0_vector_swap",
         "name": "Vector Swap",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 10,
@@ -87,7 +114,10 @@
         "code": "ds02_intersection",
         "name": "Intersection",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 11,
@@ -96,7 +126,10 @@
         "code": "ds01_most",
         "name": "Most Frequent Word",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 12,
@@ -105,7 +138,10 @@
         "code": "d62_q1c_vector_intersection",
         "name": "Vector Intersection",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 13,
@@ -114,7 +150,10 @@
         "code": "d62_q1b_grandfather",
         "name": "Grandfather",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 14,
@@ -123,7 +162,10 @@
         "code": "d62_q1a_vote",
         "name": "Vote",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 15,
@@ -132,7 +174,10 @@
         "code": "d58_q0_rating",
         "name": "CUCAS Rating",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 16,
@@ -141,7 +186,10 @@
         "code": "ex00e3",
         "name": "Check Mapping",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 17,
@@ -150,7 +198,10 @@
         "code": "d63_q1b_interval_count",
         "name": "Interval Count",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 18,
@@ -159,7 +210,10 @@
         "code": "d57_q0_histogram",
         "name": "Histogram",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 19,
@@ -168,7 +222,10 @@
         "code": "d63_qx_inside_interval",
         "name": "Inside Interval",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 20,
@@ -177,7 +234,10 @@
         "code": "d63_q1a_hiatus",
         "name": "Hiatus",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 21,
@@ -186,7 +246,10 @@
         "code": "d60_q0_v2m",
         "name": "Vector to Map",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 22,
@@ -195,7 +258,10 @@
         "code": "d65_q1a_multiply",
         "name": "Member Multiply",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 23,
@@ -204,7 +270,10 @@
         "code": "d64_q1a_card_battle",
         "name": "Card Battle",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 24,
@@ -213,7 +282,10 @@
         "code": "d63_q1b_list_erase",
         "name": "Vector List Erase",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 25,
@@ -222,7 +294,10 @@
         "code": "d63_q1a_multi_insert",
         "name": "Multi Insert",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 26,
@@ -231,7 +306,10 @@
         "code": "d64_q1b_password",
         "name": "Password",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 27,
@@ -240,7 +318,10 @@
         "code": "d64_q1b_moving_median",
         "name": "Moving Median",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 28,
@@ -249,7 +330,10 @@
         "code": "d64_q1a_second_min",
         "name": "Second Min",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 29,
@@ -258,7 +342,10 @@
         "code": "d59_q0_stack_concat",
         "name": "Stack Concatenate",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 30,
@@ -267,7 +354,10 @@
         "code": "d57_q1_postfix",
         "name": "Evaluate Postfix",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 31,
@@ -276,7 +366,10 @@
         "code": "d65_q1a_delivery",
         "name": "Food Delivery",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 32,
@@ -285,7 +378,10 @@
         "code": "d62_q1b_queue_count",
         "name": "Queue Count",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 33,
@@ -294,7 +390,10 @@
         "code": "d60_q0_zipcode",
         "name": "Zipcode",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 34,
@@ -303,7 +402,10 @@
         "code": "ex00m2",
         "name": "Auction",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 35,
@@ -312,7 +414,10 @@
         "code": "ex00m1",
         "name": "Restaurant",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 36,
@@ -321,7 +426,10 @@
         "code": "d65_q1c_min_of_max",
         "name": "Min of Max",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 37,
@@ -330,7 +438,10 @@
         "code": "d65_q1c_ice_cream",
         "name": "Ice Cream",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 38,
@@ -339,7 +450,10 @@
         "code": "d65_q1b_cross_2d",
         "name": "3: Cross 2D",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 39,
@@ -348,7 +462,10 @@
         "code": "d65_q1b_sparse_vector",
         "name": "4: Sparse Vector",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 40,
@@ -357,7 +474,10 @@
         "code": "d63_q2a_pair_gte",
         "name": "Pair GTE",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 41,
@@ -366,7 +486,10 @@
         "code": "d66_q1a_topsale",
         "name": "Top Sale",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 42,
@@ -375,7 +498,10 @@
         "code": "d66_q1a_booking",
         "name": "Booking",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 43,
@@ -384,7 +510,10 @@
         "code": "ds02_is_reverse",
         "name": "Is Reverse?",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 44,
@@ -393,7 +522,10 @@
         "code": "d65_q2a_no_move",
         "name": "2: Vector No Move",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 45,
@@ -402,7 +534,10 @@
         "code": "d63_q2a_vector_mirror",
         "name": "Vector Mirror",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 46,
@@ -411,7 +546,10 @@
         "code": "d62_q2c_wasted_space",
         "name": "Wasted Space",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 47,
@@ -420,7 +558,10 @@
         "code": "d62_q2a_iterator_check",
         "name": "Iterator Check",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 48,
@@ -429,7 +570,10 @@
         "code": "d58_q1_erase_many",
         "name": "Erase Many from Vector",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 49,
@@ -438,7 +582,10 @@
         "code": "d57_q1_vequal",
         "name": "Vector Equality",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 50,
@@ -447,7 +594,10 @@
         "code": "d63_q2b_vector_compress",
         "name": "Vector Compress",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 51,
@@ -456,7 +606,10 @@
         "code": "d62_q2c_vector_swap",
         "name": "Swap Vector",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 52,
@@ -465,7 +618,10 @@
         "code": "d62_q2b_vector_insert_many",
         "name": "Insert Many",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 53,
@@ -474,7 +630,10 @@
         "code": "d61_q1_ordered_set",
         "name": "Ordered Set",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 54,
@@ -483,7 +642,10 @@
         "code": "d60_q1_v_uniq",
         "name": "Vector Unique",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 55,
@@ -492,7 +654,10 @@
         "code": "d59_q1_range_insert",
         "name": "Range Insert",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 56,
@@ -501,7 +666,10 @@
         "code": "d64_q2c_vector_less",
         "name": "Vector less",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 57,
@@ -510,7 +678,10 @@
         "code": "d64_q2b_vector_rotate",
         "name": "Vector Rotate",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 58,
@@ -519,7 +690,10 @@
         "code": "d64_q2a_vector_block_swap",
         "name": "Vector Block Swap",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 59,
@@ -528,7 +702,10 @@
         "code": "d65_q2b_some_move",
         "name": "Vector Some Move",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 60,
@@ -537,7 +714,10 @@
         "code": "d63_q2b_stack_reserve",
         "name": "Stack Reserve Compare",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 61,
@@ -546,7 +726,10 @@
         "code": "d62_q2b_stack_deep_push",
         "name": "Stack Deep Push",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 62,
@@ -555,7 +738,10 @@
         "code": "d59_q1_pop_many",
         "name": "Pop Many",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 63,
@@ -564,7 +750,10 @@
         "code": "d64_q2b_stack_distribute",
         "name": "Stack Distribute",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 64,
@@ -573,7 +762,10 @@
         "code": "d57_q1_sbv2",
         "name": "Stack by Vector 2",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 65,
@@ -582,7 +774,10 @@
         "code": "d57_q1_sbv",
         "name": "Stack by Vector",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 66,
@@ -591,7 +786,10 @@
         "code": "d65_q2a_mitosis",
         "name": "1: Stack Mitosis",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 67,
@@ -600,7 +798,10 @@
         "code": "d64_q2c_stack_move_insert",
         "name": "Move Insert Stack",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 68,
@@ -609,7 +810,10 @@
         "code": "d64_q2a_stack_from_set",
         "name": "Stack From Set",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 69,
@@ -618,7 +822,10 @@
         "code": "d64_q3a_queue_check",
         "name": "Queue Check",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 70,
@@ -627,7 +834,10 @@
         "code": "d63_q3b_queue_b2f",
         "name": "Queue Back to Front",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 71,
@@ -636,7 +846,10 @@
         "code": "d63_q3a_queue_m2b",
         "name": "Queue Move to Back",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 72,
@@ -645,7 +858,10 @@
         "code": "d62_q3b_queue_m2f",
         "name": "Queue Move to Front",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 73,
@@ -654,7 +870,10 @@
         "code": "d62_q2a_multi_count",
         "name": "Multi Count",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 74,
@@ -663,7 +882,10 @@
         "code": "d61_q1_append",
         "name": "Append",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 75,
@@ -672,7 +894,10 @@
         "code": "d60_q2_split_queue",
         "name": "Split Queue",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 76,
@@ -681,7 +906,10 @@
         "code": "d60_q1_qat",
         "name": "Queue At",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 77,
@@ -690,7 +918,10 @@
         "code": "d59_q2_queue_equality",
         "name": "Queue Equality",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 78,
@@ -699,7 +930,10 @@
         "code": "d58_q1_to_vector",
         "name": "Queue to Vector",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 79,
@@ -708,7 +942,10 @@
         "code": "d65_q3b_queue_total_reverse",
         "name": "Queue Total Reverse",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 80,
@@ -717,7 +954,10 @@
         "code": "d65_q3a_queue_min",
         "name": "Queue Min Element",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 81,
@@ -726,7 +966,10 @@
         "code": "d65_q2b_split_stack",
         "name": "Split Stack",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 82,
@@ -735,7 +978,10 @@
         "code": "d64_q3b_queue_reverse",
         "name": "Queue Reverse",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 83,
@@ -744,7 +990,10 @@
         "code": "diglab_03_01",
         "name": "Digital: Simulation 03 - 01",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 84,
@@ -753,7 +1002,10 @@
         "code": "diglab_01_01",
         "name": "Digital: Simulation 01 - 01",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 85,
@@ -762,7 +1014,10 @@
         "code": "d66_q2a_vector_range_erase",
         "name": "Vector Range Erase",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 86,
@@ -771,7 +1026,10 @@
         "code": "d66_q2a_stack_vertical_split",
         "name": "Stack Vertical Split",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 87,
@@ -780,7 +1038,10 @@
         "code": "d66_q1b_car_brake",
         "name": "Car Brake",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 88,
@@ -789,7 +1050,10 @@
         "code": "d62_q3b_kheap_height",
         "name": "K-ary Heap Height",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 89,
@@ -798,7 +1062,10 @@
         "code": "d62_q3a_heap_node_relation",
         "name": "Heap Node Relation",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 90,
@@ -807,7 +1074,10 @@
         "code": "d60_q2_heap_height",
         "name": "Heap Height",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 91,
@@ -816,7 +1086,10 @@
         "code": "d57_q2_kheap",
         "name": "K-Ary Heap",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 92,
@@ -825,7 +1098,10 @@
         "code": "ds03_heap_erase",
         "name": "Heap Erase",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 93,
@@ -834,7 +1110,10 @@
         "code": "d62_q3a_heap_descendant",
         "name": "Heap Descendant",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 94,
@@ -843,7 +1122,10 @@
         "code": "d59_q2_heap_find",
         "name": "Heap Find",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 95,
@@ -852,7 +1134,10 @@
         "code": "d58_q2_hequal",
         "name": "Heap Equality",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 96,
@@ -861,7 +1146,10 @@
         "code": "ds03_heap_order",
         "name": "Heap Ordering",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 97,
@@ -870,7 +1158,10 @@
         "code": "d58_q2_custom",
         "name": "Custom Order",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 98,
@@ -879,7 +1170,10 @@
         "code": "d57_q2_heap_order2",
         "name": "Heap Ordering 2",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 99,
@@ -888,7 +1182,10 @@
         "code": "d65_q3a_heap_relation_2",
         "name": "Heap Node Relation 2",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 100,
@@ -897,7 +1194,10 @@
         "code": "d63_q3b_heap_change",
         "name": "Heap Change Value",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 101,
@@ -906,7 +1206,10 @@
         "code": "d63_q3a_rank_in_heap",
         "name": "Rank in Heap",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 102,
@@ -915,7 +1218,10 @@
         "code": "d65_q3b_heap_check",
         "name": "Heap Check",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 103,
@@ -924,7 +1230,10 @@
         "code": "d64_q3b_heap_level",
         "name": "Heap Level",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 104,
@@ -933,7 +1242,10 @@
         "code": "d64_q3a_heap_kth",
         "name": "Heap K-th",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 105,
@@ -942,7 +1254,10 @@
         "code": "diglab_07_05",
         "name": "Digital: Simulation 07 - 05",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 106,
@@ -951,7 +1266,10 @@
         "code": "diglab_07_04",
         "name": "Digital: Simulation 07 - 04",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 107,
@@ -960,7 +1278,10 @@
         "code": "diglab_07_03",
         "name": "Digital: Simulation 07 - 03",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 108,
@@ -969,7 +1290,10 @@
         "code": "diglab_07_02",
         "name": "Digital: Simulation 07 - 02",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 109,
@@ -978,7 +1302,10 @@
         "code": "diglab_07_01",
         "name": "Digital: Simulation 07 - 01",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 110,
@@ -987,7 +1314,10 @@
         "code": "d63_q4a_list_reverse",
         "name": "List Reverse",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 111,
@@ -996,7 +1326,10 @@
         "code": "d58_q3_list_replace",
         "name": "List Replace",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 112,
@@ -1005,7 +1338,10 @@
         "code": "d57_q3_zuma",
         "name": "Zuma",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 113,
@@ -1014,7 +1350,10 @@
         "code": "d64_q4a_list_merge",
         "name": "List Merge",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 114,
@@ -1023,7 +1362,10 @@
         "code": "d63_q4b_list_extract",
         "name": "List Extract",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 115,
@@ -1032,7 +1374,10 @@
         "code": "d61_q2_splitlist",
         "name": "Split List",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 116,
@@ -1041,7 +1386,10 @@
         "code": "d59_q3_list_split",
         "name": "List Split",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 117,
@@ -1050,7 +1398,10 @@
         "code": "ds04_playlist",
         "name": "Playlist Management",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 118,
@@ -1059,7 +1410,10 @@
         "code": "d65_q4a_list_check",
         "name": "List check",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 119,
@@ -1068,7 +1422,10 @@
         "code": "d60_q3_lremove_all",
         "name": "List Remove All",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 120,
@@ -1077,7 +1434,10 @@
         "code": "d57_q3_shift",
         "name": "Shift",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 121,
@@ -1086,7 +1446,10 @@
         "code": "d57_q1_sparse",
         "name": "Sparse Graph",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 122,
@@ -1095,7 +1458,10 @@
         "code": "d57_q1_dense",
         "name": "Dense Graph",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 123,
@@ -1104,7 +1470,10 @@
         "code": "diglab_08_05",
         "name": "Digital: Simulation 08 - 05",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 124,
@@ -1113,7 +1482,10 @@
         "code": "diglab_08_04",
         "name": "Digital: Simulation 08 - 04",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 125,
@@ -1122,7 +1494,10 @@
         "code": "diglab_08_03",
         "name": "Digital: Simulation 08 - 03",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 126,
@@ -1131,7 +1506,10 @@
         "code": "diglab_08_02",
         "name": "Digital: Simulation 08 - 02",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 127,
@@ -1140,7 +1518,10 @@
         "code": "diglab_08_01",
         "name": "Digital: Simulation 08 - 01",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 128,
@@ -1149,7 +1530,10 @@
         "code": "d63_q4b_shallowest",
         "name": "Shallowest Leaf",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 129,
@@ -1158,7 +1542,10 @@
         "code": "d60_q3_same_tree",
         "name": "ต้นไม้เหมือน",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 130,
@@ -1167,7 +1554,10 @@
         "code": "d63_q4a_leaves_count",
         "name": "Leaves Count",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 131,
@@ -1176,7 +1566,10 @@
         "code": "d64_q4a_subtree",
         "name": "Subtree Extract",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 132,
@@ -1185,7 +1578,10 @@
         "code": "d59_q3_bst_split",
         "name": "BST Split",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     },
     {
         "id": 133,
@@ -1194,6 +1590,9 @@
         "code": "d58_q3_unary",
         "name": "Count Unary",
         "score": 2,
-        "difficulty": 5
+        "difficulty": 5,
+        "heart": 0,
+        "scoreSelf": 3,
+        "difficultySelf": 4
     }
 ]

@@ -6,6 +6,9 @@ export type Problem = {
     name: string;
     score: number;
     difficulty: number;
+    heart: number;
+    scoreSelf: number;
+    difficultySelf: number;
 };
 
 export type Course = {

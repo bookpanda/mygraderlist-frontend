@@ -1,5 +1,4 @@
 import { RoundDiv } from '@/components/custom';
-import { dataStructure } from '@images/courses';
 import clsx from 'clsx';
 import Image from 'next/image';
 import { FC } from 'react';

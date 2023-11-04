@@ -21,7 +21,8 @@ export const Footer = () => {
                     }
                     width={60}
                     height={60}
-                    style={{ objectFit: 'cover', borderRadius: '8%' }}
+                    style={{ objectFit: 'cover' }}
+                    className="rounded-md"
                     alt="current_problem"
                     unoptimized
                 />
