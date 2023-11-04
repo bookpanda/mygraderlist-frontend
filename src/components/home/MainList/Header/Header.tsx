@@ -4,7 +4,6 @@ import { Text } from '@/components/custom';
 import { CourseIcon } from '../../../custom/CourseIcon';
 import { Sort } from './Sort';
 import { useDataContext } from '@/context/DataContext';
-import clsx from 'clsx';
 
 export const Header = () => {
     const { courses, currentCourse } = useDataContext();
