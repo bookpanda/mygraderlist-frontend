@@ -4,7 +4,6 @@ import { useDataContext } from '@/context/DataContext';
 import { DataTable } from './DataTable/DataTable';
 import { columns } from './DataTable/columns';
 import { Header } from './Header/Header';
-import clsx from 'clsx';
 
 export const MainList = () => {
     const { problems, currentCourse, courses } = useDataContext();

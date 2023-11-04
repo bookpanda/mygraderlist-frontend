@@ -1,4 +1,5 @@
 import { Footer, MainList, SideBar } from '@/components/home';
+import { EditModal } from '@/components/home/EditModal/EditModal';
 
 export default function Home() {
     return (
@@ -8,6 +9,7 @@ export default function Home() {
                 <MainList />
             </div>
             <Footer />
+            <EditModal />
         </div>
     );
 }

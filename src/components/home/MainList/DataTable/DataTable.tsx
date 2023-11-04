@@ -76,7 +76,6 @@ export function DataTable<TData, TValue>({
                     {table.getRowModel().rows?.length ? (
                         table.getRowModel().rows.map((row) => {
                             const data = row.original as Problem;
-                            let moreColor = 'transparent';
                             return (
                                 <TableRow
                                     key={row.id}
@@ -123,7 +122,7 @@ export function DataTable<TData, TValue>({
                                     })}
                                     <div className="flex h-20 w-12 items-center justify-center">
                                         <MoreHorizontal
-                                            onClick={() => openEditModal()}
+                                            onClick={openEditModal}
                                             className={clsx(
                                                 'h-[50%] hover:h-[60%] hover:w-[55%] hover:cursor-pointer',
                                                 selectedRow === row.id
