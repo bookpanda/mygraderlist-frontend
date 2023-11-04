@@ -19,6 +19,8 @@ import {
 import { useDataContext } from '@/context/DataContext';
 import { Problem } from '@/types/problem';
 import clsx from 'clsx';
+import { MoreHorizontal } from 'lucide-react';
+import { useState } from 'react';
 
 interface DataTableProps<TData, TValue> {
     columns: ColumnDef<TData, TValue>[];
@@ -35,6 +37,8 @@ export function DataTable<TData, TValue>({
             .original as Problem;
         setFooter(data);
     };
+    const [selectedRow, setSelectedRow] = useState<string | null>(null);
+
     const table = useReactTable({
         data,
         columns,
@@ -70,6 +74,7 @@ export function DataTable<TData, TValue>({
                     {table.getRowModel().rows?.length ? (
                         table.getRowModel().rows.map((row) => {
                             const data = row.original as Problem;
+                            let moreColor = 'transparent';
                             return (
                                 <TableRow
                                     key={row.id}
@@ -77,6 +82,12 @@ export function DataTable<TData, TValue>({
                                         row.getIsSelected() && 'selected'
                                     }
                                     className="border-0 hover:bg-gray-hl/50"
+                                    onMouseEnter={() => {
+                                        setSelectedRow(row.id);
+                                    }}
+                                    onMouseLeave={() => {
+                                        setSelectedRow(null);
+                                    }}
                                     onClick={() => handleClick(row)}
                                 >
                                     {row.getVisibleCells().map((cell) => {
@@ -108,6 +119,17 @@ export function DataTable<TData, TValue>({
                                             </TableCell>
                                         );
                                     })}
+                                    <div className="flex h-20 w-12 items-center justify-center">
+                                        <MoreHorizontal
+                                            // onClick={}
+                                            className={clsx(
+                                                'h-[50%] hover:h-[60%] hover:w-[55%] hover:cursor-pointer',
+                                                selectedRow === row.id
+                                                    ? 'text-white'
+                                                    : 'text-transparent'
+                                            )}
+                                        />
+                                    </div>
                                 </TableRow>
                             );
                         })
