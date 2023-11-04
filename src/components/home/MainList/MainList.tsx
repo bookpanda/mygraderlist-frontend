@@ -7,7 +7,11 @@ import { Header } from './Header/Header';
 
 export const MainList = () => {
     const { problems, currentCourse, courses } = useDataContext();
-    const currentProblems = problems?.filter((p) => p.course === currentCourse);
+    const currentProblems =
+        currentCourse === 'liked'
+            ? problems?.filter((p) => p.heart === 1)
+            : problems?.filter((p) => p.course === currentCourse);
+
     const c = courses?.find((c) => c.course === currentCourse);
     return (
         <div className="no-scrollbar relative h-full w-full overflow-auto rounded-t-xl bg-gray-600">
