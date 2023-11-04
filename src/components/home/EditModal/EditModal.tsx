@@ -19,7 +19,10 @@ export const EditModal = () => {
     return (
         <Dialog open={isEditModalOpen}>
             <DialogTrigger>Open</DialogTrigger>
-            <DialogContent onInteractOutside={closeEditModal}>
+            <DialogContent
+                onInteractOutside={closeEditModal}
+                className="bg-gray-400"
+            >
                 <DialogHeader>
                     <DialogTitle>Are you sure absolutely sure?</DialogTitle>
                     <DialogDescription>

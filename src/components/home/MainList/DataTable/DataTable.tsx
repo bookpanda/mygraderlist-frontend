@@ -32,12 +32,12 @@ export function DataTable<TData, TValue>({
     columns,
     data,
 }: DataTableProps<TData, TValue>) {
-    const { setFooter, footer } = useDataContext();
+    const { setCurrentProblem, currentProblem } = useDataContext();
     const { openEditModal } = useOpenContext();
     const handleClick = (row: Row<TData>) => {
         const data = row.getAllCells()[0].getContext().cell.row
             .original as Problem;
-        setFooter(data);
+        setCurrentProblem(data);
     };
     const [selectedRow, setSelectedRow] = useState<string | null>(null);
 
@@ -97,13 +97,15 @@ export function DataTable<TData, TValue>({
                                         if (id === 'id') {
                                             className = clsx(
                                                 'w-1',
-                                                data.code === footer?.code
+                                                data.code ===
+                                                    currentProblem?.code
                                                     ? 'text-green'
                                                     : 'text-gray-text'
                                             );
                                         } else if (id === 'name') {
                                             className = clsx(
-                                                data.code === footer?.code
+                                                data.code ===
+                                                    currentProblem?.code
                                                     ? 'text-green'
                                                     : 'text-white'
                                             );

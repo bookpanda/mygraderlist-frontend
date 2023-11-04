@@ -7,7 +7,7 @@ import problemsData from '@pubic/problems.json';
 import coursesData from '@pubic/courses.json';
 
 export const DataContextProvider = ({ children }: PropsWithChildren) => {
-    const [footer, setFooter] = useState<Problem | null>(null);
+    const [currentProblem, setCurrentProblem] = useState<Problem | null>(null);
     const [problems, setProblems] = useState<Problem[] | null>(null);
     const [courses, setCourses] = useState<Course[] | null>(null);
     const [currentCourse, setCurrentCourse] = useState<string>('');
@@ -21,8 +21,8 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
     return (
         <DataContext.Provider
             value={{
-                footer,
-                setFooter,
+                currentProblem,
+                setCurrentProblem,
                 problems,
                 courses,
                 currentCourse,

@@ -2,8 +2,8 @@ import { Course, Problem } from '@/types/problem';
 import { Dispatch, SetStateAction, createContext, useContext } from 'react';
 
 export interface DataContextProps {
-    footer: Problem | null;
-    setFooter: Dispatch<SetStateAction<Problem | null>>;
+    currentProblem: Problem | null;
+    setCurrentProblem: Dispatch<SetStateAction<Problem | null>>;
     problems: Problem[] | null;
     courses: Course[] | null;
     currentCourse: string;
@@ -11,8 +11,8 @@ export interface DataContextProps {
 }
 
 export const DataContext = createContext<DataContextProps>({
-    footer: null,
-    setFooter: () => {},
+    currentProblem: null,
+    setCurrentProblem: () => {},
     problems: null,
     courses: null,
     currentCourse: '',
