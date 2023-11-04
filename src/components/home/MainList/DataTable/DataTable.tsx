@@ -21,6 +21,7 @@ import { Problem } from '@/types/problem';
 import clsx from 'clsx';
 import { MoreHorizontal } from 'lucide-react';
 import { useState } from 'react';
+import { useOpenContext } from '@/context/OpenContext';
 
 interface DataTableProps<TData, TValue> {
     columns: ColumnDef<TData, TValue>[];
@@ -32,6 +33,7 @@ export function DataTable<TData, TValue>({
     data,
 }: DataTableProps<TData, TValue>) {
     const { setFooter, footer } = useDataContext();
+    const { openEditModal } = useOpenContext();
     const handleClick = (row: Row<TData>) => {
         const data = row.getAllCells()[0].getContext().cell.row
             .original as Problem;
@@ -121,7 +123,7 @@ export function DataTable<TData, TValue>({
                                     })}
                                     <div className="flex h-20 w-12 items-center justify-center">
                                         <MoreHorizontal
-                                            // onClick={}
+                                            onClick={() => openEditModal()}
                                             className={clsx(
                                                 'h-[50%] hover:h-[60%] hover:w-[55%] hover:cursor-pointer',
                                                 selectedRow === row.id
