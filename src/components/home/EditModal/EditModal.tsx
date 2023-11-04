@@ -14,11 +14,14 @@ import { useOpenContext } from '@/context/OpenContext';
 import { DialogClose } from '@radix-ui/react-dialog';
 import Image from 'next/image';
 import { HeartIcon, HeartFilledIcon } from '@radix-ui/react-icons';
+import { useToast } from '@/components/ui/use-toast';
 
 export const EditModal = () => {
-    const { currentProblem } = useDataContext();
+    const { toast } = useToast();
+    const { currentProblem, like, unlike } = useDataContext();
     const c = currentProblem;
     const { isEditModalOpen, closeEditModal } = useOpenContext();
+
     return (
         <Dialog open={isEditModalOpen}>
             {c && (
@@ -57,8 +60,17 @@ export const EditModal = () => {
                                 >
                                     {c.course}
                                 </Text>
-                                <HeartIcon className="h-6 w-6 hover:cursor-pointer" />
-                                <HeartFilledIcon className="h-6 w-6 text-green hover:cursor-pointer" />
+                                {c.heart === 0 ? (
+                                    <HeartIcon
+                                        className="h-6 w-6 hover:cursor-pointer"
+                                        onClick={like}
+                                    />
+                                ) : (
+                                    <HeartFilledIcon
+                                        className="h-6 w-6 text-green hover:cursor-pointer"
+                                        onClick={unlike}
+                                    />
+                                )}
                             </DialogTitle>
                         </div>
                         <DialogDescription>

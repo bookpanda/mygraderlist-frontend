@@ -4,6 +4,7 @@ import '@styles/globals.css';
 import React from 'react';
 import { DataContextProvider } from '@/context/DataProvider';
 import { OpenContextProvider } from '@/context/OpenProvider';
+import { Toaster } from '@/components/ui/toaster';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                     <body className={inter.className}>
                         <div className="box-border h-screen w-screen bg-gray-800 px-4">
                             {children}
+                            <Toaster />
                         </div>
                     </body>
                 </html>

@@ -8,6 +8,8 @@ export interface DataContextProps {
     courses: Course[] | null;
     currentCourse: string;
     setCurrentCourse: Dispatch<SetStateAction<string>>;
+    like: () => void;
+    unlike: () => void;
 }
 
 export const DataContext = createContext<DataContextProps>({
@@ -17,6 +19,8 @@ export const DataContext = createContext<DataContextProps>({
     courses: null,
     currentCourse: '',
     setCurrentCourse: () => {},
+    like: () => {},
+    unlike: () => {},
 });
 
 export const useDataContext = () => useContext(DataContext);
