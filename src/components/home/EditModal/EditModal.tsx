@@ -19,14 +19,14 @@ export const EditModal = () => {
     return (
         <Dialog open={isEditModalOpen}>
             <DialogTrigger>Open</DialogTrigger>
-            <DialogContent>
+            <DialogContent onInteractOutside={closeEditModal}>
                 <DialogHeader>
-                    {/* <DialogTitle>Are you sure absolutely sure?</DialogTitle>
+                    <DialogTitle>Are you sure absolutely sure?</DialogTitle>
                     <DialogDescription>
                         This action cannot be undone. This will permanently
                         delete your account and remove your data from our
                         servers.
-                    </DialogDescription> */}
+                    </DialogDescription>
                 </DialogHeader>
                 <DialogClose asChild>
                     <Button
