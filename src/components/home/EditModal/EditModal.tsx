@@ -15,6 +15,7 @@ import { DialogClose } from '@radix-ui/react-dialog';
 import Image from 'next/image';
 import { HeartIcon, HeartFilledIcon } from '@radix-ui/react-icons';
 import { useToast } from '@/components/ui/use-toast';
+import { LikeButton } from '../LikeButton/LikeButton';
 
 export const EditModal = () => {
     const { toast } = useToast();
@@ -60,17 +61,7 @@ export const EditModal = () => {
                                 >
                                     {c.course}
                                 </Text>
-                                {c.heart === 0 ? (
-                                    <HeartIcon
-                                        className="h-6 w-6 hover:cursor-pointer"
-                                        onClick={like}
-                                    />
-                                ) : (
-                                    <HeartFilledIcon
-                                        className="h-6 w-6 text-green hover:cursor-pointer"
-                                        onClick={unlike}
-                                    />
-                                )}
+                                <LikeButton heart={c.heart} id={c.id} />
                             </DialogTitle>
                         </div>
                         <DialogDescription>

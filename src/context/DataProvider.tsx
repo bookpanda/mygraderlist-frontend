@@ -20,10 +20,10 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
         setCurrentCourse('2110211');
     }, []);
 
-    const like = () => {
+    const like = (id: number) => {
         if (!currentProblem || !problems) return;
         const newProblems = problems?.map((p) => {
-            if (p.id === currentProblem.id) {
+            if (p.id === id) {
                 return { ...p, heart: 1 };
             }
             return p;
@@ -36,10 +36,10 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
         });
     };
 
-    const unlike = () => {
+    const unlike = (id: number) => {
         if (!currentProblem || !problems) return;
         const newProblems = problems?.map((p) => {
-            if (p.id === currentProblem.id) {
+            if (p.id === id) {
                 return { ...p, heart: 0 };
             }
             return p;

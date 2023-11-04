@@ -22,6 +22,7 @@ import clsx from 'clsx';
 import { MoreHorizontal } from 'lucide-react';
 import { useState } from 'react';
 import { useOpenContext } from '@/context/OpenContext';
+import { LikeButton } from '../../LikeButton/LikeButton';
 
 interface DataTableProps<TData, TValue> {
     columns: ColumnDef<TData, TValue>[];
@@ -122,16 +123,23 @@ export function DataTable<TData, TValue>({
                                             </TableCell>
                                         );
                                     })}
-                                    <div className="flex h-20 w-12 items-center justify-center">
-                                        <MoreHorizontal
-                                            onClick={openEditModal}
-                                            className={clsx(
-                                                'h-[50%] hover:h-[60%] hover:w-[55%] hover:cursor-pointer',
-                                                selectedRow === row.id
-                                                    ? 'text-white'
-                                                    : 'text-transparent'
-                                            )}
+                                    <div className="flex h-20 w-20 items-center justify-center space-x-5">
+                                        <LikeButton
+                                            heart={data.heart}
+                                            id={data.id}
+                                            width={5}
                                         />
+                                        <div className="w-1/2">
+                                            <MoreHorizontal
+                                                onClick={openEditModal}
+                                                className={clsx(
+                                                    'h-[50%] hover:h-[55%] hover:w-[65%] hover:cursor-pointer',
+                                                    selectedRow === row.id
+                                                        ? 'text-white'
+                                                        : 'text-transparent'
+                                                )}
+                                            />
+                                        </div>
                                     </div>
                                 </TableRow>
                             );
