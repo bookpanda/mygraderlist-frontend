@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google';
 import '@styles/globals.css';
 import React from 'react';
 import { DataContextProvider } from '@/context/DataProvider';
+import { OpenContext } from '@/context/OpenContext';
+import { OpenContextProvider } from '@/context/OpenProvider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -18,13 +20,15 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
     return (
         <DataContextProvider>
-            <html lang="en">
-                <body className={inter.className}>
-                    <div className="box-border h-screen w-screen bg-gray-800 px-4">
-                        {children}
-                    </div>
-                </body>
-            </html>
+            <OpenContextProvider>
+                <html lang="en">
+                    <body className={inter.className}>
+                        <div className="box-border h-screen w-screen bg-gray-800 px-4">
+                            {children}
+                        </div>
+                    </body>
+                </html>
+            </OpenContextProvider>
         </DataContextProvider>
     );
 }
