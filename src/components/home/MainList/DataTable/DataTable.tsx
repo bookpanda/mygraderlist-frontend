@@ -145,10 +145,10 @@ export function DataTable<TData, TValue>({
                             );
                         })
                     ) : (
-                        <TableRow>
+                        <TableRow className="hover:bg-transparent">
                             <TableCell
                                 colSpan={columns.length}
-                                className="h-24 text-center"
+                                className="h-24 text-center text-gray-text"
                             >
                                 No results.
                             </TableCell>

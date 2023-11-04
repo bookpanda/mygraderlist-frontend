@@ -31,7 +31,7 @@ export const CourseSelect: FC<CourseSelectProps> = ({ course }) => {
                         <b>{course.name}</b>
                     </Text>
                     <Text variant="p3" className="text-gray-text">
-                        {course.course}
+                        {course.course !== 'liked' && course.course}
                     </Text>
                 </TooltipContent>
             </Tooltip>

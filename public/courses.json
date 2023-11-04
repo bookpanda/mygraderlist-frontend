@@ -1,5 +1,11 @@
 [
     {
+        "id": 0,
+        "course": "liked",
+        "name": "Liked Problems",
+        "color": "#6114c7"
+    },
+    {
         "id": 1,
         "course": "2110211",
         "name": "Data Structure",

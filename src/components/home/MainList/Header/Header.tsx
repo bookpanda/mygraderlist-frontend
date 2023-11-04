@@ -33,7 +33,7 @@ export const Header = () => {
                                 variant="p1"
                                 className="ml-1 mt-1 text-white drop-shadow-2xl"
                             >
-                                {c.course}
+                                {c.course !== 'liked' && c.course}
                             </Text>
                         </div>
                     </div>
