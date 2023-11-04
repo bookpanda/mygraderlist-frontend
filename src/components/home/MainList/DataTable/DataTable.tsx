@@ -23,6 +23,7 @@ import { MoreHorizontal } from 'lucide-react';
 import { useState } from 'react';
 import { useOpenContext } from '@/context/OpenContext';
 import { LikeButton } from '../../LikeButton/LikeButton';
+import { EmojiRow } from '../../EmojiRow/EmojiRow';
 
 interface DataTableProps<TData, TValue> {
     columns: ColumnDef<TData, TValue>[];
@@ -92,7 +93,7 @@ export function DataTable<TData, TValue>({
                                     }}
                                     onClick={() => handleClick(row)}
                                 >
-                                    {row.getVisibleCells().map((cell) => {
+                                    {row.getVisibleCells().map((cell, idx) => {
                                         const id = cell.id.split('_')[1];
                                         let className = '';
                                         if (id === 'id') {
@@ -111,6 +112,21 @@ export function DataTable<TData, TValue>({
                                                     : 'text-white'
                                             );
                                         }
+                                        if (idx === 1)
+                                            return (
+                                                <TableCell
+                                                    key={cell.id}
+                                                    className={className}
+                                                >
+                                                    {flexRender(
+                                                        cell.column.columnDef
+                                                            .cell,
+                                                        cell.getContext()
+                                                    )}
+                                                    <EmojiRow />
+                                                </TableCell>
+                                            );
+
                                         return (
                                             <TableCell
                                                 key={cell.id}
@@ -123,11 +139,12 @@ export function DataTable<TData, TValue>({
                                             </TableCell>
                                         );
                                     })}
-                                    <div className="flex h-20 w-20 items-center justify-center space-x-5">
+                                    <div className="flex h-36 w-20 items-center justify-center space-x-5">
                                         <LikeButton
                                             heart={data.heart}
                                             id={data.id}
                                             width={5}
+                                            show={selectedRow === row.id}
                                         />
                                         <div className="w-1/2">
                                             <MoreHorizontal

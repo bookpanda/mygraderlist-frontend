@@ -9,20 +9,23 @@ interface LikeButtonProps {
     heart: number;
     id: number;
     width?: number;
+    show?: boolean;
 }
 
-export const LikeButton: FC<LikeButtonProps> = ({ heart, id, width }) => {
+export const LikeButton: FC<LikeButtonProps> = ({ heart, id, width, show }) => {
     const { like, unlike } = useDataContext();
     return (
         <>
             {heart === 0 ? (
-                <HeartIcon
-                    className={clsx(
-                        'text-gray-text hover:cursor-pointer',
-                        width ? `h-${width} w-${width}` : 'h-6 w-6'
-                    )}
-                    onClick={() => like(id)}
-                />
+                show && (
+                    <HeartIcon
+                        className={clsx(
+                            'text-gray-text hover:cursor-pointer',
+                            width ? `h-${width} w-${width}` : 'h-6 w-6'
+                        )}
+                        onClick={() => like(id)}
+                    />
+                )
             ) : (
                 <HeartFilledIcon
                     className={clsx(
