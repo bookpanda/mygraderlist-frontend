@@ -9,6 +9,11 @@ export type Problem = {
     heart: number;
     scoreSelf: number;
     difficultySelf: number;
+    emojis: {
+        emoji: string;
+        count: number;
+    }[];
+    emojisSelf: string[];
 };
 
 export type Course = {

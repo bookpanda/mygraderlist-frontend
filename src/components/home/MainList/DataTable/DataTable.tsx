@@ -116,14 +116,22 @@ export function DataTable<TData, TValue>({
                                             return (
                                                 <TableCell
                                                     key={cell.id}
-                                                    className={className}
+                                                    className={clsx(
+                                                        className,
+                                                        'pt-10'
+                                                    )}
                                                 >
                                                     {flexRender(
                                                         cell.column.columnDef
                                                             .cell,
                                                         cell.getContext()
                                                     )}
-                                                    <EmojiRow />
+                                                    <EmojiRow
+                                                        emojis={data.emojis}
+                                                        emojisSelf={
+                                                            data.emojisSelf
+                                                        }
+                                                    />
                                                 </TableCell>
                                             );
 
