@@ -127,6 +127,7 @@ export function DataTable<TData, TValue>({
                                                         cell.getContext()
                                                     )}
                                                     <EmojiRow
+                                                        id={data.id}
                                                         emojis={data.emojis}
                                                         emojisSelf={
                                                             data.emojisSelf

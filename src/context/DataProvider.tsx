@@ -1,6 +1,6 @@
 'use client';
 
-import { PropsWithChildren, useEffect, useState } from 'react';
+import { PropsWithChildren, useEffect, useMemo, useRef, useState } from 'react';
 import { DataContext } from './DataContext';
 import { Course, Problem } from '@/types/problem';
 import problemsData from '@pubic/problems.json';
@@ -20,16 +20,22 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
         setCurrentCourse('2110211');
     }, []);
 
+    useEffect(() => {
+        if (problems)
+            setCurrentProblem(
+                problems.find((p) => p.id === currentProblem?.id) ?? null
+            );
+    }, [problems, currentProblem?.id]);
+
     const like = (id: number) => {
         if (!currentProblem || !problems) return;
-        const newProblems = problems?.map((p) => {
+        const newProblems = problems.map((p) => {
             if (p.id === id) {
                 return { ...p, heart: 1 };
             }
             return p;
         });
         setProblems(newProblems);
-        setCurrentProblem({ ...currentProblem, heart: 1 });
         toast({
             title: 'Added to favourites',
             description: `${currentProblem.name} (${currentProblem.code})`,
@@ -38,18 +44,70 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
 
     const unlike = (id: number) => {
         if (!currentProblem || !problems) return;
-        const newProblems = problems?.map((p) => {
+        const newProblems = problems.map((p) => {
             if (p.id === id) {
                 return { ...p, heart: 0 };
             }
             return p;
         });
         setProblems(newProblems);
-        setCurrentProblem({ ...currentProblem, heart: 0 });
         toast({
             title: 'Removed from favourites',
             description: `${currentProblem.name} (${currentProblem.code})`,
         });
+    };
+
+    const addEmoji = (id: number, emoji: string) => {
+        if (!currentProblem || !problems) return;
+        const currentCount =
+            currentProblem.emojis.find((e) => e.emoji === emoji)?.count ?? 0;
+        const newEmojis = currentProblem.emojis.map((e) => {
+            if (e.emoji === emoji) {
+                return {
+                    emoji,
+                    count: currentCount + 1,
+                };
+            }
+            return e;
+        });
+        const newProblems = problems.map((p) => {
+            if (p.id === id) {
+                return {
+                    ...p,
+                    emojis: newEmojis.filter((e) => e.count > 0),
+                    emojisSelf: [...p.emojisSelf, emoji],
+                };
+            }
+            return p;
+        });
+        setProblems(() => newProblems);
+    };
+
+    const removeEmoji = (id: number, emoji: string) => {
+        if (!currentProblem || !problems) return;
+        const currentCount =
+            currentProblem.emojis.find((e) => e.emoji === emoji)?.count ?? 0;
+        if (currentCount === 0) return;
+        const newEmojis = currentProblem.emojis.map((e) => {
+            if (e.emoji === emoji) {
+                return {
+                    emoji,
+                    count: currentCount - 1,
+                };
+            }
+            return e;
+        });
+        const newProblems = problems.map((p) => {
+            if (p.id === id) {
+                return {
+                    ...p,
+                    emojis: newEmojis.filter((e) => e.count > 0),
+                    emojisSelf: p.emojisSelf.filter((e) => e !== emoji),
+                };
+            }
+            return p;
+        });
+        setProblems(() => newProblems);
     };
 
     return (
@@ -63,6 +121,8 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
                 setCurrentCourse,
                 like,
                 unlike,
+                addEmoji,
+                removeEmoji,
             }}
         >
             {children}

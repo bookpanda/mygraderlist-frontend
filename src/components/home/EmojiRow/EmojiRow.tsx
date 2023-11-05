@@ -3,6 +3,7 @@ import { FC } from 'react';
 import { Emoji } from './Emoji';
 
 interface EmojiRowProps {
+    id: number;
     emojis: {
         emoji: string;
         count: number;
@@ -12,6 +13,7 @@ interface EmojiRowProps {
 }
 
 export const EmojiRow: FC<EmojiRowProps> = ({
+    id,
     className,
     emojis,
     emojisSelf,
@@ -19,14 +21,9 @@ export const EmojiRow: FC<EmojiRowProps> = ({
     return (
         <div className={clsx('mt-3 flex space-x-1 text-white', className)}>
             {emojis.map((e) => {
-                const hasSelf = e.emoji in emojisSelf;
+                const hasSelf = emojisSelf.includes(e.emoji);
                 return (
-                    <Emoji
-                        key={e.emoji}
-                        emoji={e.emoji}
-                        amount={e.count}
-                        hasSelf={hasSelf}
-                    />
+                    <Emoji key={e.emoji} id={id} emojis={e} hasSelf={hasSelf} />
                 );
             })}
         </div>

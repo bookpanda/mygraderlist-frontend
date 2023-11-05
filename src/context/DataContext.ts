@@ -10,6 +10,8 @@ export interface DataContextProps {
     setCurrentCourse: Dispatch<SetStateAction<string>>;
     like: (id: number) => void;
     unlike: (id: number) => void;
+    addEmoji: (id: number, emoji: string) => void;
+    removeEmoji: (id: number, emoji: string) => void;
 }
 
 export const DataContext = createContext<DataContextProps>({
@@ -21,6 +23,8 @@ export const DataContext = createContext<DataContextProps>({
     setCurrentCourse: () => {},
     like: () => {},
     unlike: () => {},
+    addEmoji: () => {},
+    removeEmoji: () => {},
 });
 
 export const useDataContext = () => useContext(DataContext);
