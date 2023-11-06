@@ -61,7 +61,7 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
         if (!currentProblem || !problems) return;
         const currentCount =
             currentProblem.emojis.find((e) => e.emoji === emoji)?.count ?? 0;
-        const newEmojis = currentProblem.emojis.map((e) => {
+        let newEmojis = currentProblem.emojis.map((e) => {
             if (e.emoji === emoji) {
                 return {
                     emoji,
@@ -70,6 +70,15 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
             }
             return e;
         });
+        if (currentCount === 0) {
+            newEmojis = [
+                ...newEmojis,
+                {
+                    emoji,
+                    count: 1,
+                },
+            ];
+        }
         const newProblems = problems.map((p) => {
             if (p.id === id) {
                 return {

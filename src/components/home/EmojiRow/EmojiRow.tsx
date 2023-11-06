@@ -31,7 +31,7 @@ export const EmojiRow: FC<EmojiRowProps> = ({
                     <Emoji key={e.emoji} id={id} emojis={e} hasSelf={hasSelf} />
                 );
             })}
-            <AddEmoji isVisible={currentProblem?.id === id} />
+            <AddEmoji isVisible={currentProblem?.id === id} id={id} />
         </div>
     );
 };
