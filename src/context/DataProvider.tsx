@@ -60,6 +60,7 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
     const addEmoji = (id: number, emoji: string) => {
         if (!currentProblem || !problems) return;
         if (currentProblem.emojisSelf.includes(emoji)) return;
+        if (currentProblem.emojis.length >= 10) return;
         const currentCount =
             currentProblem.emojis.find((e) => e.emoji === emoji)?.count ?? 0;
         let newEmojis = currentProblem.emojis.map((e) => {

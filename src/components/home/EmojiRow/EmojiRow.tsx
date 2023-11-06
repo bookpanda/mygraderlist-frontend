@@ -25,7 +25,12 @@ export const EmojiRow: FC<EmojiRowProps> = ({
     const { currentProblem } = useDataContext();
 
     return (
-        <div className={clsx('mt-3 flex space-x-1 text-white', className)}>
+        <div
+            className={clsx(
+                'overflow-wrap mt-3 flex w-[30vw] space-x-1 overflow-auto text-white',
+                className
+            )}
+        >
             {emojis.map((e) => {
                 const hasSelf = emojisSelf.includes(e.emoji);
                 return (
