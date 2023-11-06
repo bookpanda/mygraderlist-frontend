@@ -17,9 +17,10 @@ export const EmojiModal = () => {
 
     const handlePick = (emoji: EmojiClickData) => {
         if (currentProblem) addEmoji(currentProblem.id, emoji.emoji);
+        closeEmojiModal();
     };
     return (
-        <div className="absolute left-[50%] top-[20%] z-50">
+        <div className="absolute left-[30%] top-[20%] z-50">
             {isEmojiModalOpen && (
                 <Draggable>
                     <div className="hover:cursor-pointer">
