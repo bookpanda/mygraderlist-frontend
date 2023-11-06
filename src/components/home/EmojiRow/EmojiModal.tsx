@@ -4,10 +4,16 @@ import { useOpenContext } from '@/context/OpenContext';
 import EmojiPicker, { EmojiClickData } from 'emoji-picker-react';
 import Draggable from 'react-draggable';
 import { useDataContext } from '@/context/DataContext';
+import { useEffect } from 'react';
 
 export const EmojiModal = () => {
     const { addEmoji, currentProblem } = useDataContext();
-    const { isEmojiModalOpen } = useOpenContext();
+    const { isEmojiModalOpen, closeEmojiModal } = useOpenContext();
+
+    useEffect(() => {
+        closeEmojiModal();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [currentProblem?.id]);
 
     const handlePick = (emoji: EmojiClickData) => {
         if (currentProblem) addEmoji(currentProblem.id, emoji.emoji);

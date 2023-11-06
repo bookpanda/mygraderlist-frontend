@@ -1,6 +1,6 @@
 'use client';
 
-import { PropsWithChildren, useEffect, useMemo, useRef, useState } from 'react';
+import { PropsWithChildren, useEffect, useState } from 'react';
 import { DataContext } from './DataContext';
 import { Course, Problem } from '@/types/problem';
 import problemsData from '@pubic/problems.json';
@@ -59,6 +59,7 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
 
     const addEmoji = (id: number, emoji: string) => {
         if (!currentProblem || !problems) return;
+        if (currentProblem.emojisSelf.includes(emoji)) return;
         const currentCount =
             currentProblem.emojis.find((e) => e.emoji === emoji)?.count ?? 0;
         let newEmojis = currentProblem.emojis.map((e) => {
