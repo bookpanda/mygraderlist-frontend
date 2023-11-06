@@ -23,6 +23,7 @@ export const EmojiRow: FC<EmojiRowProps> = ({
     emojisSelf,
 }) => {
     const { currentProblem } = useDataContext();
+
     return (
         <div className={clsx('mt-3 flex space-x-1 text-white', className)}>
             {emojis.map((e) => {

@@ -6,10 +6,8 @@ import {
     TooltipTrigger,
 } from '@/components/ui/tooltip';
 import Image from 'next/image';
-import { FC, useEffect, useState } from 'react';
-import EmojiPicker, { EmojiClickData } from 'emoji-picker-react';
-import Draggable from 'react-draggable';
-import { useDataContext } from '@/context/DataContext';
+import { FC } from 'react';
+import { useOpenContext } from '@/context/OpenContext';
 
 interface AddEmojiProps {
     isVisible: boolean;
@@ -17,16 +15,12 @@ interface AddEmojiProps {
 }
 
 export const AddEmoji: FC<AddEmojiProps> = ({ isVisible, id }) => {
-    const [open, setOpen] = useState(false);
-    const { addEmoji } = useDataContext();
+    const { openEmojiModal, closeEmojiModal, isEmojiModalOpen } =
+        useOpenContext();
 
-    useEffect(() => {
-        setOpen(false);
-    }, [isVisible]);
-
-    const handlePick = (emoji: EmojiClickData) => {
-        console.log(emoji.emoji);
-        addEmoji(id, emoji.emoji);
+    const handleClick = () => {
+        if (isEmojiModalOpen) closeEmojiModal();
+        else openEmojiModal();
     };
 
     return isVisible ? (
@@ -36,10 +30,7 @@ export const AddEmoji: FC<AddEmojiProps> = ({ isVisible, id }) => {
                     <TooltipTrigger asChild>
                         <div
                             className="trigger flex items-center hover:cursor-pointer"
-                            onClick={() => {
-                                setOpen(!open);
-                                console.log(open);
-                            }}
+                            onClick={handleClick}
                         >
                             <Image
                                 src={require(`@images/add_emoji.svg`)}
@@ -59,15 +50,6 @@ export const AddEmoji: FC<AddEmojiProps> = ({ isVisible, id }) => {
                     </TooltipContent>
                 </Tooltip>
             </TooltipProvider>
-            {open && (
-                <Draggable>
-                    <div className="absolute hover:cursor-pointer">
-                        <EmojiPicker
-                            onEmojiClick={(emoji) => handlePick(emoji)}
-                        />
-                    </div>
-                </Draggable>
-            )}
         </>
     ) : (
         <div className="h-[18px] w-[18px]"></div>

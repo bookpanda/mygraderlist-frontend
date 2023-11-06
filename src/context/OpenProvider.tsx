@@ -5,6 +5,7 @@ import { OpenContext } from './OpenContext';
 
 export const OpenContextProvider = ({ children }: PropsWithChildren) => {
     const [isEditModalOpen, setIsEditModalOpen] = useState(false);
+    const [isEmojiModalOpen, setIsEmojiModalOpen] = useState(false);
 
     const openEditModal = () => {
         closeAllModals();
@@ -12,6 +13,14 @@ export const OpenContextProvider = ({ children }: PropsWithChildren) => {
     };
     const closeEditModal = () => {
         setIsEditModalOpen(false);
+    };
+
+    const openEmojiModal = () => {
+        closeAllModals();
+        setIsEmojiModalOpen(true);
+    };
+    const closeEmojiModal = () => {
+        setIsEmojiModalOpen(false);
     };
 
     const closeAllModals = () => {
@@ -26,6 +35,9 @@ export const OpenContextProvider = ({ children }: PropsWithChildren) => {
                 isEditModalOpen,
                 openEditModal,
                 closeEditModal,
+                isEmojiModalOpen,
+                openEmojiModal,
+                closeEmojiModal,
             }}
         >
             {children}
