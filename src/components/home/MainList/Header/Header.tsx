@@ -4,6 +4,7 @@ import { Text } from '@/components/custom';
 import { CourseIcon } from '../../../custom/CourseIcon';
 import { Sort } from './Sort';
 import { useDataContext } from '@/context/DataContext';
+import { Login } from './Login';
 
 export const Header = () => {
     const { courses, currentCourse } = useDataContext();
@@ -13,9 +14,13 @@ export const Header = () => {
             {c && (
                 <>
                     <div
-                        className="-z-10 flex w-full items-center space-x-8 px-6 pb-5 pt-8"
-                        style={{ backgroundColor: `${c.color}` }}
+                        className="-z-10 flex items-center space-x-8 px-6 pb-5 pt-8"
+                        // style={{ backgroundColor: `${c.color}` }}
+                        style={{
+                            backgroundImage: `linear-gradient(to top right, ${c?.color}40, ${c?.color})`,
+                        }}
                     >
+                        <Login />
                         <CourseIcon
                             course={c.course}
                             className="drop-shadow-xl"

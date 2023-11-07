@@ -16,7 +16,7 @@ export const MainList = () => {
     return (
         <div className="no-scrollbar relative h-full w-full overflow-auto rounded-t-xl bg-gray-600">
             <div
-                className="absolute h-2/3 w-full bg-gradient-to-b"
+                className="absolute h-2/3 w-full"
                 style={{
                     backgroundImage: `linear-gradient(to bottom, ${c?.color}, ${c?.color}00)`,
                 }}
