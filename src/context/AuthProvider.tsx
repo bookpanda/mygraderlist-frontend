@@ -1,13 +1,21 @@
 'use client';
 
 import { PropsWithChildren, useState } from 'react';
-import { Footer, AuthContext } from './AuthContext';
+import { AuthContext } from './AuthContext';
 
 export const AuthContextProvider = ({ children }: PropsWithChildren) => {
-    const [footer, setFooter] = useState<Footer | null>(null);
+    const [isAuth, setIsAuth] = useState(false);
+
+    const login = () => {
+        setIsAuth(true);
+    };
+
+    const logout = () => {
+        setIsAuth(false);
+    };
 
     return (
-        <AuthContext.Provider value={{ footer, setFooter }}>
+        <AuthContext.Provider value={{ isAuth, login, logout }}>
             {children}
         </AuthContext.Provider>
     );

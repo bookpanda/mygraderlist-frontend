@@ -1,19 +1,15 @@
 import { Dispatch, SetStateAction, createContext, useContext } from 'react';
 
-export interface Footer {
-    name: string;
-    code: string;
-    image: string;
-}
-
 export interface AuthContextProps {
-    footer: Footer | null;
-    setFooter: Dispatch<SetStateAction<Footer | null>>;
+    isAuth: boolean;
+    login: () => void;
+    logout: () => void;
 }
 
 export const AuthContext = createContext<AuthContextProps>({
-    footer: null,
-    setFooter: () => {},
+    isAuth: false,
+    login: () => {},
+    logout: () => {},
 });
 
-export const useHomeContext = () => useContext(AuthContext);
+export const useAuthContext = () => useContext(AuthContext);

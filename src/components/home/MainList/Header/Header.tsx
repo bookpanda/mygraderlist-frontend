@@ -12,15 +12,14 @@ export const Header = () => {
     return (
         <div className="w-full">
             {c && (
-                <>
-                    <div
-                        className="-z-10 flex items-center space-x-8 px-6 pb-5 pt-8"
-                        // style={{ backgroundColor: `${c.color}` }}
-                        style={{
-                            backgroundImage: `linear-gradient(to top right, ${c?.color}40, ${c?.color})`,
-                        }}
-                    >
-                        <Login />
+                <div
+                    className="flex flex-col justify-between px-6 pb-5 pt-4"
+                    style={{
+                        backgroundImage: `linear-gradient(to top right, ${c?.color}40, ${c?.color})`,
+                    }}
+                >
+                    <Login />
+                    <div className="flex items-center space-x-8">
                         <CourseIcon
                             course={c.course}
                             className="drop-shadow-xl"
@@ -42,11 +41,11 @@ export const Header = () => {
                             </Text>
                         </div>
                     </div>
-                    <div className="z-10 flex w-full justify-end px-6 pt-8">
-                        <Sort />
-                    </div>
-                </>
+                </div>
             )}
+            <div className="z-10 flex w-full justify-end px-6 pt-8">
+                <Sort />
+            </div>
         </div>
     );
 };
