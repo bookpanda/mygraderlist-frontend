@@ -43,9 +43,6 @@ export const Header = () => {
                     </div>
                 </div>
             )}
-            {/* <div className="z-10 flex w-full justify-end px-6 pt-8">
-                <Sort />
-            </div> */}
         </div>
     );
 };
