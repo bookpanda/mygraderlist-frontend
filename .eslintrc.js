@@ -5,18 +5,21 @@ const config = {
     extends: [
         'next/core-web-vitals',
         'eslint:recommended',
-        'plugin:prettier/recommended',
+        // 'plugin:prettier/recommended',
         'plugin:react/jsx-runtime',
     ],
-    plugins: ['prettier', 'simple-import-sort'],
+    plugins: [
+        'simple-import-sort',
+        //  'prettier'
+    ],
     rules: {
         'no-unused-vars': 'off',
-        'prettier/prettier': [
-            'error',
-            {
-                endOfLine: 'auto',
-            },
-        ],
+        // 'prettier/prettier': [
+        //     'error',
+        //     {
+        //         endOfLine: 'auto',
+        //     },
+        // ],
     },
 };
 
