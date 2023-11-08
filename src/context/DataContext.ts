@@ -12,6 +12,8 @@ export interface DataContextProps {
     unlike: (id: number) => void;
     addEmoji: (id: number, emoji: string) => void;
     removeEmoji: (id: number, emoji: string) => void;
+    search: string;
+    setSearch: Dispatch<SetStateAction<string>>;
 }
 
 export const DataContext = createContext<DataContextProps>({
@@ -25,6 +27,8 @@ export const DataContext = createContext<DataContextProps>({
     unlike: () => {},
     addEmoji: () => {},
     removeEmoji: () => {},
+    search: '',
+    setSearch: () => {},
 });
 
 export const useDataContext = () => useContext(DataContext);

@@ -13,6 +13,7 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
     const [problems, setProblems] = useState<Problem[] | null>(null);
     const [courses, setCourses] = useState<Course[] | null>(null);
     const [currentCourse, setCurrentCourse] = useState<string>('');
+    const [search, setSearch] = useState('');
 
     useEffect(() => {
         setProblems(problemsData);
@@ -134,6 +135,8 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
                 unlike,
                 addEmoji,
                 removeEmoji,
+                search,
+                setSearch,
             }}
         >
             {children}

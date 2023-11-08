@@ -6,6 +6,8 @@ import {
     flexRender,
     getCoreRowModel,
     useReactTable,
+    SortingState,
+    getSortedRowModel,
 } from '@tanstack/react-table';
 
 import {
@@ -36,6 +38,7 @@ export function DataTable<TData, TValue>({
 }: DataTableProps<TData, TValue>) {
     const { setCurrentProblem, currentProblem } = useDataContext();
     const { openEditModal } = useOpenContext();
+    const [sorting, setSorting] = useState<SortingState>([]);
     const handleClick = (row: Row<TData>) => {
         const data = row.getAllCells()[0].getContext().cell.row
             .original as Problem;
@@ -47,6 +50,11 @@ export function DataTable<TData, TValue>({
         data,
         columns,
         getCoreRowModel: getCoreRowModel(),
+        onSortingChange: setSorting,
+        getSortedRowModel: getSortedRowModel(),
+        state: {
+            sorting,
+        },
     });
 
     return (
@@ -118,7 +126,7 @@ export function DataTable<TData, TValue>({
                                                     key={cell.id}
                                                     className={clsx(
                                                         className,
-                                                        'pt-10'
+                                                        'w-1/3 pt-10'
                                                     )}
                                                 >
                                                     {flexRender(

@@ -67,6 +67,8 @@ export const EditModal = () => {
                                     show
                                 />
                             </DialogTitle>
+
+                            {/* score diff  */}
                         </div>
                         <DialogDescription>
                             This action cannot be undone. This will permanently

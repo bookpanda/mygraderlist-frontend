@@ -4,11 +4,16 @@ import { Text } from '@/components/custom';
 import { Problem } from '@/types/problem';
 import { ColumnDef } from '@tanstack/react-table';
 import Image from 'next/image';
+import { ColHeader } from './ColHeader';
 
 export const columns: ColumnDef<Problem>[] = [
     {
         accessorKey: 'id',
-        header: () => <p className="mx-3 font-light text-gray-text">#</p>,
+        header: ({ column }) => (
+            <ColHeader column={column} className="w-12">
+                <p className="mx-3 font-light text-gray-text">#</p>
+            </ColHeader>
+        ),
         cell: ({ row }) => {
             return (
                 <div className="w-1">
@@ -21,10 +26,10 @@ export const columns: ColumnDef<Problem>[] = [
     },
     {
         accessorKey: 'name',
-        header: () => (
-            <div className="flex space-x-3">
+        header: ({ column }) => (
+            <ColHeader column={column} className="space-x-3">
                 <p className="font-light text-gray-text">Name</p>
-            </div>
+            </ColHeader>
         ),
         cell: ({ row }) => {
             return (
@@ -58,7 +63,26 @@ export const columns: ColumnDef<Problem>[] = [
     },
     {
         accessorKey: 'score',
-        header: () => <p className="font-light text-gray-text">Score</p>,
+        header: ({ column }) => (
+            <ColHeader column={column} className="w-16 space-x-1">
+                <p className="font-light text-gray-text">Score</p>
+            </ColHeader>
+        ),
+        cell: ({ row }) => {
+            return (
+                <Text variant="p1" className="text-gray-text">
+                    {row.original.score}
+                </Text>
+            );
+        },
+    },
+    {
+        accessorKey: 'avg_score',
+        header: ({ column }) => (
+            <ColHeader column={column} className="w-24 space-x-1">
+                <p className="font-light text-gray-text">Avg. Score</p>
+            </ColHeader>
+        ),
         cell: ({ row }) => {
             return (
                 <Text variant="p1" className="text-gray-text">
@@ -69,7 +93,26 @@ export const columns: ColumnDef<Problem>[] = [
     },
     {
         accessorKey: 'difficulty',
-        header: () => <p className="font-light text-gray-text">Difficulty</p>,
+        header: ({ column }) => (
+            <ColHeader column={column} className="w-20 space-x-1">
+                <p className="font-light text-gray-text">Difficulty</p>
+            </ColHeader>
+        ),
+        cell: ({ row }) => {
+            return (
+                <Text variant="p1" className="text-gray-text">
+                    {row.original.difficulty}
+                </Text>
+            );
+        },
+    },
+    {
+        accessorKey: 'avg_difficulty',
+        header: ({ column }) => (
+            <ColHeader column={column} className="w-28 space-x-1">
+                <p className="font-light text-gray-text">Avg. Difficulty</p>
+            </ColHeader>
+        ),
         cell: ({ row }) => {
             return (
                 <Text variant="p1" className="text-gray-text">
