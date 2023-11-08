@@ -8,6 +8,7 @@ const config = {
         'plugin:prettier/recommended',
         'plugin:react/jsx-runtime',
     ],
+    plugins: ['prettier', 'simple-import-sort'],
     rules: {
         'no-unused-vars': 'off',
         'prettier/prettier': [

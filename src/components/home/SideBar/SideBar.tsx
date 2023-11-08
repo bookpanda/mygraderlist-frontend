@@ -1,7 +1,6 @@
 'use client';
 
 import { useDataContext } from '@/context/DataContext';
-import { CourseIcon } from '../../custom/CourseIcon';
 import { CourseSelect } from './CourseSelect';
 
 export const SideBar = () => {
