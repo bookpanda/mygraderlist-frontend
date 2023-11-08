@@ -7,6 +7,8 @@ export interface OpenContextProps {
     isEmojiModalOpen: boolean;
     openEmojiModal: () => void;
     closeEmojiModal: () => void;
+    openProblemModal: () => void;
+    closeProblemModal: () => void;
 }
 
 export const OpenContext = createContext<OpenContextProps>({
@@ -16,6 +18,8 @@ export const OpenContext = createContext<OpenContextProps>({
     isEmojiModalOpen: false,
     openEmojiModal: () => {},
     closeEmojiModal: () => {},
+    openProblemModal: () => {},
+    closeProblemModal: () => {},
 });
 
 export const useOpenContext = () => useContext(OpenContext);
