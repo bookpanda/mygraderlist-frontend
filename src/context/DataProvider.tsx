@@ -16,6 +16,7 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
     const [search, setSearch] = useState('');
 
     useEffect(() => {
+        problemsData.sort((a, b) => b.id - a.id);
         setProblems(problemsData);
         setCourses(coursesData);
         setCurrentCourse('2110211');

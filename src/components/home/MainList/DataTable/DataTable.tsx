@@ -44,6 +44,7 @@ export function DataTable<TData, TValue>({
     const { openEditModal } = useOpenContext();
     const [sorting, setSorting] = useState<SortingState>([]);
     const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
+    const [selectedRow, setSelectedRow] = useState<string | null>(null);
 
     const handleClick = (row: Row<TData>) => {
         const data = row.getAllCells()[0].getContext().cell.row
@@ -51,7 +52,6 @@ export function DataTable<TData, TValue>({
         setCurrentProblem(data);
         if (isEnableProblemModal) openProblemModal();
     };
-    const [selectedRow, setSelectedRow] = useState<string | null>(null);
 
     const table = useReactTable({
         data,
