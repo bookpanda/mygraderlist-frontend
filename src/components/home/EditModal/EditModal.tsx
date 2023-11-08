@@ -60,12 +60,7 @@ export const EditModal = () => {
                                 >
                                     {c.course}
                                 </Text>
-                                <LikeButton
-                                    heart={c.heart}
-                                    id={c.id}
-                                    // width={25}
-                                    show
-                                />
+                                <LikeButton heart={c.heart} id={c.id} show />
                             </DialogTitle>
 
                             {/* score diff  */}

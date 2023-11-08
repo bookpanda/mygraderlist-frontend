@@ -47,6 +47,7 @@ export const OpenContextProvider = ({ children }: PropsWithChildren) => {
                 isEmojiModalOpen,
                 openEmojiModal,
                 closeEmojiModal,
+                isProblemModalOpen,
                 openProblemModal,
                 closeProblemModal,
             }}
