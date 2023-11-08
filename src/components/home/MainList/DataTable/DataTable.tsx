@@ -8,6 +8,8 @@ import {
     useReactTable,
     SortingState,
     getSortedRowModel,
+    ColumnFiltersState,
+    getFilteredRowModel,
 } from '@tanstack/react-table';
 
 import {
@@ -26,6 +28,7 @@ import { useState } from 'react';
 import { useOpenContext } from '@/context/OpenContext';
 import { LikeButton } from '../../LikeButton/LikeButton';
 import { EmojiRow } from '../../EmojiRow/EmojiRow';
+import { Input } from '@/components/ui/input';
 
 interface DataTableProps<TData, TValue> {
     columns: ColumnDef<TData, TValue>[];
@@ -39,6 +42,8 @@ export function DataTable<TData, TValue>({
     const { setCurrentProblem, currentProblem } = useDataContext();
     const { openEditModal } = useOpenContext();
     const [sorting, setSorting] = useState<SortingState>([]);
+    const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
+
     const handleClick = (row: Row<TData>) => {
         const data = row.getAllCells()[0].getContext().cell.row
             .original as Problem;
@@ -52,13 +57,31 @@ export function DataTable<TData, TValue>({
         getCoreRowModel: getCoreRowModel(),
         onSortingChange: setSorting,
         getSortedRowModel: getSortedRowModel(),
+        onColumnFiltersChange: setColumnFilters,
+        getFilteredRowModel: getFilteredRowModel(),
         state: {
             sorting,
+            columnFilters,
         },
     });
 
     return (
         <div>
+            <div className="flex items-center py-4">
+                <Input
+                    placeholder="Search by name..."
+                    value={
+                        (table.getColumn('name')?.getFilterValue() as string) ??
+                        ''
+                    }
+                    onChange={(event) =>
+                        table
+                            .getColumn('name')
+                            ?.setFilterValue(event.target.value)
+                    }
+                    className="z-10 max-w-sm border-transparent bg-gray-60060 text-white"
+                />
+            </div>
             <Table>
                 <TableHeader>
                     {table.getHeaderGroups().map((headerGroup) => (
