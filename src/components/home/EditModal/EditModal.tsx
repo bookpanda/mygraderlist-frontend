@@ -5,7 +5,6 @@ import { Button } from '@/components/ui/button';
 import {
     Dialog,
     DialogContent,
-    DialogDescription,
     DialogHeader,
     DialogTitle,
 } from '@/components/ui/dialog';
@@ -13,12 +12,11 @@ import { useDataContext } from '@/context/DataContext';
 import { useOpenContext } from '@/context/OpenContext';
 import { DialogClose } from '@radix-ui/react-dialog';
 import Image from 'next/image';
-import { useToast } from '@/components/ui/use-toast';
 import { LikeButton } from '../LikeButton/LikeButton';
+import { RatingForm } from './RatingForm';
 
 export const EditModal = () => {
-    const { toast } = useToast();
-    const { currentProblem, like, unlike } = useDataContext();
+    const { currentProblem } = useDataContext();
     const c = currentProblem;
     const { isEditModalOpen, closeEditModal } = useOpenContext();
 
@@ -62,16 +60,10 @@ export const EditModal = () => {
                                 </Text>
                                 <LikeButton heart={c.heart} id={c.id} show />
                             </DialogTitle>
-
-                            {/* score diff  */}
                         </div>
-                        <DialogDescription>
-                            This action cannot be undone. This will permanently
-                            delete your account and remove your data from our
-                            servers.
-                        </DialogDescription>
+                        <RatingForm />
                     </DialogHeader>
-                    <div className="flex justify-between">
+                    <div className="mt-6 flex justify-between">
                         <DialogClose asChild>
                             <Button
                                 type="button"
