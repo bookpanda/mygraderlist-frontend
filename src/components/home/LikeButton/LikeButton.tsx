@@ -20,18 +20,16 @@ export const LikeButton: FC<LikeButtonProps> = ({ heart, id, width, show }) => {
                 show && (
                     <HeartIcon
                         className={clsx(
-                            'text-gray-text hover:cursor-pointer',
-                            width ? `h-${width} w-${width}` : 'h-6 w-6'
+                            'h-6 w-6 text-gray-text hover:cursor-pointer'
                         )}
+                        style={{ width: `${width}px`, height: `${width}px` }}
                         onClick={() => like(id)}
                     />
                 )
             ) : (
                 <HeartFilledIcon
-                    className={clsx(
-                        'text-green hover:cursor-pointer',
-                        width ? `h-${width} w-${width}` : 'h-6 w-6'
-                    )}
+                    className={clsx('h-6 w-6 text-green hover:cursor-pointer')}
+                    style={{ width: `${width}px`, height: `${width}px` }}
                     onClick={() => unlike(id)}
                 />
             )}

@@ -152,7 +152,6 @@ export function DataTable<TData, TValue>({
                                         <LikeButton
                                             heart={data.heart}
                                             id={data.id}
-                                            width={5}
                                             show={selectedRow === row.id}
                                         />
                                         <div className="w-1/2">

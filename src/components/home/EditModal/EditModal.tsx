@@ -13,7 +13,6 @@ import { useDataContext } from '@/context/DataContext';
 import { useOpenContext } from '@/context/OpenContext';
 import { DialogClose } from '@radix-ui/react-dialog';
 import Image from 'next/image';
-import { HeartIcon, HeartFilledIcon } from '@radix-ui/react-icons';
 import { useToast } from '@/components/ui/use-toast';
 import { LikeButton } from '../LikeButton/LikeButton';
 
@@ -42,7 +41,7 @@ export const EditModal = () => {
                                               `@images/courses/${c.course}/${c.group}/${c.code}.webp`
                                           )
                                 }
-                                width={100}
+                                width={200}
                                 style={{ objectFit: 'cover' }}
                                 alt={c.code}
                                 className="rounded-lg"
@@ -61,7 +60,12 @@ export const EditModal = () => {
                                 >
                                     {c.course}
                                 </Text>
-                                <LikeButton heart={c.heart} id={c.id} />
+                                <LikeButton
+                                    heart={c.heart}
+                                    id={c.id}
+                                    // width={25}
+                                    show
+                                />
                             </DialogTitle>
                         </div>
                         <DialogDescription>
