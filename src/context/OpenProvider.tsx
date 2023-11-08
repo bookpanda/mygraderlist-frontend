@@ -10,7 +10,7 @@ export const OpenContextProvider = ({ children }: PropsWithChildren) => {
     const [isEnableProblemModal, setIsEnableProblemModal] = useState(true);
 
     const openEditModal = () => {
-        closeAllModals();
+        setIsEditModalOpen(false);
         setIsEditModalOpen(true);
     };
     const closeEditModal = () => {
@@ -33,10 +33,6 @@ export const OpenContextProvider = ({ children }: PropsWithChildren) => {
     const closeProblemModal = () => {
         setIsProblemModalOpen(false);
         setIsEnableProblemModal(false);
-    };
-
-    const closeAllModals = () => {
-        closeEditModal();
     };
 
     useEffect(() => {}, []);

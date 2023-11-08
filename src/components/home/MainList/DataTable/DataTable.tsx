@@ -40,8 +40,12 @@ export function DataTable<TData, TValue>({
     data,
 }: DataTableProps<TData, TValue>) {
     const { setCurrentProblem, currentProblem } = useDataContext();
-    const { isEnableProblemModal, openProblemModal } = useOpenContext();
-    const { openEditModal } = useOpenContext();
+    const {
+        isEnableProblemModal,
+        openProblemModal,
+        isProblemModalOpen,
+        openEditModal,
+    } = useOpenContext();
     const [sorting, setSorting] = useState<SortingState>([]);
     const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
     const [selectedRow, setSelectedRow] = useState<string | null>(null);
@@ -50,7 +54,7 @@ export function DataTable<TData, TValue>({
         const data = row.getAllCells()[0].getContext().cell.row
             .original as Problem;
         setCurrentProblem(data);
-        if (isEnableProblemModal) openProblemModal();
+        if (isEnableProblemModal && !isProblemModalOpen) openProblemModal();
     };
 
     const table = useReactTable({
@@ -191,7 +195,7 @@ export function DataTable<TData, TValue>({
                                             <MoreHorizontal
                                                 onClick={openEditModal}
                                                 className={clsx(
-                                                    'h-[50%] hover:h-[55%] hover:w-[65%] hover:cursor-pointer',
+                                                    'h-[50%] hover:scale-110 hover:cursor-pointer',
                                                     selectedRow === row.id
                                                         ? 'text-white'
                                                         : 'text-transparent'

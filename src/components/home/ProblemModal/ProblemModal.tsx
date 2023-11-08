@@ -1,9 +1,8 @@
 'use client';
 
-import { CourseIcon, RoundDiv, Text } from '@/components/custom';
+import { RoundDiv, Text } from '@/components/custom';
 import { useDataContext } from '@/context/DataContext';
 import { useOpenContext } from '@/context/OpenContext';
-import clsx from 'clsx';
 import { MoreHorizontal, X } from 'lucide-react';
 import Image from 'next/image';
 import { LikeButton } from '../LikeButton/LikeButton';
@@ -22,7 +21,7 @@ export const ProblemModal = () => {
                         {currentCourse}
                     </Text>
                     <X
-                        className="text-gray-textlight h-8 w-8 rounded-full p-1 duration-300 hover:h-[33px] hover:w-[33px] hover:cursor-pointer hover:bg-gray-hl hover:text-white"
+                        className="text-gray-textlight h-8 w-8 rounded-full p-1 duration-300 hover:scale-110 hover:cursor-pointer hover:bg-gray-hl hover:text-white"
                         onClick={closeProblemModal}
                     />
                 </div>
@@ -55,7 +54,7 @@ export const ProblemModal = () => {
                         <div className="w-1/2">
                             <MoreHorizontal
                                 onClick={openEditModal}
-                                className="hover:cursor-pointer' h-[50%] text-white hover:h-[55%] hover:w-[70%] hover:cursor-pointer"
+                                className="hover:cursor-pointer' h-[50%] text-white hover:scale-110 hover:cursor-pointer"
                             />
                         </div>
                     </div>
