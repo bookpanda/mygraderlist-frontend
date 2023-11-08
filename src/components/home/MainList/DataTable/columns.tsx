@@ -71,7 +71,9 @@ export const columns: ColumnDef<Problem>[] = [
         cell: ({ row }) => {
             return (
                 <Text variant="p1" className="text-gray-text">
-                    {row.original.scoreSelf}
+                    {row.original.scoreSelf === 0
+                        ? '-'
+                        : row.original.scoreSelf}
                 </Text>
             );
         },
@@ -86,7 +88,11 @@ export const columns: ColumnDef<Problem>[] = [
         cell: ({ row }) => {
             return (
                 <Text variant="p1" className="text-gray-text">
-                    {row.original.score}
+                    {row.original.score === 0
+                        ? '-'
+                        : (Math.round(row.original.score * 100) / 100).toFixed(
+                              2
+                          )}
                 </Text>
             );
         },
@@ -101,7 +107,9 @@ export const columns: ColumnDef<Problem>[] = [
         cell: ({ row }) => {
             return (
                 <Text variant="p1" className="text-gray-text">
-                    {row.original.difficultySelf}
+                    {row.original.difficultySelf === 0
+                        ? '-'
+                        : row.original.difficultySelf}
                 </Text>
             );
         },
@@ -116,7 +124,11 @@ export const columns: ColumnDef<Problem>[] = [
         cell: ({ row }) => {
             return (
                 <Text variant="p1" className="text-gray-text">
-                    {row.original.difficulty}
+                    {row.original.difficulty === 0
+                        ? '-'
+                        : (
+                              Math.round(row.original.difficulty * 100) / 100
+                          ).toFixed(2)}
                 </Text>
             );
         },

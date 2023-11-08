@@ -5,7 +5,9 @@ export type Problem = {
     code: string;
     name: string;
     score: number;
+    numScore: number;
     difficulty: number;
+    numDifficulty: number;
     heart: number;
     scoreSelf: number;
     difficultySelf: number;

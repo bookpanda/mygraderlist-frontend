@@ -30,22 +30,33 @@ const scoreOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const difficultyOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const formSchema = z.object({
-    score: z.number(),
-    difficulty: z.number(),
+    score: z.string(),
+    difficulty: z.string(),
 });
 
 export const RatingForm: FC<RatingFormProps> = ({ handleClose }) => {
-    const { currentProblem } = useDataContext();
+    const { currentProblem, submitRating } = useDataContext();
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
-            score: 0,
-            difficulty: 0,
+            score: currentProblem?.scoreSelf.toString() ?? '0',
+            difficulty: currentProblem?.difficultySelf.toString() ?? '0',
         },
     });
 
     function onSubmit(values: z.infer<typeof formSchema>) {
-        console.log(values);
+        if (
+            !currentProblem ||
+            values.score === '0' ||
+            values.difficulty === '0'
+        )
+            return;
+        submitRating(
+            currentProblem.id,
+            parseInt(values.score),
+            parseInt(values.difficulty)
+        );
+        handleClose();
     }
 
     return (
@@ -68,7 +79,7 @@ export const RatingForm: FC<RatingFormProps> = ({ handleClose }) => {
                             >
                                 <FormControl>
                                     <SelectTrigger className="w-[100px] border-0 bg-white">
-                                        <SelectValue placeholder="Se" />
+                                        <SelectValue />
                                     </SelectTrigger>
                                 </FormControl>
                                 <SelectContent>
@@ -99,7 +110,7 @@ export const RatingForm: FC<RatingFormProps> = ({ handleClose }) => {
                             >
                                 <FormControl>
                                     <SelectTrigger className="w-[100px] border-0 bg-white">
-                                        <SelectValue placeholder="Se" />
+                                        <SelectValue />
                                     </SelectTrigger>
                                 </FormControl>
                                 <SelectContent>

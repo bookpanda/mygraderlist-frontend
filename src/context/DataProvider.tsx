@@ -6,6 +6,7 @@ import { Course, Problem } from '@/types/problem';
 import problemsData from '@pubic/problems.json';
 import coursesData from '@pubic/courses.json';
 import { useToast } from '@/components/ui/use-toast';
+import { calculateRating } from '@/utils/calculateRating';
 
 export const DataContextProvider = ({ children }: PropsWithChildren) => {
     const { toast } = useToast();
@@ -13,7 +14,6 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
     const [problems, setProblems] = useState<Problem[] | null>(null);
     const [courses, setCourses] = useState<Course[] | null>(null);
     const [currentCourse, setCurrentCourse] = useState<string>('');
-    const [search, setSearch] = useState('');
 
     useEffect(() => {
         problemsData.sort((a, b) => b.id - a.id);
@@ -123,6 +123,28 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
         setProblems(() => newProblems);
     };
 
+    const submitRating = (id: number, score: number, difficulty: number) => {
+        if (!currentProblem || !problems) return;
+        const newProblems = problems.map((p) => {
+            if (p.id === id) {
+                const { newScore, newNumScore, newDiff, newNumDiff } =
+                    calculateRating(p, score, difficulty);
+
+                return {
+                    ...p,
+                    score: newScore,
+                    numScore: newNumScore,
+                    difficulty: newDiff,
+                    numDifficulty: newNumDiff,
+                    scoreSelf: score,
+                    difficultySelf: difficulty,
+                };
+            }
+            return p;
+        });
+        setProblems(() => newProblems);
+    };
+
     return (
         <DataContext.Provider
             value={{
@@ -136,8 +158,7 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
                 unlike,
                 addEmoji,
                 removeEmoji,
-                search,
-                setSearch,
+                submitRating,
             }}
         >
             {children}
