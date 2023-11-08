@@ -4,9 +4,12 @@ import { useDataContext } from '@/context/DataContext';
 import { DataTable } from './DataTable/DataTable';
 import { columns } from './DataTable/columns';
 import { Header } from './Header/Header';
+import { useOpenContext } from '@/context/OpenContext';
+import clsx from 'clsx';
 
 export const MainList = () => {
     const { problems, currentCourse, courses } = useDataContext();
+    const { isProblemModalOpen } = useOpenContext();
     const currentProblems =
         currentCourse === 'liked'
             ? problems?.filter((p) => p.heart === 1)
@@ -14,7 +17,12 @@ export const MainList = () => {
 
     const c = courses?.find((c) => c.course === currentCourse);
     return (
-        <div className="no-scrollbar relative h-full w-full overflow-auto rounded-t-xl bg-gray-600">
+        <div
+            className={clsx(
+                'no-scrollbar relative h-full overflow-scroll rounded-xl bg-gray-600',
+                !isProblemModalOpen && 'w-full'
+            )}
+        >
             <div
                 className="absolute h-2/3 w-full"
                 style={{
