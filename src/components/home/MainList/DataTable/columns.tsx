@@ -71,7 +71,7 @@ export const columns: ColumnDef<Problem>[] = [
         cell: ({ row }) => {
             return (
                 <Text variant="p1" className="text-gray-text">
-                    {row.original.score}
+                    {row.original.scoreSelf}
                 </Text>
             );
         },
@@ -101,7 +101,7 @@ export const columns: ColumnDef<Problem>[] = [
         cell: ({ row }) => {
             return (
                 <Text variant="p1" className="text-gray-text">
-                    {row.original.difficulty}
+                    {row.original.difficultySelf}
                 </Text>
             );
         },

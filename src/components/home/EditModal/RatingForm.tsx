@@ -17,15 +17,25 @@ import {
     FormItem,
     FormLabel,
 } from '@/components/ui/form';
+import { useDataContext } from '@/context/DataContext';
+import { DialogClose } from '@/components/ui/dialog';
+import { Button } from '@/components/ui/button';
+import { FC } from 'react';
 
-const scoreOptions = [1, 2, 3, 4, 5];
+interface RatingFormProps {
+    handleClose: () => void;
+}
+
+const scoreOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const difficultyOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const formSchema = z.object({
     score: z.number(),
     difficulty: z.number(),
 });
 
-export const RatingForm = () => {
+export const RatingForm: FC<RatingFormProps> = ({ handleClose }) => {
+    const { currentProblem } = useDataContext();
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
@@ -53,11 +63,8 @@ export const RatingForm = () => {
                                 Score
                             </FormLabel>
                             <Select
-                                onValueChange={(e) => {
-                                    field.onChange(e);
-                                    onSubmit(form.getValues());
-                                }}
-                                defaultValue={field.value.toString()}
+                                onValueChange={field.onChange}
+                                defaultValue={currentProblem?.scoreSelf.toString()}
                             >
                                 <FormControl>
                                     <SelectTrigger className="w-[100px] border-0 bg-white">
@@ -87,11 +94,8 @@ export const RatingForm = () => {
                                 Difficulty
                             </FormLabel>
                             <Select
-                                onValueChange={(e) => {
-                                    field.onChange(e);
-                                    onSubmit(form.getValues());
-                                }}
-                                defaultValue={field.value.toString()}
+                                onValueChange={field.onChange}
+                                defaultValue={currentProblem?.difficultySelf.toString()}
                             >
                                 <FormControl>
                                     <SelectTrigger className="w-[100px] border-0 bg-white">
@@ -99,7 +103,7 @@ export const RatingForm = () => {
                                     </SelectTrigger>
                                 </FormControl>
                                 <SelectContent>
-                                    {scoreOptions.map((option) => (
+                                    {difficultyOptions.map((option) => (
                                         <SelectItem
                                             key={option}
                                             value={option.toString()}
@@ -113,6 +117,23 @@ export const RatingForm = () => {
                     )}
                 />
             </form>
+            <div className="mt-6 flex justify-between">
+                <DialogClose asChild>
+                    <Button type="button" variant="white" onClick={handleClose}>
+                        Close
+                    </Button>
+                </DialogClose>
+                <Button
+                    type="submit"
+                    variant="green"
+                    className="shadow-2xl"
+                    onClick={() => {
+                        onSubmit(form.getValues());
+                    }}
+                >
+                    Save
+                </Button>
+            </div>
         </Form>
     );
 };
