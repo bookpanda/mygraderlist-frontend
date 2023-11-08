@@ -6,6 +6,7 @@ import { DataContextProvider } from '@/context/DataProvider';
 import { OpenContextProvider } from '@/context/OpenProvider';
 import { Toaster } from '@/components/ui/toaster';
 import { AuthContextProvider } from '@/context/AuthProvider';
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -55,6 +56,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                         <body className={inter.className}>
                             <div className="box-border h-screen w-screen bg-gray-800 px-4">
                                 {children}
+                                <Analytics />
                                 <Toaster />
                             </div>
                         </body>
