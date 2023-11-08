@@ -10,6 +10,8 @@ export interface OpenContextProps {
     isProblemModalOpen: boolean;
     openProblemModal: () => void;
     closeProblemModal: () => void;
+    isEnableProblemModal: boolean;
+    setIsEnableProblemModal: Dispatch<SetStateAction<boolean>>;
 }
 
 export const OpenContext = createContext<OpenContextProps>({
@@ -22,6 +24,8 @@ export const OpenContext = createContext<OpenContextProps>({
     isProblemModalOpen: false,
     openProblemModal: () => {},
     closeProblemModal: () => {},
+    isEnableProblemModal: true,
+    setIsEnableProblemModal: () => {},
 });
 
 export const useOpenContext = () => useContext(OpenContext);

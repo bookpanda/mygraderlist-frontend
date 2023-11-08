@@ -40,6 +40,7 @@ export function DataTable<TData, TValue>({
     data,
 }: DataTableProps<TData, TValue>) {
     const { setCurrentProblem, currentProblem } = useDataContext();
+    const { isEnableProblemModal, openProblemModal } = useOpenContext();
     const { openEditModal } = useOpenContext();
     const [sorting, setSorting] = useState<SortingState>([]);
     const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
@@ -48,6 +49,7 @@ export function DataTable<TData, TValue>({
         const data = row.getAllCells()[0].getContext().cell.row
             .original as Problem;
         setCurrentProblem(data);
+        if (isEnableProblemModal) openProblemModal();
     };
     const [selectedRow, setSelectedRow] = useState<string | null>(null);
 

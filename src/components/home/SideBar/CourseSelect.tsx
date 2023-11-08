@@ -6,6 +6,7 @@ import {
     TooltipTrigger,
 } from '@/components/ui/tooltip';
 import { useDataContext } from '@/context/DataContext';
+import { useOpenContext } from '@/context/OpenContext';
 import { Course } from '@/types/problem';
 import { FC } from 'react';
 
@@ -15,8 +16,10 @@ interface CourseSelectProps {
 
 export const CourseSelect: FC<CourseSelectProps> = ({ course }) => {
     const { setCurrentCourse } = useDataContext();
+    const { setIsEnableProblemModal } = useOpenContext();
     const handleClick = () => {
         setCurrentCourse(course.course);
+        setIsEnableProblemModal(true);
     };
     return (
         <TooltipProvider delayDuration={50}>

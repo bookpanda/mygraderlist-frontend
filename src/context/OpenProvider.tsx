@@ -7,6 +7,7 @@ export const OpenContextProvider = ({ children }: PropsWithChildren) => {
     const [isEditModalOpen, setIsEditModalOpen] = useState(false);
     const [isEmojiModalOpen, setIsEmojiModalOpen] = useState(false);
     const [isProblemModalOpen, setIsProblemModalOpen] = useState(false);
+    const [isEnableProblemModal, setIsEnableProblemModal] = useState(true);
 
     const openEditModal = () => {
         closeAllModals();
@@ -27,9 +28,11 @@ export const OpenContextProvider = ({ children }: PropsWithChildren) => {
     const openProblemModal = () => {
         closeEditModal();
         setIsProblemModalOpen(true);
+        setIsEnableProblemModal(true);
     };
     const closeProblemModal = () => {
         setIsProblemModalOpen(false);
+        setIsEnableProblemModal(false);
     };
 
     const closeAllModals = () => {
@@ -50,6 +53,8 @@ export const OpenContextProvider = ({ children }: PropsWithChildren) => {
                 isProblemModalOpen,
                 openProblemModal,
                 closeProblemModal,
+                isEnableProblemModal,
+                setIsEnableProblemModal,
             }}
         >
             {children}
