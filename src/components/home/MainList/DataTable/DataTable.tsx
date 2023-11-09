@@ -88,7 +88,7 @@ export function DataTable<TData, TValue>({
                     className="z-10 max-w-sm border-transparent bg-gray-60060 text-white"
                 />
             </div>
-            <Table>
+            <Table className="mb-24 md:mb-0">
                 <TableHeader>
                     {table.getHeaderGroups().map((headerGroup) => (
                         <TableRow
