@@ -27,7 +27,7 @@ export const Emoji: FC<EmojiProps> = ({ id, emojis, hasSelf }) => {
     return (
         <div
             className={clsx(
-                'flex space-x-1 rounded-full bg-gray-hl pl-1 pr-2 text-white hover:cursor-pointer',
+                'mt-1 flex space-x-1 rounded-full bg-gray-hl pl-1 pr-2 text-white hover:cursor-pointer',
                 hasSelf && 'border-gray-light border'
             )}
             onClick={handleClick}
