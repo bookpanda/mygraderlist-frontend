@@ -10,12 +10,12 @@ export default function Home() {
     return (
         <>
             <EditModal />
-            <EmojiModal />
             <div className="hidden h-screen w-full px-4 pt-8 xl:block">
                 <div className="flex h-[90%] space-x-2">
                     <SideBar />
                     <MainList />
                     <ProblemModal />
+                    <EmojiModal />
                 </div>
                 <Footer />
             </div>

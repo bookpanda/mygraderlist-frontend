@@ -20,16 +20,27 @@ export const EmojiModal = () => {
         closeEmojiModal();
     };
     return (
-        <div className="absolute left-[30%] top-[20%] z-50">
-            {isEmojiModalOpen && (
-                <Draggable>
+        <>
+            <div className="absolute left-[30%] top-[20%] z-50 hidden xl:block">
+                {isEmojiModalOpen && (
+                    <Draggable>
+                        <div className="hover:cursor-pointer">
+                            <EmojiPicker
+                                onEmojiClick={(emoji) => handlePick(emoji)}
+                            />
+                        </div>
+                    </Draggable>
+                )}
+            </div>
+            <div className="absolute right-[10%] top-[20%] z-50 xl:hidden">
+                {isEmojiModalOpen && (
                     <div className="hover:cursor-pointer">
                         <EmojiPicker
                             onEmojiClick={(emoji) => handlePick(emoji)}
                         />
                     </div>
-                </Draggable>
-            )}
-        </div>
+                )}
+            </div>
+        </>
     );
 };
