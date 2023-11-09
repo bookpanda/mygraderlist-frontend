@@ -60,7 +60,7 @@ export const EditModal = () => {
                     </div>
 
                     {/* mobile */}
-                    <div className="mb-4 flex flex-col space-y-3 xl:hidden">
+                    <div className="mb-4 flex flex-col items-center space-y-3 xl:hidden">
                         <Image
                             src={
                                 c.group === ''
@@ -71,12 +71,12 @@ export const EditModal = () => {
                                           `@images/courses/${c.course}/${c.group}/${c.code}.webp`
                                       )
                             }
-                            style={{ objectFit: 'cover', width: '100%' }}
+                            style={{ objectFit: 'cover', width: '80%' }}
                             alt={c.code}
                             className="rounded-lg"
                             unoptimized
                         />
-                        <div className="flex items-center space-x-10 text-white">
+                        <div className="flex w-[80%] items-center space-x-10 text-white">
                             <div>
                                 <Text
                                     variant="h5"
