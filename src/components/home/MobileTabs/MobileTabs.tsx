@@ -10,7 +10,7 @@ export const MobileTabs = () => {
     return (
         <Tabs
             defaultValue="home"
-            className="block h-full w-full md:hidden"
+            className="block h-full w-full xl:hidden"
             onValueChange={(val) => {
                 setCurrentTab(() => val);
             }}

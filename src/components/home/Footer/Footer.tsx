@@ -55,7 +55,7 @@ export const Footer = () => {
             {currentProblem && (
                 <div
                     ref={contianerRef}
-                    className="absolute bottom-[10%] left-0 z-10 flex w-full items-center space-x-4 rounded-lg p-2 md:hidden"
+                    className="absolute bottom-[10%] left-0 z-10 flex w-full items-center space-x-4 rounded-lg p-2 xl:hidden"
                     style={{
                         backgroundColor: `${color.bg}`,
                     }}

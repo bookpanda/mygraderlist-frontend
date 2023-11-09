@@ -19,7 +19,7 @@ export const MainList = () => {
     return (
         <div
             className={clsx(
-                'no-scrollbar relative h-full overflow-scroll bg-gray-600 md:rounded-xl',
+                'no-scrollbar relative h-full overflow-scroll bg-gray-600 xl:rounded-xl',
                 !isProblemModalOpen && 'w-full'
             )}
         >

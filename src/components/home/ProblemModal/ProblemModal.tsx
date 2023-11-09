@@ -15,7 +15,7 @@ export const ProblemModal = () => {
         isProblemModalOpen &&
         currentProblem &&
         currentCourse && (
-            <div className="no-scrollbar hidden h-full w-1/4 overflow-auto rounded-xl bg-gray-600 p-4 md:block">
+            <div className="no-scrollbar hidden h-full w-1/4 overflow-auto rounded-xl bg-gray-600 p-4 xl:block">
                 <div className="flex h-8 items-center justify-between">
                     <Text variant="h5" className="text-white">
                         {currentCourse.course}

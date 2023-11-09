@@ -25,7 +25,7 @@ export const EditModal = () => {
                     onInteractOutside={closeEditModal}
                     className="rounded-xl bg-gray-400"
                 >
-                    <div className="mb-4 hidden space-x-3 md:flex">
+                    <div className="mb-4 hidden space-x-3 xl:flex">
                         <Image
                             src={
                                 c.group === ''
@@ -60,7 +60,7 @@ export const EditModal = () => {
                     </div>
 
                     {/* mobile */}
-                    <div className="mb-4 flex flex-col space-y-3 md:hidden">
+                    <div className="mb-4 flex flex-col space-y-3 xl:hidden">
                         <Image
                             src={
                                 c.group === ''
