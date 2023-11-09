@@ -16,9 +16,10 @@ interface CourseSelectProps {
 
 export const CourseSelect: FC<CourseSelectProps> = ({ course }) => {
     const { setCurrentCourse } = useDataContext();
-    const { setIsEnableProblemModal } = useOpenContext();
+    const { setIsEnableProblemModal, closeProblemModal } = useOpenContext();
     const handleClick = () => {
         setCurrentCourse(course);
+        closeProblemModal();
         setIsEnableProblemModal(true);
     };
     return (

@@ -8,7 +8,7 @@ import { useOpenContext } from '@/context/OpenContext';
 import clsx from 'clsx';
 
 export const MainList = () => {
-    const { problems, currentCourse, courses } = useDataContext();
+    const { problems, currentCourse } = useDataContext();
     const { isProblemModalOpen } = useOpenContext();
     const currentProblems =
         currentCourse?.course === 'liked'
