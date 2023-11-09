@@ -10,7 +10,7 @@ export default function Home() {
     return (
         <>
             <EditModal />
-            <div className="hidden h-screen w-full pt-8 xl:block">
+            <div className="hidden h-screen w-full px-4 pt-8 xl:block">
                 <div className="flex h-[90%] space-x-2">
                     <SideBar />
                     <MainList />

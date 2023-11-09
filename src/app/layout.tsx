@@ -54,7 +54,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                         />
                         <meta name="theme-color" content="#ffffff" />
                         <body className={inter.className}>
-                            <div className="box-border h-screen w-screen bg-gray-800 px-4">
+                            <div className="box-border h-screen w-screen bg-gray-800">
                                 {children}
                                 <Analytics />
                                 <Toaster />

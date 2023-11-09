@@ -1,4 +1,4 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Tabs, TabsContent, TabsList } from '@/components/ui/tabs';
 import { Footer, MainList, SideBar } from '..';
 import { EmojiModal } from '../EmojiRow/EmojiModal';
 import { ProblemModal } from '../ProblemModal/ProblemModal';
@@ -27,7 +27,7 @@ export const MobileTabs = () => {
                     <SideBar />
                 </div>
             </TabsContent>
-            <TabsList className="bg- absolute flex w-[94%] justify-center space-x-[20%]">
+            <TabsList className="absolute flex w-[94%] justify-center space-x-[20%] bg-transparent">
                 <TabsButton text="home" active={currentTab === 'home'} />
                 <TabsButton text="courses" active={currentTab === 'courses'} />
             </TabsList>
