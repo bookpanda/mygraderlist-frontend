@@ -23,6 +23,7 @@ export const SideBar = () => {
                         <div
                             className="flex space-x-3"
                             onClick={() => setCurrentCourse(c)}
+                            key={c.name}
                         >
                             <Image
                                 src={require(
