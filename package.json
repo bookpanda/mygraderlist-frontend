@@ -24,6 +24,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "emoji-picker-react": "^4.5.15",
+    "fast-average-color": "^9.4.0",
     "lucide-react": "^0.290.0",
     "next": "14.0.0",
     "react": "^18",
