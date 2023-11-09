@@ -6,8 +6,8 @@ export interface DataContextProps {
     setCurrentProblem: Dispatch<SetStateAction<Problem | null>>;
     problems: Problem[] | null;
     courses: Course[] | null;
-    currentCourse: string;
-    setCurrentCourse: Dispatch<SetStateAction<string>>;
+    currentCourse: Course | null;
+    setCurrentCourse: Dispatch<SetStateAction<Course | null>>;
     like: (id: number) => void;
     unlike: (id: number) => void;
     addEmoji: (id: number, emoji: string) => void;
@@ -20,7 +20,7 @@ export const DataContext = createContext<DataContextProps>({
     setCurrentProblem: () => {},
     problems: null,
     courses: null,
-    currentCourse: '',
+    currentCourse: {} as Course,
     setCurrentCourse: () => {},
     like: () => {},
     unlike: () => {},

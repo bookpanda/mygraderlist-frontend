@@ -18,7 +18,7 @@ export const ProblemModal = () => {
             <div className="no-scrollbar h-full w-1/4 overflow-auto rounded-xl bg-gray-600 p-4">
                 <div className="flex h-8 items-center justify-between">
                     <Text variant="h5" className="text-white">
-                        {currentCourse}
+                        {currentCourse.course}
                     </Text>
                     <X
                         className="text-gray-textlight h-8 w-8 rounded-full p-1 duration-300 hover:scale-110 hover:cursor-pointer hover:bg-gray-hl hover:text-white"

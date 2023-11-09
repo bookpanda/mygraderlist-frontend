@@ -9,6 +9,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 export default function Home() {
     return (
         <>
+            <EditModal />
             <div className="hidden h-screen w-full pt-8 xl:block">
                 <div className="flex h-[90%] space-x-2">
                     <SideBar />
@@ -17,31 +18,24 @@ export default function Home() {
                     <ProblemModal />
                 </div>
                 <Footer />
-                <EditModal />
             </div>
-            {/* {viewport.sm && (
-                <>
-                    <Tabs defaultValue="account" className="h-full w-full">
-                        <TabsContent value="account" className="h-full w-full">
-                            <div className="flex h-[90%] space-x-2">
-                                <SideBar />
-                                <MainList />
-                                <EmojiModal />
-                                <ProblemModal />
-                            </div>
-                            <Footer />
-                            <EditModal />
-                        </TabsContent>
-                        <TabsContent value="password">
-                            Change your password here.
-                        </TabsContent>
-                        <TabsList>
-                            <TabsTrigger value="account">Account</TabsTrigger>
-                            <TabsTrigger value="password">Password</TabsTrigger>
-                        </TabsList>
-                    </Tabs>
-                </>
-            )} */}
+            <Tabs defaultValue="list" className="block h-full w-full md:hidden">
+                <TabsContent value="list" className="h-[90%] w-full">
+                    <div className="flex h-[90%] space-x-2">
+                        <MainList />
+                        <EmojiModal />
+                        <ProblemModal />
+                    </div>
+                </TabsContent>
+                <TabsContent value="courses">
+                    <SideBar />
+                </TabsContent>
+                <TabsList>
+                    <TabsTrigger value="list">List</TabsTrigger>
+                    <TabsTrigger value="courses">Courses</TabsTrigger>
+                </TabsList>
+                <Footer />
+            </Tabs>
         </>
     );
 }

@@ -13,13 +13,13 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
     const [currentProblem, setCurrentProblem] = useState<Problem | null>(null);
     const [problems, setProblems] = useState<Problem[] | null>(null);
     const [courses, setCourses] = useState<Course[] | null>(null);
-    const [currentCourse, setCurrentCourse] = useState<string>('');
+    const [currentCourse, setCurrentCourse] = useState<Course | null>(null);
 
     useEffect(() => {
         problemsData.sort((a, b) => b.id - a.id);
         setProblems(problemsData);
         setCourses(coursesData);
-        setCurrentCourse('2110211');
+        setCurrentCourse(coursesData[1]);
     }, []);
 
     useEffect(() => {

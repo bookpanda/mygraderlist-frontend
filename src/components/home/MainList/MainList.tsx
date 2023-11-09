@@ -11,11 +11,11 @@ export const MainList = () => {
     const { problems, currentCourse, courses } = useDataContext();
     const { isProblemModalOpen } = useOpenContext();
     const currentProblems =
-        currentCourse === 'liked'
+        currentCourse?.course === 'liked'
             ? problems?.filter((p) => p.heart === 1)
-            : problems?.filter((p) => p.course === currentCourse);
+            : problems?.filter((p) => p.course === currentCourse?.course);
 
-    const c = courses?.find((c) => c.course === currentCourse);
+    const c = currentCourse;
     return (
         <div
             className={clsx(

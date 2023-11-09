@@ -18,7 +18,7 @@ export const CourseSelect: FC<CourseSelectProps> = ({ course }) => {
     const { setCurrentCourse } = useDataContext();
     const { setIsEnableProblemModal } = useOpenContext();
     const handleClick = () => {
-        setCurrentCourse(course.course);
+        setCurrentCourse(course);
         setIsEnableProblemModal(true);
     };
     return (
@@ -26,7 +26,7 @@ export const CourseSelect: FC<CourseSelectProps> = ({ course }) => {
             <Tooltip>
                 <TooltipTrigger asChild>
                     <div onClick={() => handleClick()}>
-                        <CourseIcon course={course.course} />
+                        <CourseIcon course={course} />
                     </div>
                 </TooltipTrigger>
                 <TooltipContent side="right" className="border-0 bg-gray-400">

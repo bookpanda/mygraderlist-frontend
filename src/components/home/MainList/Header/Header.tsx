@@ -6,8 +6,9 @@ import { useDataContext } from '@/context/DataContext';
 import { Login } from './Login';
 
 export const Header = () => {
-    const { courses, currentCourse } = useDataContext();
-    const c = courses?.find((c) => c.course === currentCourse);
+    const { currentCourse } = useDataContext();
+    const c = currentCourse;
+
     return (
         <div className="w-full">
             {c && (
@@ -20,7 +21,7 @@ export const Header = () => {
                     <Login />
                     <div className="flex items-center space-x-8">
                         <CourseIcon
-                            course={c.course}
+                            course={c}
                             className="drop-shadow-xl"
                             width={180}
                         />

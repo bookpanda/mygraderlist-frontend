@@ -25,7 +25,7 @@ export const EditModal = () => {
                     onInteractOutside={closeEditModal}
                     className="bg-gray-400"
                 >
-                    <DialogHeader>
+                    <div>
                         <div className="mb-4 flex space-x-3">
                             <Image
                                 src={
@@ -43,7 +43,7 @@ export const EditModal = () => {
                                 className="rounded-lg"
                                 unoptimized
                             />
-                            <DialogTitle className="text-white">
+                            <div className="text-white">
                                 <Text
                                     variant="h5"
                                     className="text-white drop-shadow-2xl"
@@ -57,9 +57,9 @@ export const EditModal = () => {
                                     {c.course}
                                 </Text>
                                 <LikeButton heart={c.heart} id={c.id} show />
-                            </DialogTitle>
+                            </div>
                         </div>
-                    </DialogHeader>
+                    </div>
                     <RatingForm handleClose={closeEditModal} />
                 </DialogContent>
             )}
