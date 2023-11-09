@@ -27,7 +27,7 @@ export const MobileTabs = () => {
                     <SideBar />
                 </div>
             </TabsContent>
-            <TabsList className="absolute bottom-[2%] flex w-[94%] justify-center space-x-[20%] bg-transparent">
+            <TabsList className="absolute bottom-[2%] flex h-20 w-full justify-center space-x-[20%] bg-black">
                 <TabsButton text="home" active={currentTab === 'home'} />
                 <TabsButton text="courses" active={currentTab === 'courses'} />
             </TabsList>
