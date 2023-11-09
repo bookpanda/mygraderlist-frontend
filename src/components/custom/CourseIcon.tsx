@@ -18,7 +18,7 @@ export const CourseIcon: FC<CourseIconProps> = ({
     height,
 }) => {
     return (
-        <RoundDiv className={clsx('rounded-lg bg-gray-400 p-0', className)}>
+        <RoundDiv className={clsx('p-0', className)}>
             {course && (
                 <Image
                     src={require(`@images/courses/${course.course}/icon.webp`)}
