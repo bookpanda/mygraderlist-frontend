@@ -13,7 +13,7 @@ export const Footer = () => {
     const { currentProblem, currentCourse } = useDataContext();
     const { openEditModal } = useOpenContext();
     const contianerRef = useRef<HTMLDivElement>(null);
-    const [color, setColor] = useState({ bg: '', isDark: false });
+    const [color, setColor] = useState({ bg: '', isDark: true });
 
     useEffect(() => {
         if (contianerRef.current === null || !currentProblem) return;
@@ -57,7 +57,8 @@ export const Footer = () => {
                     ref={contianerRef}
                     className="absolute bottom-[10%] left-0 z-10 flex w-full items-center space-x-4 rounded-lg p-2 xl:hidden"
                     style={{
-                        backgroundColor: `${color.bg}`,
+                        backgroundColor:
+                            color.bg !== '' ? color.bg : currentCourse?.color,
                     }}
                     onClick={openEditModal}
                 >

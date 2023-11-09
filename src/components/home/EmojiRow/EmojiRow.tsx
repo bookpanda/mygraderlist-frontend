@@ -27,7 +27,7 @@ export const EmojiRow: FC<EmojiRowProps> = ({
     return (
         <div
             className={clsx(
-                'overflow-wrap mt-3 flex w-[30vw] space-x-1 overflow-auto text-white',
+                'overflow-wrap mt-3 flex w-full space-x-1 overflow-auto text-white',
                 className
             )}
         >

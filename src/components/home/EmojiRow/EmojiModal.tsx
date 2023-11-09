@@ -36,7 +36,7 @@ export const EmojiModal = () => {
                     </div>
                 </Draggable>
             </div>
-            <div className="absolute bottom-0 left-0 z-50 xl:hidden">
+            <div className="absolute bottom-0 right-0 z-50 xl:hidden">
                 <div
                     className={clsx(
                         'hover:cursor-pointer',
