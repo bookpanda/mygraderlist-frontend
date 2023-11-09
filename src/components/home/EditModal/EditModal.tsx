@@ -60,7 +60,7 @@ export const EditModal = () => {
                     </div>
 
                     {/* mobile */}
-                    <div className="mb-4 flex flex-col space-y-3">
+                    <div className="mb-4 flex flex-col space-y-3 md:hidden">
                         <Image
                             src={
                                 c.group === ''

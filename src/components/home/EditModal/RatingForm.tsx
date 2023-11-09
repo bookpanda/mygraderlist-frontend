@@ -63,7 +63,7 @@ export const RatingForm: FC<RatingFormProps> = ({ handleClose }) => {
         <Form {...form}>
             <form
                 onSubmit={form.handleSubmit(onSubmit)}
-                className="z-10 space-y-6"
+                className="z-10 flex space-x-[20%]"
             >
                 <FormField
                     control={form.control}
