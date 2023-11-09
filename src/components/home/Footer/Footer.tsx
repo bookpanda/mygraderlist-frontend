@@ -33,7 +33,7 @@ export const Footer = () => {
                 <div
                     className="bg-gray-800p-4 absolute bottom-[10%] left-0 z-10 flex w-full items-center space-x-4 rounded-lg p-2 md:hidden"
                     style={{
-                        backgroundColor: `${currentCourse?.color}80`,
+                        backgroundColor: `${currentCourse?.color}`,
                     }}
                     onClick={openEditModal}
                 >
@@ -42,7 +42,7 @@ export const Footer = () => {
                         <Text variant="p1" className="text-white">
                             {currentProblem?.name}
                         </Text>
-                        <Text variant="p3" className="text-gray-text">
+                        <Text variant="p3" className="text-gray-textlight">
                             {currentProblem?.code}
                         </Text>
                     </div>
