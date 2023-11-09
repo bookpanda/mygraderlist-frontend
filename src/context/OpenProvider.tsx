@@ -1,6 +1,6 @@
 'use client';
 
-import { PropsWithChildren, useEffect, useMemo, useState } from 'react';
+import { PropsWithChildren, useState } from 'react';
 import { OpenContext } from './OpenContext';
 
 export const OpenContextProvider = ({ children }: PropsWithChildren) => {
@@ -8,28 +8,6 @@ export const OpenContextProvider = ({ children }: PropsWithChildren) => {
     const [isEmojiModalOpen, setIsEmojiModalOpen] = useState(false);
     const [isProblemModalOpen, setIsProblemModalOpen] = useState(false);
     const [isEnableProblemModal, setIsEnableProblemModal] = useState(true);
-    const [windowSize, setWindowSize] = useState(getWindowSize());
-    const viewport = useMemo(
-        () => ({
-            sm: windowSize.innerWidth > 0,
-            md: windowSize.innerWidth > 768,
-            lg: windowSize.innerWidth > 1024,
-            xl: windowSize.innerWidth > 1280,
-            '2xl': windowSize.innerWidth > 1536,
-        }),
-        [windowSize]
-    );
-
-    useEffect(() => {
-        function handleWindowResize() {
-            setWindowSize(getWindowSize());
-        }
-        window.addEventListener('resize', handleWindowResize);
-
-        return () => {
-            window.removeEventListener('resize', handleWindowResize);
-        };
-    }, []);
 
     const openEditModal = () => {
         setIsEditModalOpen(false);
@@ -57,14 +35,6 @@ export const OpenContextProvider = ({ children }: PropsWithChildren) => {
         setIsEnableProblemModal(false);
     };
 
-    function getWindowSize() {
-        if (typeof window !== 'undefined') {
-            const { innerWidth, innerHeight } = window;
-            return { innerWidth, innerHeight };
-        }
-        return { innerWidth: 0, innerHeight: 0 };
-    }
-
     return (
         <OpenContext.Provider
             value={{
@@ -79,7 +49,6 @@ export const OpenContextProvider = ({ children }: PropsWithChildren) => {
                 closeProblemModal,
                 isEnableProblemModal,
                 setIsEnableProblemModal,
-                viewport,
             }}
         >
             {children}
