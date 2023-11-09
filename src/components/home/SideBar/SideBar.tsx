@@ -11,7 +11,7 @@ export const SideBar = () => {
 
     return (
         <>
-            <div className="no-scrollbar hidden space-y-3 overflow-scroll rounded-lg bg-gray-600 p-2 xl:block">
+            <div className="no-scrollbar hidden flex-none flex-col items-center space-y-3 overflow-scroll rounded-lg bg-gray-600 p-2 xl:flex">
                 {courses?.map((c) => <CourseSelect key={c.name} course={c} />)}
             </div>
             <div className="no-scrollbar block w-full space-y-4 overflow-scroll rounded-lg bg-gray-600 px-4 py-2 xl:hidden">
