@@ -7,7 +7,7 @@ import { AddEmoji } from './AddEmoji';
 import { useDataContext } from '@/context/DataContext';
 
 interface EmojiRowProps {
-    id: number;
+    id: string;
     emojis: {
         emoji: string;
         count: number;

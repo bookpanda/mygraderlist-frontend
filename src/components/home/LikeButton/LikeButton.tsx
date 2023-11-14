@@ -7,7 +7,7 @@ import { FC } from 'react';
 
 interface LikeButtonProps {
     heart: number;
-    id: number;
+    id: string;
     width?: number;
     show?: boolean;
 }

@@ -6,7 +6,7 @@ import clsx from 'clsx';
 import { FC } from 'react';
 
 interface EmojiProps {
-    id: number;
+    id: string;
     emojis: {
         emoji: string;
         count: number;

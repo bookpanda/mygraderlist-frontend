@@ -1,5 +1,5 @@
 import { RoundDiv } from '@/components/custom';
-import { Course } from '@/types/problem';
+import { Course } from '@/types/course';
 import clsx from 'clsx';
 import Image from 'next/image';
 import { FC } from 'react';

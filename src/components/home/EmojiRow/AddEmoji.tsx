@@ -11,7 +11,7 @@ import { useOpenContext } from '@/context/OpenContext';
 
 interface AddEmojiProps {
     isVisible: boolean;
-    id: number;
+    id: string;
 }
 
 export const AddEmoji: FC<AddEmojiProps> = ({ isVisible, id }) => {
