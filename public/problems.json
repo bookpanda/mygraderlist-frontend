@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "ex",
         "code": "ex00e1",
         "name": "Time After",
@@ -26,7 +26,7 @@
     },
     {
         "id": 2,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "ex",
         "code": "ex00e2",
         "name": "Min Max",
@@ -51,7 +51,7 @@
     },
     {
         "id": 3,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "ds",
         "code": "ds00_reverse",
         "name": "Reverse Vector 1",
@@ -76,7 +76,7 @@
     },
     {
         "id": 4,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d57",
         "code": "d57_q0_remove_even",
         "name": "Remove Even",
@@ -101,7 +101,7 @@
     },
     {
         "id": 5,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q1c_vector_op",
         "name": "Vector Operation",
@@ -117,7 +117,7 @@
     },
     {
         "id": 6,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q1a_punch",
         "name": "Vector Punch",
@@ -133,7 +133,7 @@
     },
     {
         "id": 7,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "ds",
         "code": "ds01_pair_sum",
         "name": "Pair Sum",
@@ -149,7 +149,7 @@
     },
     {
         "id": 8,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "ds",
         "code": "ds00_reverse2",
         "name": "Reverse Vector 2",
@@ -165,7 +165,7 @@
     },
     {
         "id": 9,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d59",
         "code": "d59_q0_vector_swap",
         "name": "Vector Swap",
@@ -181,7 +181,7 @@
     },
     {
         "id": 10,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "ds",
         "code": "ds02_intersection",
         "name": "Intersection",
@@ -197,7 +197,7 @@
     },
     {
         "id": 11,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "ds",
         "code": "ds01_most",
         "name": "Most Frequent Word",
@@ -213,7 +213,7 @@
     },
     {
         "id": 12,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q1c_vector_intersection",
         "name": "Vector Intersection",
@@ -229,7 +229,7 @@
     },
     {
         "id": 13,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q1b_grandfather",
         "name": "Grandfather",
@@ -245,7 +245,7 @@
     },
     {
         "id": 14,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q1a_vote",
         "name": "Vote",
@@ -261,7 +261,7 @@
     },
     {
         "id": 15,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d58",
         "code": "d58_q0_rating",
         "name": "CUCAS Rating",
@@ -277,7 +277,7 @@
     },
     {
         "id": 16,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "ex",
         "code": "ex00e3",
         "name": "Check Mapping",
@@ -293,7 +293,7 @@
     },
     {
         "id": 17,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q1b_interval_count",
         "name": "Interval Count",
@@ -309,7 +309,7 @@
     },
     {
         "id": 18,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d57",
         "code": "d57_q0_histogram",
         "name": "Histogram",
@@ -325,7 +325,7 @@
     },
     {
         "id": 19,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_qx_inside_interval",
         "name": "Inside Interval",
@@ -341,7 +341,7 @@
     },
     {
         "id": 20,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q1a_hiatus",
         "name": "Hiatus",
@@ -357,7 +357,7 @@
     },
     {
         "id": 21,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d60",
         "code": "d60_q0_v2m",
         "name": "Vector to Map",
@@ -373,7 +373,7 @@
     },
     {
         "id": 22,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q1a_multiply",
         "name": "Member Multiply",
@@ -389,7 +389,7 @@
     },
     {
         "id": 23,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q1a_card_battle",
         "name": "Card Battle",
@@ -405,7 +405,7 @@
     },
     {
         "id": 24,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q1b_list_erase",
         "name": "Vector List Erase",
@@ -421,7 +421,7 @@
     },
     {
         "id": 25,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q1a_multi_insert",
         "name": "Multi Insert",
@@ -437,7 +437,7 @@
     },
     {
         "id": 26,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q1b_password",
         "name": "Password",
@@ -453,7 +453,7 @@
     },
     {
         "id": 27,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q1b_moving_median",
         "name": "Moving Median",
@@ -469,7 +469,7 @@
     },
     {
         "id": 28,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q1a_second_min",
         "name": "Second Min",
@@ -485,7 +485,7 @@
     },
     {
         "id": 29,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d59",
         "code": "d59_q0_stack_concat",
         "name": "Stack Concatenate",
@@ -501,7 +501,7 @@
     },
     {
         "id": 30,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d57",
         "code": "d57_q1_postfix",
         "name": "Evaluate Postfix",
@@ -517,7 +517,7 @@
     },
     {
         "id": 31,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q1a_delivery",
         "name": "Food Delivery",
@@ -533,7 +533,7 @@
     },
     {
         "id": 32,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q1b_queue_count",
         "name": "Queue Count",
@@ -549,7 +549,7 @@
     },
     {
         "id": 33,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d60",
         "code": "d60_q0_zipcode",
         "name": "Zipcode",
@@ -565,7 +565,7 @@
     },
     {
         "id": 34,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "ex",
         "code": "ex00m2",
         "name": "Auction",
@@ -581,7 +581,7 @@
     },
     {
         "id": 35,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "ex",
         "code": "ex00m1",
         "name": "Restaurant",
@@ -597,7 +597,7 @@
     },
     {
         "id": 36,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q1c_min_of_max",
         "name": "Min of Max",
@@ -613,7 +613,7 @@
     },
     {
         "id": 37,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q1c_ice_cream",
         "name": "Ice Cream",
@@ -629,7 +629,7 @@
     },
     {
         "id": 38,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q1b_cross_2d",
         "name": "3: Cross 2D",
@@ -645,7 +645,7 @@
     },
     {
         "id": 39,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q1b_sparse_vector",
         "name": "4: Sparse Vector",
@@ -661,7 +661,7 @@
     },
     {
         "id": 40,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q2a_pair_gte",
         "name": "Pair GTE",
@@ -677,7 +677,7 @@
     },
     {
         "id": 41,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d66",
         "code": "d66_q1a_topsale",
         "name": "Top Sale",
@@ -693,7 +693,7 @@
     },
     {
         "id": 42,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d66",
         "code": "d66_q1a_booking",
         "name": "Booking",
@@ -709,7 +709,7 @@
     },
     {
         "id": 43,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "ds",
         "code": "ds02_is_reverse",
         "name": "Is Reverse?",
@@ -725,7 +725,7 @@
     },
     {
         "id": 44,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q2a_no_move",
         "name": "2: Vector No Move",
@@ -741,7 +741,7 @@
     },
     {
         "id": 45,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q2a_vector_mirror",
         "name": "Vector Mirror",
@@ -757,7 +757,7 @@
     },
     {
         "id": 46,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q2c_wasted_space",
         "name": "Wasted Space",
@@ -773,7 +773,7 @@
     },
     {
         "id": 47,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q2a_iterator_check",
         "name": "Iterator Check",
@@ -789,7 +789,7 @@
     },
     {
         "id": 48,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d58",
         "code": "d58_q1_erase_many",
         "name": "Erase Many from Vector",
@@ -805,7 +805,7 @@
     },
     {
         "id": 49,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d57",
         "code": "d57_q1_vequal",
         "name": "Vector Equality",
@@ -821,7 +821,7 @@
     },
     {
         "id": 50,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q2b_vector_compress",
         "name": "Vector Compress",
@@ -837,7 +837,7 @@
     },
     {
         "id": 51,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q2c_vector_swap",
         "name": "Swap Vector",
@@ -853,7 +853,7 @@
     },
     {
         "id": 52,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q2b_vector_insert_many",
         "name": "Insert Many",
@@ -869,7 +869,7 @@
     },
     {
         "id": 53,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d61",
         "code": "d61_q1_ordered_set",
         "name": "Ordered Set",
@@ -885,7 +885,7 @@
     },
     {
         "id": 54,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d60",
         "code": "d60_q1_v_uniq",
         "name": "Vector Unique",
@@ -901,7 +901,7 @@
     },
     {
         "id": 55,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d59",
         "code": "d59_q1_range_insert",
         "name": "Range Insert",
@@ -917,7 +917,7 @@
     },
     {
         "id": 56,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q2c_vector_less",
         "name": "Vector less",
@@ -933,7 +933,7 @@
     },
     {
         "id": 57,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q2b_vector_rotate",
         "name": "Vector Rotate",
@@ -949,7 +949,7 @@
     },
     {
         "id": 58,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q2a_vector_block_swap",
         "name": "Vector Block Swap",
@@ -965,7 +965,7 @@
     },
     {
         "id": 59,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q2b_some_move",
         "name": "Vector Some Move",
@@ -981,7 +981,7 @@
     },
     {
         "id": 60,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q2b_stack_reserve",
         "name": "Stack Reserve Compare",
@@ -997,7 +997,7 @@
     },
     {
         "id": 61,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q2b_stack_deep_push",
         "name": "Stack Deep Push",
@@ -1013,7 +1013,7 @@
     },
     {
         "id": 62,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d59",
         "code": "d59_q1_pop_many",
         "name": "Pop Many",
@@ -1029,7 +1029,7 @@
     },
     {
         "id": 63,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q2b_stack_distribute",
         "name": "Stack Distribute",
@@ -1045,7 +1045,7 @@
     },
     {
         "id": 64,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d57",
         "code": "d57_q1_sbv2",
         "name": "Stack by Vector 2",
@@ -1061,7 +1061,7 @@
     },
     {
         "id": 65,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d57",
         "code": "d57_q1_sbv",
         "name": "Stack by Vector",
@@ -1077,7 +1077,7 @@
     },
     {
         "id": 66,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q2a_mitosis",
         "name": "1: Stack Mitosis",
@@ -1093,7 +1093,7 @@
     },
     {
         "id": 67,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q2c_stack_move_insert",
         "name": "Move Insert Stack",
@@ -1109,7 +1109,7 @@
     },
     {
         "id": 68,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q2a_stack_from_set",
         "name": "Stack From Set",
@@ -1125,7 +1125,7 @@
     },
     {
         "id": 69,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q3a_queue_check",
         "name": "Queue Check",
@@ -1141,7 +1141,7 @@
     },
     {
         "id": 70,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q3b_queue_b2f",
         "name": "Queue Back to Front",
@@ -1157,7 +1157,7 @@
     },
     {
         "id": 71,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q3a_queue_m2b",
         "name": "Queue Move to Back",
@@ -1173,7 +1173,7 @@
     },
     {
         "id": 72,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q3b_queue_m2f",
         "name": "Queue Move to Front",
@@ -1189,7 +1189,7 @@
     },
     {
         "id": 73,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q2a_multi_count",
         "name": "Multi Count",
@@ -1205,7 +1205,7 @@
     },
     {
         "id": 74,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d61",
         "code": "d61_q1_append",
         "name": "Append",
@@ -1221,7 +1221,7 @@
     },
     {
         "id": 75,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d60",
         "code": "d60_q2_split_queue",
         "name": "Split Queue",
@@ -1237,7 +1237,7 @@
     },
     {
         "id": 76,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d60",
         "code": "d60_q1_qat",
         "name": "Queue At",
@@ -1253,7 +1253,7 @@
     },
     {
         "id": 77,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d59",
         "code": "d59_q2_queue_equality",
         "name": "Queue Equality",
@@ -1269,7 +1269,7 @@
     },
     {
         "id": 78,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d58",
         "code": "d58_q1_to_vector",
         "name": "Queue to Vector",
@@ -1285,7 +1285,7 @@
     },
     {
         "id": 79,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q3b_queue_total_reverse",
         "name": "Queue Total Reverse",
@@ -1301,7 +1301,7 @@
     },
     {
         "id": 80,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q3a_queue_min",
         "name": "Queue Min Element",
@@ -1317,7 +1317,7 @@
     },
     {
         "id": 81,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q2b_split_stack",
         "name": "Split Stack",
@@ -1333,7 +1333,7 @@
     },
     {
         "id": 82,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q3b_queue_reverse",
         "name": "Queue Reverse",
@@ -1349,7 +1349,7 @@
     },
     {
         "id": 83,
-        "course": "2110263",
+        "courseCode": "2110263",
         "group": "diglab",
         "code": "diglab_03_01",
         "name": "Digital: Simulation 03 - 01",
@@ -1365,7 +1365,7 @@
     },
     {
         "id": 84,
-        "course": "2110263",
+        "courseCode": "2110263",
         "group": "diglab",
         "code": "diglab_01_01",
         "name": "Digital: Simulation 01 - 01",
@@ -1381,7 +1381,7 @@
     },
     {
         "id": 85,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d66",
         "code": "d66_q2a_vector_range_erase",
         "name": "Vector Range Erase",
@@ -1397,7 +1397,7 @@
     },
     {
         "id": 86,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d66",
         "code": "d66_q2a_stack_vertical_split",
         "name": "Stack Vertical Split",
@@ -1413,7 +1413,7 @@
     },
     {
         "id": 87,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d66",
         "code": "d66_q1b_car_brake",
         "name": "Car Brake",
@@ -1429,7 +1429,7 @@
     },
     {
         "id": 88,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q3b_kheap_height",
         "name": "K-ary Heap Height",
@@ -1445,7 +1445,7 @@
     },
     {
         "id": 89,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q3a_heap_node_relation",
         "name": "Heap Node Relation",
@@ -1461,7 +1461,7 @@
     },
     {
         "id": 90,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d60",
         "code": "d60_q2_heap_height",
         "name": "Heap Height",
@@ -1477,7 +1477,7 @@
     },
     {
         "id": 91,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d57",
         "code": "d57_q2_kheap",
         "name": "K-Ary Heap",
@@ -1493,7 +1493,7 @@
     },
     {
         "id": 92,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "ds",
         "code": "ds03_heap_erase",
         "name": "Heap Erase",
@@ -1509,7 +1509,7 @@
     },
     {
         "id": 93,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q3a_heap_descendant",
         "name": "Heap Descendant",
@@ -1525,7 +1525,7 @@
     },
     {
         "id": 94,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d59",
         "code": "d59_q2_heap_find",
         "name": "Heap Find",
@@ -1541,7 +1541,7 @@
     },
     {
         "id": 95,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d58",
         "code": "d58_q2_hequal",
         "name": "Heap Equality",
@@ -1557,7 +1557,7 @@
     },
     {
         "id": 96,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "ds",
         "code": "ds03_heap_order",
         "name": "Heap Ordering",
@@ -1573,7 +1573,7 @@
     },
     {
         "id": 97,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d58",
         "code": "d58_q2_custom",
         "name": "Custom Order",
@@ -1589,7 +1589,7 @@
     },
     {
         "id": 98,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d57",
         "code": "d57_q2_heap_order2",
         "name": "Heap Ordering 2",
@@ -1605,7 +1605,7 @@
     },
     {
         "id": 99,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q3a_heap_relation_2",
         "name": "Heap Node Relation 2",
@@ -1621,7 +1621,7 @@
     },
     {
         "id": 100,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q3b_heap_change",
         "name": "Heap Change Value",
@@ -1637,7 +1637,7 @@
     },
     {
         "id": 101,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q3a_rank_in_heap",
         "name": "Rank in Heap",
@@ -1653,7 +1653,7 @@
     },
     {
         "id": 102,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q3b_heap_check",
         "name": "Heap Check",
@@ -1669,7 +1669,7 @@
     },
     {
         "id": 103,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q3b_heap_level",
         "name": "Heap Level",
@@ -1685,7 +1685,7 @@
     },
     {
         "id": 104,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q3a_heap_kth",
         "name": "Heap K-th",
@@ -1701,7 +1701,7 @@
     },
     {
         "id": 105,
-        "course": "2110263",
+        "courseCode": "2110263",
         "group": "diglab",
         "code": "diglab_07_05",
         "name": "Digital: Simulation 07 - 05",
@@ -1717,7 +1717,7 @@
     },
     {
         "id": 106,
-        "course": "2110263",
+        "courseCode": "2110263",
         "group": "diglab",
         "code": "diglab_07_04",
         "name": "Digital: Simulation 07 - 04",
@@ -1733,7 +1733,7 @@
     },
     {
         "id": 107,
-        "course": "2110263",
+        "courseCode": "2110263",
         "group": "diglab",
         "code": "diglab_07_03",
         "name": "Digital: Simulation 07 - 03",
@@ -1749,7 +1749,7 @@
     },
     {
         "id": 108,
-        "course": "2110263",
+        "courseCode": "2110263",
         "group": "diglab",
         "code": "diglab_07_02",
         "name": "Digital: Simulation 07 - 02",
@@ -1765,7 +1765,7 @@
     },
     {
         "id": 109,
-        "course": "2110263",
+        "courseCode": "2110263",
         "group": "diglab",
         "code": "diglab_07_01",
         "name": "Digital: Simulation 07 - 01",
@@ -1781,7 +1781,7 @@
     },
     {
         "id": 110,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q4a_list_reverse",
         "name": "List Reverse",
@@ -1797,7 +1797,7 @@
     },
     {
         "id": 111,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d58",
         "code": "d58_q3_list_replace",
         "name": "List Replace",
@@ -1813,7 +1813,7 @@
     },
     {
         "id": 112,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d57",
         "code": "d57_q3_zuma",
         "name": "Zuma",
@@ -1829,7 +1829,7 @@
     },
     {
         "id": 113,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q4a_list_merge",
         "name": "List Merge",
@@ -1845,7 +1845,7 @@
     },
     {
         "id": 114,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q4b_list_extract",
         "name": "List Extract",
@@ -1861,7 +1861,7 @@
     },
     {
         "id": 115,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d61",
         "code": "d61_q2_splitlist",
         "name": "Split List",
@@ -1877,7 +1877,7 @@
     },
     {
         "id": 116,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d59",
         "code": "d59_q3_list_split",
         "name": "List Split",
@@ -1893,7 +1893,7 @@
     },
     {
         "id": 117,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "ds",
         "code": "ds04_playlist",
         "name": "Playlist Management",
@@ -1909,7 +1909,7 @@
     },
     {
         "id": 118,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q4a_list_check",
         "name": "List check",
@@ -1925,7 +1925,7 @@
     },
     {
         "id": 119,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d60",
         "code": "d60_q3_lremove_all",
         "name": "List Remove All",
@@ -1941,7 +1941,7 @@
     },
     {
         "id": 120,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d57",
         "code": "d57_q3_shift",
         "name": "Shift",
@@ -1957,7 +1957,7 @@
     },
     {
         "id": 121,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d57",
         "code": "d57_q1_sparse",
         "name": "Sparse Graph",
@@ -1973,7 +1973,7 @@
     },
     {
         "id": 122,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d57",
         "code": "d57_q1_dense",
         "name": "Dense Graph",
@@ -1989,7 +1989,7 @@
     },
     {
         "id": 123,
-        "course": "2110263",
+        "courseCode": "2110263",
         "group": "diglab",
         "code": "diglab_08_05",
         "name": "Digital: Simulation 08 - 05",
@@ -2005,7 +2005,7 @@
     },
     {
         "id": 124,
-        "course": "2110263",
+        "courseCode": "2110263",
         "group": "diglab",
         "code": "diglab_08_04",
         "name": "Digital: Simulation 08 - 04",
@@ -2021,7 +2021,7 @@
     },
     {
         "id": 125,
-        "course": "2110263",
+        "courseCode": "2110263",
         "group": "diglab",
         "code": "diglab_08_03",
         "name": "Digital: Simulation 08 - 03",
@@ -2037,7 +2037,7 @@
     },
     {
         "id": 126,
-        "course": "2110263",
+        "courseCode": "2110263",
         "group": "diglab",
         "code": "diglab_08_02",
         "name": "Digital: Simulation 08 - 02",
@@ -2053,7 +2053,7 @@
     },
     {
         "id": 127,
-        "course": "2110263",
+        "courseCode": "2110263",
         "group": "diglab",
         "code": "diglab_08_01",
         "name": "Digital: Simulation 08 - 01",
@@ -2069,7 +2069,7 @@
     },
     {
         "id": 128,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q4b_shallowest",
         "name": "Shallowest Leaf",
@@ -2085,7 +2085,7 @@
     },
     {
         "id": 129,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d60",
         "code": "d60_q3_same_tree",
         "name": "ต้นไม้เหมือน",
@@ -2101,7 +2101,7 @@
     },
     {
         "id": 130,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q4a_leaves_count",
         "name": "Leaves Count",
@@ -2117,7 +2117,7 @@
     },
     {
         "id": 131,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q4a_subtree",
         "name": "Subtree Extract",
@@ -2133,7 +2133,7 @@
     },
     {
         "id": 132,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d59",
         "code": "d59_q3_bst_split",
         "name": "BST Split",
@@ -2149,7 +2149,7 @@
     },
     {
         "id": 133,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d58",
         "code": "d58_q3_unary",
         "name": "Count Unary",
@@ -2165,7 +2165,7 @@
     },
     {
         "id": 134,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "ds",
         "code": "ds04_best_bst",
         "name": "Optimal Binary Search Tree",
@@ -2181,7 +2181,7 @@
     },
     {
         "id": 135,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q4a_bst_at_level",
         "name": "BST at level",
@@ -2197,7 +2197,7 @@
     },
     {
         "id": 136,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d61",
         "code": "d61_q2_imbalance",
         "name": "Imbalance",
@@ -2213,7 +2213,7 @@
     },
     {
         "id": 137,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d66",
         "code": "d66_q1c_company_department",
         "name": "Company Department",
@@ -2229,7 +2229,7 @@
     },
     {
         "id": 138,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d66",
         "code": "d66_q2b_stack_reverse",
         "name": "Stack Reverse",
@@ -2245,7 +2245,7 @@
     },
     {
         "id": 139,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d66",
         "code": "d66_q3a_queue_vertical_split",
         "name": "Queue Vertical Split",
@@ -2261,7 +2261,7 @@
     },
     {
         "id": 140,
-        "course": "2110211",
+        "courseCode": "2110211",
         "group": "d66",
         "code": "d66_q3a_kheap_check",
         "name": "K-ary Heap Check",
@@ -2277,7 +2277,7 @@
     },
     {
         "id": 141,
-        "course": "2110263",
+        "courseCode": "2110263",
         "group": "diglab",
         "code": "diglab_09_01",
         "name": "Digital: Simulation 09 - Vending Machine",
