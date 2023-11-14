@@ -1,12 +1,7 @@
 'use client';
 
 import { Text } from '@/components/custom';
-import {
-    Dialog,
-    DialogContent,
-    DialogHeader,
-    DialogTitle,
-} from '@/components/ui/dialog';
+import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { useDataContext } from '@/context/DataContext';
 import { useOpenContext } from '@/context/OpenContext';
 import Image from 'next/image';
