@@ -38,10 +38,10 @@ export const columns: ColumnDef<Problem>[] = [
                         src={
                             row.original.group === ''
                                 ? require(
-                                      `@images/courses/${row.original.course}/icon.webp`
+                                      `@images/courses/${row.original.courseCode}/icon.webp`
                                   )
                                 : require(
-                                      `@images/courses/${row.original.course}/${row.original.group}/${row.original.code}.webp`
+                                      `@images/courses/${row.original.courseCode}/${row.original.group}/${row.original.code}.webp`
                                   )
                         }
                         width={45}
