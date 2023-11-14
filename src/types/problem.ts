@@ -1,17 +1,19 @@
 export type IProblems = {
-    id: number;
+    id: string;
     courseCode: string;
     group: string;
     code: string;
     name: string;
+    order: number;
 }[];
 
 export type Problem = {
-    id: number;
+    id: string;
     courseCode: string;
     group: string;
     code: string;
     name: string;
+    order: number;
     score: number;
     numScore: number;
     difficulty: number;
@@ -24,11 +26,4 @@ export type Problem = {
         count: number;
     }[];
     emojisSelf: string[];
-};
-
-export type Course = {
-    id: number;
-    courseCode: string;
-    name: string;
-    color: string;
 };
