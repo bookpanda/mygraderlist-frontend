@@ -1,6 +1,14 @@
+export type IProblems = {
+    id: number;
+    courseCode: string;
+    group: string;
+    code: string;
+    name: string;
+}[];
+
 export type Problem = {
     id: number;
-    course: string;
+    courseCode: string;
     group: string;
     code: string;
     name: string;
@@ -20,7 +28,7 @@ export type Problem = {
 
 export type Course = {
     id: number;
-    course: string;
+    courseCode: string;
     name: string;
     color: string;
 };
