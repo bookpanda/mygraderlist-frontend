@@ -7,7 +7,6 @@ export const getAllCourses = async (): Promise<ICourses | null> => {
     let res: AxiosResponse;
     try {
         res = await apiClient.get<ICourses>('/course/');
-        console.log(res.data);
     } catch (err) {
         return null;
     }

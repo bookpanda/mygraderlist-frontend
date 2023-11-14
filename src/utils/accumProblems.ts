@@ -48,12 +48,25 @@ export const accumProblems = (
         );
         const emojisSelf = _emojisSelf?.map((emoji) => emoji.emoji) ?? [];
 
+        const _ratings = ratings?.filter(
+            (rating) => rating.problemId === problem.id
+        );
+        const numScore = _ratings ? _ratings.length : 0;
+        const numDifficulty = _ratings ? _ratings.length : 0;
+        const _score = _ratings?.reduce((prev, curr) => prev + curr.score, 0);
+        const score = _score ? _score / numScore : 0;
+        const _difficulty = _ratings?.reduce(
+            (prev, curr) => prev + curr.difficulty,
+            0
+        );
+        const difficulty = _difficulty ? _difficulty / numDifficulty : 0;
+
         const newProblem: Problem = {
             ...problem,
-            score: 0,
-            numScore: 0,
-            difficulty: 0,
-            numDifficulty: 0,
+            score,
+            numScore,
+            difficulty,
+            numDifficulty,
             heart,
             scoreSelf,
             difficultySelf,
@@ -61,29 +74,6 @@ export const accumProblems = (
             emojisSelf,
         };
         accumProblems.push(newProblem);
-    });
-    ratings?.forEach((rating) => {
-        const problem = accumProblems.find(
-            (problem) => problem.id === rating.problemId
-        );
-        let count = 0;
-        if (problem) {
-            problem.score += rating.score;
-            problem.numScore += 1;
-            problem.difficulty += rating.difficulty;
-            problem.numDifficulty += 1;
-            count += 1;
-        }
-    });
-    // accumProblems.forEach((problem) => {
-    userRatings?.forEach((rating) => {
-        const problem = accumProblems.find(
-            (problem) => problem.id === rating.problemId
-        );
-        if (problem) {
-            problem.scoreSelf = rating.score;
-            problem.difficultySelf = rating.difficulty;
-        }
     });
 
     return accumProblems;

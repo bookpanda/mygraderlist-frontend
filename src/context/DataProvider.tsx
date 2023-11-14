@@ -3,7 +3,6 @@
 import { PropsWithChildren, useEffect, useState } from 'react';
 import { DataContext } from './DataContext';
 import { Problem } from '@/types/problem';
-import problemsData from '@pubic/problems.json';
 import { useToast } from '@/components/ui/use-toast';
 import { calculateRating } from '@/utils/calculateRating';
 import { getAllProblems } from '@/api/problem';
@@ -32,8 +31,6 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
             const resUserEmojis = await getUserEmojis();
             const resUserLikes = await getUserLikes();
 
-            console.log(resProblems);
-            console.log(resCourses);
             const problemsData = accumProblems(
                 resProblems,
                 resRatings,
@@ -49,9 +46,6 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
             if (resCourses) setCurrentCourse(resCourses[1]);
         }
         fetchData();
-
-        // problemsData.sort((a, b) => b.order - a.order);
-        // setProblems(problemsData);
     }, []);
 
     useEffect(() => {

@@ -26,7 +26,6 @@ export const Footer = () => {
                     bg: color.rgba,
                     isDark: color.isDark,
                 });
-                console.log(color);
             })
             .catch((e) => {
                 console.log(e);
