@@ -7,6 +7,9 @@ import problemsData from '@pubic/problems.json';
 import coursesData from '@pubic/courses.json';
 import { useToast } from '@/components/ui/use-toast';
 import { calculateRating } from '@/utils/calculateRating';
+import { getAllProblems } from '@/api/problem';
+import { getAllCourses } from '@/api/course';
+import { apiClient } from '@/api/axios';
 
 export const DataContextProvider = ({ children }: PropsWithChildren) => {
     const { toast } = useToast();
@@ -16,10 +19,19 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
     const [currentCourse, setCurrentCourse] = useState<Course | null>(null);
 
     useEffect(() => {
+        async function fetchData() {
+            const resCourses = await getAllCourses();
+            const resProblems = await getAllProblems();
+            console.log(resProblems);
+            console.log(resCourses);
+            // setProblems(problemsData);
+            setCourses(resCourses);
+            if (resCourses) setCurrentCourse(resCourses[1]);
+        }
+        fetchData();
+
         problemsData.sort((a, b) => b.id - a.id);
         setProblems(problemsData);
-        setCourses(coursesData);
-        setCurrentCourse(coursesData[1]);
     }, []);
 
     useEffect(() => {
