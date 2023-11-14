@@ -2,14 +2,18 @@
 
 import { PropsWithChildren, useEffect, useState } from 'react';
 import { DataContext } from './DataContext';
-import { Course, Problem } from '@/types/problem';
+import { Problem } from '@/types/problem';
 import problemsData from '@pubic/problems.json';
-import coursesData from '@pubic/courses.json';
 import { useToast } from '@/components/ui/use-toast';
 import { calculateRating } from '@/utils/calculateRating';
 import { getAllProblems } from '@/api/problem';
 import { getAllCourses } from '@/api/course';
-import { apiClient } from '@/api/axios';
+import { getUserLikes } from '@/api/like';
+import { getAllRatings, getUserRatings } from '@/api/rating';
+import { getAllEmojis, getUserEmojis } from '@/api/emoji';
+import { Course } from '@/types/course';
+import { sortCourses } from '@/utils/sortCourses';
+import { accumProblems } from '@/utils/accumProblems';
 
 export const DataContextProvider = ({ children }: PropsWithChildren) => {
     const { toast } = useToast();
@@ -22,16 +26,32 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
         async function fetchData() {
             const resCourses = await getAllCourses();
             const resProblems = await getAllProblems();
+            const resRatings = await getAllRatings();
+            const resUserRatings = await getUserRatings();
+            const resEmojis = await getAllEmojis();
+            const resUserEmojis = await getUserEmojis();
+            const resUserLikes = await getUserLikes();
+
             console.log(resProblems);
             console.log(resCourses);
-            // setProblems(problemsData);
+            const problemsData = accumProblems(
+                resProblems,
+                resRatings,
+                resUserRatings,
+                resEmojis,
+                resUserEmojis,
+                resUserLikes
+            );
+            problemsData.sort((a, b) => b.order - a.order);
+            setProblems(problemsData);
+            sortCourses(resCourses);
             setCourses(resCourses);
             if (resCourses) setCurrentCourse(resCourses[1]);
         }
         fetchData();
 
-        problemsData.sort((a, b) => b.id - a.id);
-        setProblems(problemsData);
+        // problemsData.sort((a, b) => b.order - a.order);
+        // setProblems(problemsData);
     }, []);
 
     useEffect(() => {
@@ -41,7 +61,7 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
             );
     }, [problems, currentProblem?.id]);
 
-    const like = (id: number) => {
+    const like = (id: string) => {
         if (!currentProblem || !problems) return;
         const newProblems = problems.map((p) => {
             if (p.id === id) {
@@ -56,7 +76,7 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
         });
     };
 
-    const unlike = (id: number) => {
+    const unlike = (id: string) => {
         if (!currentProblem || !problems) return;
         const newProblems = problems.map((p) => {
             if (p.id === id) {
@@ -71,7 +91,7 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
         });
     };
 
-    const addEmoji = (id: number, emoji: string) => {
+    const addEmoji = (id: string, emoji: string) => {
         if (!currentProblem || !problems) return;
         if (currentProblem.emojisSelf.includes(emoji)) return;
         if (currentProblem.emojis.length >= 10) return;
@@ -108,7 +128,7 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
         setProblems(() => newProblems);
     };
 
-    const removeEmoji = (id: number, emoji: string) => {
+    const removeEmoji = (id: string, emoji: string) => {
         if (!currentProblem || !problems) return;
         const currentCount =
             currentProblem.emojis.find((e) => e.emoji === emoji)?.count ?? 0;
@@ -135,7 +155,7 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
         setProblems(() => newProblems);
     };
 
-    const submitRating = (id: number, score: number, difficulty: number) => {
+    const submitRating = (id: string, score: number, difficulty: number) => {
         if (!currentProblem || !problems) return;
         const newProblems = problems.map((p) => {
             if (p.id === id) {

@@ -133,7 +133,7 @@ export function DataTable<TData, TValue>({
                                     {row.getVisibleCells().map((cell, idx) => {
                                         const id = cell.id.split('_')[1];
                                         let className = '';
-                                        if (id === 'id') {
+                                        if (id === 'order') {
                                             className = clsx(
                                                 'w-1',
                                                 data.code ===

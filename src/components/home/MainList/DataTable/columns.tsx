@@ -8,7 +8,7 @@ import { ColHeader } from './ColHeader';
 
 export const columns: ColumnDef<Problem>[] = [
     {
-        accessorKey: 'id',
+        accessorKey: 'order',
         header: ({ column }) => (
             <ColHeader column={column} className="w-12">
                 <p className="mx-3 font-light text-gray-text">#</p>
