@@ -5,7 +5,6 @@ import {
     useCallback,
     useEffect,
     useMemo,
-    useRef,
     useState,
 } from 'react';
 import { AuthContext } from './AuthContext';
@@ -16,7 +15,7 @@ export const AuthContextProvider = ({ children }: PropsWithChildren) => {
     const searchParams = useSearchParams();
     const router = useRouter();
     const [isAuth, setIsAuth] = useState(false);
-    const isFetching = useRef(false);
+    // const isFetching = useRef(false);
 
     // const auth = useCallback(async () => {
     //     if (isFetching.current) {
