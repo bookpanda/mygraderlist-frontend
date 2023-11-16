@@ -29,7 +29,6 @@ apiClient.interceptors.response.use(
         // Handle if token is not yet expired but invalid
         if (err.response && err.response.status === 401) {
             localStorage.clear();
-            window.location.href = '/';
         }
         return Promise.reject(err);
     }

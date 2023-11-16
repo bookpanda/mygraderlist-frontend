@@ -13,6 +13,8 @@ import { getAllEmojis, getUserEmojis } from '@/api/emoji';
 import { Course } from '@/types/course';
 import { sortCourses } from '@/utils/sortCourses';
 import { accumProblems } from '@/utils/accumProblems';
+import problemsData from '@public/problems.json';
+import coursesData from '@public/courses.json';
 
 export const DataContextProvider = ({ children }: PropsWithChildren) => {
     const { toast } = useToast();
@@ -46,6 +48,9 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
             if (resCourses) setCurrentCourse(resCourses[1]);
         }
         fetchData();
+        setProblems(problemsData);
+        setCourses(coursesData);
+        setCurrentCourse(coursesData[1]);
     }, []);
 
     useEffect(() => {
