@@ -1,4 +1,4 @@
-import { ICredential } from '@/types/auth';
+import { ICredential, IGoogleLoginUrl } from '@/types/auth';
 import axios, { AxiosError, AxiosResponse } from 'axios';
 
 const authClient = axios.create({
@@ -35,13 +35,13 @@ export const getAccessToken = async () => {
         return null;
     }
 
-    const { accessToken, refreshToken, expiresOn } = JSON.parse(
+    const { accessToken, refreshToken, expiresIn } = JSON.parse(
         token
     ) as ICredential;
 
     // Renew access token if expired
     const now = new Date();
-    const expiry = new Date(expiresOn);
+    const expiry = new Date(expiresIn);
     if (now > expiry) {
         const newAccessToken = await renewAccessToken(refreshToken);
         if (!newAccessToken) {
@@ -52,25 +52,38 @@ export const getAccessToken = async () => {
     return accessToken;
 };
 
-export const exchangeGoogleCodeForToken = async (
-    code: string
-): Promise<ICredential | number | null> => {
+export const getGoogleLoginUrl = async (): Promise<IGoogleLoginUrl> => {
     let res: AxiosResponse;
     try {
-        res = await authClient.post<ICredential>(
-            `/auth/google?code=${code}`,
-            {}
-        );
+        res = await authClient.post<ICredential>('/auth/googleUrl', {});
     } catch (err) {
         const error = err as AxiosError;
         throw error;
     }
 
-    const expiresOn = new Date();
-    expiresOn.setSeconds(expiresOn.getSeconds() + res.data.expires_in);
     return {
-        accessToken: res.data.access_token,
-        refreshToken: res.data.refresh_token,
-        expiresOn,
+        url: res.data,
+    };
+};
+
+export const exchangeGoogleCodeForToken = async (
+    code: string
+): Promise<ICredential | number | null> => {
+    let res: AxiosResponse;
+    try {
+        res = await authClient.post<ICredential>(`/auth/verifyGoogle`, {
+            code,
+        });
+    } catch (err) {
+        const error = err as AxiosError;
+        throw error;
+    }
+
+    const expiresIn = new Date();
+    expiresIn.setSeconds(expiresIn.getSeconds() + res.data.expiresIn);
+    return {
+        accessToken: res.data.accessToken,
+        refreshToken: res.data.refreshToken,
+        expiresIn,
     };
 };

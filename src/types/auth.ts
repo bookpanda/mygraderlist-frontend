@@ -1,5 +1,9 @@
 export interface ICredential {
     accessToken: string;
     refreshToken: string;
-    expiresOn: Date;
+    expiresIn: Date;
+}
+
+export interface IGoogleLoginUrl {
+    url: string;
 }
