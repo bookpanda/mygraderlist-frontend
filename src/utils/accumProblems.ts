@@ -19,8 +19,6 @@ export const accumProblems = (
                 : likes?.find((like) => like.problemId === problem.id)
                 ? 1
                 : 0;
-        // if (heart)
-        console.log('problem ', problem.name, 'have heart ');
 
         const _scoreSelf =
             userRatings?.length === 0
