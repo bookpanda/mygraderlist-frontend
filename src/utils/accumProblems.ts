@@ -13,23 +13,33 @@ export const accumProblems = (
 ): Problem[] => {
     const accumProblems: Problem[] = [];
     problems?.forEach((problem) => {
-        const heart = likes?.find((like) => like.problemId === problem.id)
-            ? 1
-            : 0;
+        const heart =
+            likes?.length === 0
+                ? 0
+                : likes?.find((like) => like.problemId === problem.id)
+                ? 1
+                : 0;
+        // if (heart)
+        console.log('problem ', problem.name, 'have heart ');
 
-        const _scoreSelf = userRatings?.find(
-            (rating) => rating.problemId === problem.id
-        )?.score;
+        const _scoreSelf =
+            userRatings?.length === 0
+                ? 0
+                : userRatings?.find((rating) => rating.problemId === problem.id)
+                      ?.score;
         const scoreSelf = _scoreSelf ? _scoreSelf : 0;
 
-        const _difficultySelf = userRatings?.find(
-            (rating) => rating.problemId === problem.id
-        )?.difficulty;
+        const _difficultySelf =
+            userRatings?.length === 0
+                ? 0
+                : userRatings?.find((rating) => rating.problemId === problem.id)
+                      ?.difficulty;
         const difficultySelf = _difficultySelf ? _difficultySelf : 0;
 
-        const _emojis = emojis?.filter(
-            (emoji) => emoji.problemId === problem.id
-        );
+        const _emojis =
+            emojis?.length === 0
+                ? []
+                : emojis?.filter((emoji) => emoji.problemId === problem.id);
         const mp: Map<string, number> = new Map();
         _emojis?.forEach((emoji) => {
             if (mp.has(emoji.emoji)) {
@@ -43,9 +53,10 @@ export const accumProblems = (
             count,
         }));
 
-        const _emojisSelf = userEmojis?.filter(
-            (emoji) => emoji.problemId === problem.id
-        );
+        const _emojisSelf =
+            userEmojis?.length === 0
+                ? []
+                : userEmojis?.filter((emoji) => emoji.problemId === problem.id);
         const emojisSelf = _emojisSelf?.map((emoji) => emoji.emoji) ?? [];
 
         const _ratings = ratings?.filter(
