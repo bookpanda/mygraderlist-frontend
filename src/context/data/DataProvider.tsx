@@ -7,14 +7,15 @@ import { useToast } from '@/components/ui/use-toast';
 import { calculateRating } from '@/utils/calculateRating';
 import { getAllProblems } from '@/api/problem';
 import { getAllCourses } from '@/api/course';
-import { getUserLikes, unlikeProblem } from '@/api/like';
+import { getUserLikes } from '@/api/like';
 import { getAllRatings, getUserRatings } from '@/api/rating';
-import { getAllEmojis, getUserEmojis } from '@/api/emoji';
+import { deleteEmoji, getAllEmojis, getUserEmojis } from '@/api/emoji';
 import { Course } from '@/types/course';
 import { sortCourses } from '@/utils/sortCourses';
 import { accumProblems } from '@/utils/accumProblems';
 import { useAuthContext } from '../AuthContext';
-import { handleLike, handleUnlike } from './like';
+import { handleCreateLike, handleDeleteLike } from './like';
+import { handleCreateEmoji, handleDeleteEmoji } from './emoji';
 
 export const DataContextProvider = ({ children }: PropsWithChildren) => {
     const { toast } = useToast();
@@ -80,7 +81,7 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
             return;
         }
 
-        const newProblems = await handleLike(problemId, user, problems);
+        const newProblems = await handleCreateLike(problemId, user, problems);
         setProblems(newProblems);
         toast({
             title: 'Added to favourites',
@@ -95,7 +96,7 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
             return;
         }
 
-        const newProblems = await handleUnlike(problemId, problems);
+        const newProblems = await handleDeleteLike(problemId, problems);
         setProblems(newProblems);
         toast({
             title: 'Removed from favourites',
@@ -103,67 +104,38 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
         });
     };
 
-    const addEmoji = (id: string, emoji: string) => {
+    const addEmoji = async (problemId: string, emoji: string) => {
         if (!currentProblem || !problems) return;
         if (currentProblem.emojisSelf.find((eS) => eS.emoji === emoji)) return;
         if (currentProblem.emojis.length >= 10) return;
-        const currentCount =
-            currentProblem.emojis.find((e) => e.emoji === emoji)?.count ?? 0;
-        let newEmojis = currentProblem.emojis.map((e) => {
-            if (e.emoji === emoji) {
-                return {
-                    emoji,
-                    count: currentCount + 1,
-                };
-            }
-            return e;
-        });
-        if (currentCount === 0) {
-            newEmojis = [
-                ...newEmojis,
-                {
-                    emoji,
-                    count: 1,
-                },
-            ];
+        if (!user) {
+            login();
+            return;
         }
-        const newProblems = problems.map((p) => {
-            if (p.id === id) {
-                return {
-                    ...p,
-                    emojis: newEmojis.filter((e) => e.count > 0),
-                    emojisSelf: [...p.emojisSelf, { emoji, id }], //i change id for emoji id
-                };
-            }
-            return p;
-        });
+
+        const newProblems = await handleCreateEmoji(
+            emoji,
+            problemId,
+            user,
+            problems,
+            currentProblem
+        );
         setProblems(() => newProblems);
     };
 
-    const removeEmoji = (id: string, emoji: string) => {
+    const removeEmoji = async (problemId: string, emoji: string) => {
         if (!currentProblem || !problems) return;
-        const currentCount =
-            currentProblem.emojis.find((e) => e.emoji === emoji)?.count ?? 0;
-        if (currentCount === 0) return;
-        const newEmojis = currentProblem.emojis.map((e) => {
-            if (e.emoji === emoji) {
-                return {
-                    emoji,
-                    count: currentCount - 1,
-                };
-            }
-            return e;
-        });
-        const newProblems = problems.map((p) => {
-            if (p.id === id) {
-                return {
-                    ...p,
-                    emojis: newEmojis.filter((e) => e.count > 0),
-                    emojisSelf: p.emojisSelf.filter((e) => e.emoji !== emoji),
-                };
-            }
-            return p;
-        });
+        if (!user) {
+            login();
+            return;
+        }
+
+        const newProblems = await handleDeleteEmoji(
+            emoji,
+            problemId,
+            problems,
+            currentProblem
+        );
         setProblems(() => newProblems);
     };
 
