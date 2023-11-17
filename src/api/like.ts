@@ -14,12 +14,12 @@ export const getUserLikes = async (): Promise<ILikes | null> => {
     return res.data;
 };
 
-export const likeProblem = async (like: LikeDto): Promise<ILike> => {
+export const createLike = async (like: LikeDto): Promise<ILike> => {
     let res: AxiosResponse;
     try {
         res = await apiClient.post<ILikes>('/like/', {
-            problem_id: like.ProblemID,
-            user_id: like.UserID,
+            problem_id: like.problemId,
+            user_id: like.userId,
         });
     } catch (err: any) {
         const message = err.response?.data.message;
@@ -36,7 +36,7 @@ export const likeProblem = async (like: LikeDto): Promise<ILike> => {
     return res.data;
 };
 
-export const unlikeProblem = async (id: string): Promise<boolean> => {
+export const deleteLike = async (id: string): Promise<boolean> => {
     let res: AxiosResponse;
     try {
         res = await apiClient.delete<boolean>(`/like/${id}`);

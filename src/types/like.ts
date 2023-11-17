@@ -7,6 +7,6 @@ export type ILike = {
 export type ILikes = ILike[];
 
 export type LikeDto = {
-    ProblemID: string;
-    UserID: string;
+    problemId: string;
+    userId: string;
 };

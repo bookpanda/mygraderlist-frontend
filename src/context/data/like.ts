@@ -1,15 +1,15 @@
-import { likeProblem, unlikeProblem } from '@/api/like';
+import { createLike, deleteLike } from '@/api/like';
 import { Problem } from '@/types/problem';
 import { IUser } from '@/types/user';
 
-export const handleLike = async (
+export const handleCreateLike = async (
     problemId: string,
     user: IUser,
     problems: Problem[]
 ) => {
-    const createdLike = await likeProblem({
-        ProblemID: problemId,
-        UserID: user.id,
+    const createdLike = await createLike({
+        problemId: problemId,
+        userId: user.id,
     });
     const newProblems = problems.map((p) => {
         if (p.id === problemId) {
@@ -20,11 +20,14 @@ export const handleLike = async (
     return newProblems;
 };
 
-export const handleUnlike = async (problemId: string, problems: Problem[]) => {
+export const handleDeleteLike = async (
+    problemId: string,
+    problems: Problem[]
+) => {
     const likeId = problems.find((p) => p.id === problemId)?.heart;
     if (!likeId) return problems;
 
-    await unlikeProblem(likeId);
+    await deleteLike(likeId);
     const newProblems = problems.map((p) => {
         if (p.id === problemId) {
             return { ...p, heart: undefined };
