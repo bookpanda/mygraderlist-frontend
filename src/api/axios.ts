@@ -28,7 +28,7 @@ apiClient.interceptors.response.use(
     (err: AxiosError) => {
         // Handle if token is not yet expired but invalid
         if (err.response && err.response.status === 401) {
-            localStorage.clear();
+            // localStorage.clear();
         }
         return Promise.reject(err);
     }
