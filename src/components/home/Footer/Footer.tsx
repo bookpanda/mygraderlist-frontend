@@ -1,7 +1,7 @@
 'use client';
 
 import { Text } from '@/components/custom';
-import { useDataContext } from '@/context/DataContext';
+import { useDataContext } from '@/context/data/DataContext';
 import { FooterImage } from './FooterImage';
 import { LikeButton } from '../LikeButton/LikeButton';
 import { useOpenContext } from '@/context/OpenContext';
@@ -26,7 +26,6 @@ export const Footer = () => {
                     bg: color.rgba,
                     isDark: color.isDark,
                 });
-                console.log(color);
             })
             .catch((e) => {
                 console.log(e);

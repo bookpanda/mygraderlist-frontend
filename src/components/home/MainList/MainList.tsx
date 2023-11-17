@@ -1,6 +1,6 @@
 'use client';
 
-import { useDataContext } from '@/context/DataContext';
+import { useDataContext } from '@/context/data/DataContext';
 import { DataTable } from './DataTable/DataTable';
 import { columns } from './DataTable/columns';
 import { Header } from './Header/Header';
@@ -11,9 +11,11 @@ export const MainList = () => {
     const { problems, currentCourse } = useDataContext();
     const { isProblemModalOpen } = useOpenContext();
     const currentProblems =
-        currentCourse?.course === 'liked'
-            ? problems?.filter((p) => p.heart === 1)
-            : problems?.filter((p) => p.course === currentCourse?.course);
+        currentCourse?.courseCode === 'liked'
+            ? problems?.filter((p) => p.heart)
+            : problems?.filter(
+                  (p) => p.courseCode === currentCourse?.courseCode
+              );
 
     const c = currentCourse;
     return (

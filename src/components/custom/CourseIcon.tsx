@@ -1,5 +1,5 @@
 import { RoundDiv } from '@/components/custom';
-import { Course } from '@/types/problem';
+import { Course } from '@/types/course';
 import clsx from 'clsx';
 import Image from 'next/image';
 import { FC } from 'react';
@@ -21,7 +21,9 @@ export const CourseIcon: FC<CourseIconProps> = ({
         <RoundDiv className={clsx('p-0', className)}>
             {course && (
                 <Image
-                    src={require(`@images/courses/${course.course}/icon.webp`)}
+                    src={require(
+                        `@images/courses/${course.courseCode}/icon.webp`
+                    )}
                     alt="data-struct"
                     width={width ?? 60}
                     height={height ?? 60}

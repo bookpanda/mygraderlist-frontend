@@ -4,15 +4,15 @@ import clsx from 'clsx';
 import { FC } from 'react';
 import { Emoji } from './Emoji';
 import { AddEmoji } from './AddEmoji';
-import { useDataContext } from '@/context/DataContext';
+import { useDataContext } from '@/context/data/DataContext';
 
 interface EmojiRowProps {
-    id: number;
+    id: string;
     emojis: {
         emoji: string;
         count: number;
     }[];
-    emojisSelf: string[];
+    emojisSelf: { emoji: string; id: string }[];
     className?: string;
 }
 
@@ -32,7 +32,9 @@ export const EmojiRow: FC<EmojiRowProps> = ({
             )}
         >
             {emojis.map((e) => {
-                const hasSelf = emojisSelf.includes(e.emoji);
+                const hasSelf = emojisSelf.find((eS) => eS.emoji === e.emoji)
+                    ? true
+                    : false;
                 return (
                     <Emoji key={e.emoji} id={id} emojis={e} hasSelf={hasSelf} />
                 );

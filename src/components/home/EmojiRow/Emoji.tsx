@@ -1,12 +1,12 @@
 'use client';
 
 import { Text } from '@/components/custom';
-import { useDataContext } from '@/context/DataContext';
+import { useDataContext } from '@/context/data/DataContext';
 import clsx from 'clsx';
 import { FC } from 'react';
 
 interface EmojiProps {
-    id: number;
+    id: string;
     emojis: {
         emoji: string;
         count: number;

@@ -1,4 +1,5 @@
-import { Course, Problem } from '@/types/problem';
+import { Course } from '@/types/course';
+import { Problem } from '@/types/problem';
 import { Dispatch, SetStateAction, createContext, useContext } from 'react';
 
 export interface DataContextProps {
@@ -8,11 +9,13 @@ export interface DataContextProps {
     courses: Course[] | null;
     currentCourse: Course | null;
     setCurrentCourse: Dispatch<SetStateAction<Course | null>>;
-    like: (id: number) => void;
-    unlike: (id: number) => void;
-    addEmoji: (id: number, emoji: string) => void;
-    removeEmoji: (id: number, emoji: string) => void;
-    submitRating: (id: number, score: number, difficulty: number) => void;
+    like: (id: string) => void;
+    unlike: (id: string) => void;
+    addEmoji: (id: string, emoji: string) => void;
+    removeEmoji: (id: string, emoji: string) => void;
+    submitRating: (id: string, score: number, difficulty: number) => void;
+    fetchData: () => void;
+    clearAuthData: () => void;
 }
 
 export const DataContext = createContext<DataContextProps>({
@@ -27,6 +30,8 @@ export const DataContext = createContext<DataContextProps>({
     addEmoji: () => {},
     removeEmoji: () => {},
     submitRating: () => {},
+    fetchData: () => {},
+    clearAuthData: () => {},
 });
 
 export const useDataContext = () => useContext(DataContext);

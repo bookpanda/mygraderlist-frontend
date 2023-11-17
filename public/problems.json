@@ -1,7 +1,7 @@
 [
     {
-        "id": 1,
-        "course": "2110211",
+        "id": "1",
+        "courseCode": "2110211",
         "group": "ex",
         "code": "ex00e1",
         "name": "Time After",
@@ -22,11 +22,12 @@
                 "count": 3
             }
         ],
-        "emojisSelf": ["🛌", "💀"]
+        "emojisSelf": ["🛌", "💀"],
+        "order": 1
     },
     {
-        "id": 2,
-        "course": "2110211",
+        "id": "2",
+        "courseCode": "2110211",
         "group": "ex",
         "code": "ex00e2",
         "name": "Min Max",
@@ -47,11 +48,12 @@
                 "count": 3
             }
         ],
-        "emojisSelf": ["🛌", "💀"]
+        "emojisSelf": ["🛌", "💀"],
+        "order": 1
     },
     {
-        "id": 3,
-        "course": "2110211",
+        "id": "3",
+        "courseCode": "2110211",
         "group": "ds",
         "code": "ds00_reverse",
         "name": "Reverse Vector 1",
@@ -72,11 +74,12 @@
                 "count": 3
             }
         ],
-        "emojisSelf": ["🛌"]
+        "emojisSelf": ["🛌"],
+        "order": 1
     },
     {
-        "id": 4,
-        "course": "2110211",
+        "id": "4",
+        "courseCode": "2110211",
         "group": "d57",
         "code": "d57_q0_remove_even",
         "name": "Remove Even",
@@ -97,11 +100,12 @@
                 "count": 3
             }
         ],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 5,
-        "course": "2110211",
+        "id": "5",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q1c_vector_op",
         "name": "Vector Operation",
@@ -113,11 +117,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 6,
-        "course": "2110211",
+        "id": "6",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q1a_punch",
         "name": "Vector Punch",
@@ -129,11 +134,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 7,
-        "course": "2110211",
+        "id": "7",
+        "courseCode": "2110211",
         "group": "ds",
         "code": "ds01_pair_sum",
         "name": "Pair Sum",
@@ -145,11 +151,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 8,
-        "course": "2110211",
+        "id": "8",
+        "courseCode": "2110211",
         "group": "ds",
         "code": "ds00_reverse2",
         "name": "Reverse Vector 2",
@@ -161,11 +168,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 9,
-        "course": "2110211",
+        "id": "9",
+        "courseCode": "2110211",
         "group": "d59",
         "code": "d59_q0_vector_swap",
         "name": "Vector Swap",
@@ -177,11 +185,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 10,
-        "course": "2110211",
+        "id": "10",
+        "courseCode": "2110211",
         "group": "ds",
         "code": "ds02_intersection",
         "name": "Intersection",
@@ -193,11 +202,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 11,
-        "course": "2110211",
+        "id": "11",
+        "courseCode": "2110211",
         "group": "ds",
         "code": "ds01_most",
         "name": "Most Frequent Word",
@@ -209,11 +219,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 12,
-        "course": "2110211",
+        "id": "12",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q1c_vector_intersection",
         "name": "Vector Intersection",
@@ -225,11 +236,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 13,
-        "course": "2110211",
+        "id": "13",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q1b_grandfather",
         "name": "Grandfather",
@@ -241,11 +253,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 14,
-        "course": "2110211",
+        "id": "14",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q1a_vote",
         "name": "Vote",
@@ -257,11 +270,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 15,
-        "course": "2110211",
+        "id": "15",
+        "courseCode": "2110211",
         "group": "d58",
         "code": "d58_q0_rating",
         "name": "CUCAS Rating",
@@ -273,11 +287,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 16,
-        "course": "2110211",
+        "id": "16",
+        "courseCode": "2110211",
         "group": "ex",
         "code": "ex00e3",
         "name": "Check Mapping",
@@ -289,11 +304,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 17,
-        "course": "2110211",
+        "id": "17",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q1b_interval_count",
         "name": "Interval Count",
@@ -305,11 +321,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 18,
-        "course": "2110211",
+        "id": "18",
+        "courseCode": "2110211",
         "group": "d57",
         "code": "d57_q0_histogram",
         "name": "Histogram",
@@ -321,11 +338,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 19,
-        "course": "2110211",
+        "id": "19",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_qx_inside_interval",
         "name": "Inside Interval",
@@ -337,11 +355,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 20,
-        "course": "2110211",
+        "id": "20",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q1a_hiatus",
         "name": "Hiatus",
@@ -353,11 +372,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 21,
-        "course": "2110211",
+        "id": "21",
+        "courseCode": "2110211",
         "group": "d60",
         "code": "d60_q0_v2m",
         "name": "Vector to Map",
@@ -369,11 +389,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 22,
-        "course": "2110211",
+        "id": "22",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q1a_multiply",
         "name": "Member Multiply",
@@ -385,11 +406,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 23,
-        "course": "2110211",
+        "id": "23",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q1a_card_battle",
         "name": "Card Battle",
@@ -401,11 +423,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 24,
-        "course": "2110211",
+        "id": "24",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q1b_list_erase",
         "name": "Vector List Erase",
@@ -417,11 +440,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 25,
-        "course": "2110211",
+        "id": "25",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q1a_multi_insert",
         "name": "Multi Insert",
@@ -433,11 +457,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 26,
-        "course": "2110211",
+        "id": "26",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q1b_password",
         "name": "Password",
@@ -449,11 +474,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 27,
-        "course": "2110211",
+        "id": "27",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q1b_moving_median",
         "name": "Moving Median",
@@ -465,11 +491,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 28,
-        "course": "2110211",
+        "id": "28",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q1a_second_min",
         "name": "Second Min",
@@ -481,11 +508,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 29,
-        "course": "2110211",
+        "id": "29",
+        "courseCode": "2110211",
         "group": "d59",
         "code": "d59_q0_stack_concat",
         "name": "Stack Concatenate",
@@ -497,11 +525,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 30,
-        "course": "2110211",
+        "id": "30",
+        "courseCode": "2110211",
         "group": "d57",
         "code": "d57_q1_postfix",
         "name": "Evaluate Postfix",
@@ -513,11 +542,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 31,
-        "course": "2110211",
+        "id": "31",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q1a_delivery",
         "name": "Food Delivery",
@@ -529,11 +559,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 32,
-        "course": "2110211",
+        "id": "32",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q1b_queue_count",
         "name": "Queue Count",
@@ -545,11 +576,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 33,
-        "course": "2110211",
+        "id": "33",
+        "courseCode": "2110211",
         "group": "d60",
         "code": "d60_q0_zipcode",
         "name": "Zipcode",
@@ -561,11 +593,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 34,
-        "course": "2110211",
+        "id": "34",
+        "courseCode": "2110211",
         "group": "ex",
         "code": "ex00m2",
         "name": "Auction",
@@ -577,11 +610,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 35,
-        "course": "2110211",
+        "id": "35",
+        "courseCode": "2110211",
         "group": "ex",
         "code": "ex00m1",
         "name": "Restaurant",
@@ -593,11 +627,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 36,
-        "course": "2110211",
+        "id": "36",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q1c_min_of_max",
         "name": "Min of Max",
@@ -609,11 +644,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 37,
-        "course": "2110211",
+        "id": "37",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q1c_ice_cream",
         "name": "Ice Cream",
@@ -625,11 +661,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 38,
-        "course": "2110211",
+        "id": "38",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q1b_cross_2d",
         "name": "3: Cross 2D",
@@ -641,11 +678,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 39,
-        "course": "2110211",
+        "id": "39",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q1b_sparse_vector",
         "name": "4: Sparse Vector",
@@ -657,11 +695,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 40,
-        "course": "2110211",
+        "id": "40",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q2a_pair_gte",
         "name": "Pair GTE",
@@ -673,11 +712,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 41,
-        "course": "2110211",
+        "id": "41",
+        "courseCode": "2110211",
         "group": "d66",
         "code": "d66_q1a_topsale",
         "name": "Top Sale",
@@ -689,11 +729,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 42,
-        "course": "2110211",
+        "id": "42",
+        "courseCode": "2110211",
         "group": "d66",
         "code": "d66_q1a_booking",
         "name": "Booking",
@@ -705,11 +746,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 43,
-        "course": "2110211",
+        "id": "43",
+        "courseCode": "2110211",
         "group": "ds",
         "code": "ds02_is_reverse",
         "name": "Is Reverse?",
@@ -721,11 +763,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 44,
-        "course": "2110211",
+        "id": "44",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q2a_no_move",
         "name": "2: Vector No Move",
@@ -737,11 +780,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 45,
-        "course": "2110211",
+        "id": "45",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q2a_vector_mirror",
         "name": "Vector Mirror",
@@ -753,11 +797,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 46,
-        "course": "2110211",
+        "id": "46",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q2c_wasted_space",
         "name": "Wasted Space",
@@ -769,11 +814,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 47,
-        "course": "2110211",
+        "id": "47",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q2a_iterator_check",
         "name": "Iterator Check",
@@ -785,11 +831,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 48,
-        "course": "2110211",
+        "id": "48",
+        "courseCode": "2110211",
         "group": "d58",
         "code": "d58_q1_erase_many",
         "name": "Erase Many from Vector",
@@ -801,11 +848,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 49,
-        "course": "2110211",
+        "id": "49",
+        "courseCode": "2110211",
         "group": "d57",
         "code": "d57_q1_vequal",
         "name": "Vector Equality",
@@ -817,11 +865,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 50,
-        "course": "2110211",
+        "id": "50",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q2b_vector_compress",
         "name": "Vector Compress",
@@ -833,11 +882,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 51,
-        "course": "2110211",
+        "id": "51",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q2c_vector_swap",
         "name": "Swap Vector",
@@ -849,11 +899,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 52,
-        "course": "2110211",
+        "id": "52",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q2b_vector_insert_many",
         "name": "Insert Many",
@@ -865,11 +916,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 53,
-        "course": "2110211",
+        "id": "53",
+        "courseCode": "2110211",
         "group": "d61",
         "code": "d61_q1_ordered_set",
         "name": "Ordered Set",
@@ -881,11 +933,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 54,
-        "course": "2110211",
+        "id": "54",
+        "courseCode": "2110211",
         "group": "d60",
         "code": "d60_q1_v_uniq",
         "name": "Vector Unique",
@@ -897,11 +950,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 55,
-        "course": "2110211",
+        "id": "55",
+        "courseCode": "2110211",
         "group": "d59",
         "code": "d59_q1_range_insert",
         "name": "Range Insert",
@@ -913,11 +967,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 56,
-        "course": "2110211",
+        "id": "56",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q2c_vector_less",
         "name": "Vector less",
@@ -929,11 +984,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 57,
-        "course": "2110211",
+        "id": "57",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q2b_vector_rotate",
         "name": "Vector Rotate",
@@ -945,11 +1001,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 58,
-        "course": "2110211",
+        "id": "58",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q2a_vector_block_swap",
         "name": "Vector Block Swap",
@@ -961,11 +1018,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 59,
-        "course": "2110211",
+        "id": "59",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q2b_some_move",
         "name": "Vector Some Move",
@@ -977,11 +1035,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 60,
-        "course": "2110211",
+        "id": "60",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q2b_stack_reserve",
         "name": "Stack Reserve Compare",
@@ -993,11 +1052,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 61,
-        "course": "2110211",
+        "id": "61",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q2b_stack_deep_push",
         "name": "Stack Deep Push",
@@ -1009,11 +1069,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 62,
-        "course": "2110211",
+        "id": "62",
+        "courseCode": "2110211",
         "group": "d59",
         "code": "d59_q1_pop_many",
         "name": "Pop Many",
@@ -1025,11 +1086,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 63,
-        "course": "2110211",
+        "id": "63",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q2b_stack_distribute",
         "name": "Stack Distribute",
@@ -1041,11 +1103,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 64,
-        "course": "2110211",
+        "id": "64",
+        "courseCode": "2110211",
         "group": "d57",
         "code": "d57_q1_sbv2",
         "name": "Stack by Vector 2",
@@ -1057,11 +1120,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 65,
-        "course": "2110211",
+        "id": "65",
+        "courseCode": "2110211",
         "group": "d57",
         "code": "d57_q1_sbv",
         "name": "Stack by Vector",
@@ -1073,11 +1137,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 66,
-        "course": "2110211",
+        "id": "66",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q2a_mitosis",
         "name": "1: Stack Mitosis",
@@ -1089,11 +1154,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 67,
-        "course": "2110211",
+        "id": "67",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q2c_stack_move_insert",
         "name": "Move Insert Stack",
@@ -1105,11 +1171,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 68,
-        "course": "2110211",
+        "id": "68",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q2a_stack_from_set",
         "name": "Stack From Set",
@@ -1121,11 +1188,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 69,
-        "course": "2110211",
+        "id": "69",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q3a_queue_check",
         "name": "Queue Check",
@@ -1137,11 +1205,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 70,
-        "course": "2110211",
+        "id": "70",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q3b_queue_b2f",
         "name": "Queue Back to Front",
@@ -1153,11 +1222,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 71,
-        "course": "2110211",
+        "id": "71",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q3a_queue_m2b",
         "name": "Queue Move to Back",
@@ -1169,11 +1239,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 72,
-        "course": "2110211",
+        "id": "72",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q3b_queue_m2f",
         "name": "Queue Move to Front",
@@ -1185,11 +1256,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 73,
-        "course": "2110211",
+        "id": "73",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q2a_multi_count",
         "name": "Multi Count",
@@ -1201,11 +1273,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 74,
-        "course": "2110211",
+        "id": "74",
+        "courseCode": "2110211",
         "group": "d61",
         "code": "d61_q1_append",
         "name": "Append",
@@ -1217,11 +1290,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 75,
-        "course": "2110211",
+        "id": "75",
+        "courseCode": "2110211",
         "group": "d60",
         "code": "d60_q2_split_queue",
         "name": "Split Queue",
@@ -1233,11 +1307,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 76,
-        "course": "2110211",
+        "id": "76",
+        "courseCode": "2110211",
         "group": "d60",
         "code": "d60_q1_qat",
         "name": "Queue At",
@@ -1249,11 +1324,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 77,
-        "course": "2110211",
+        "id": "77",
+        "courseCode": "2110211",
         "group": "d59",
         "code": "d59_q2_queue_equality",
         "name": "Queue Equality",
@@ -1265,11 +1341,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 78,
-        "course": "2110211",
+        "id": "78",
+        "courseCode": "2110211",
         "group": "d58",
         "code": "d58_q1_to_vector",
         "name": "Queue to Vector",
@@ -1281,11 +1358,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 79,
-        "course": "2110211",
+        "id": "79",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q3b_queue_total_reverse",
         "name": "Queue Total Reverse",
@@ -1297,11 +1375,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 80,
-        "course": "2110211",
+        "id": "80",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q3a_queue_min",
         "name": "Queue Min Element",
@@ -1313,11 +1392,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 81,
-        "course": "2110211",
+        "id": "81",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q2b_split_stack",
         "name": "Split Stack",
@@ -1329,11 +1409,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 82,
-        "course": "2110211",
+        "id": "82",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q3b_queue_reverse",
         "name": "Queue Reverse",
@@ -1345,11 +1426,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 83,
-        "course": "2110263",
+        "id": "83",
+        "courseCode": "2110263",
         "group": "diglab",
         "code": "diglab_03_01",
         "name": "Digital: Simulation 03 - 01",
@@ -1361,11 +1443,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 84,
-        "course": "2110263",
+        "id": "84",
+        "courseCode": "2110263",
         "group": "diglab",
         "code": "diglab_01_01",
         "name": "Digital: Simulation 01 - 01",
@@ -1377,11 +1460,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 85,
-        "course": "2110211",
+        "id": "85",
+        "courseCode": "2110211",
         "group": "d66",
         "code": "d66_q2a_vector_range_erase",
         "name": "Vector Range Erase",
@@ -1393,11 +1477,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 86,
-        "course": "2110211",
+        "id": "86",
+        "courseCode": "2110211",
         "group": "d66",
         "code": "d66_q2a_stack_vertical_split",
         "name": "Stack Vertical Split",
@@ -1409,11 +1494,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 87,
-        "course": "2110211",
+        "id": "87",
+        "courseCode": "2110211",
         "group": "d66",
         "code": "d66_q1b_car_brake",
         "name": "Car Brake",
@@ -1425,11 +1511,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 88,
-        "course": "2110211",
+        "id": "88",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q3b_kheap_height",
         "name": "K-ary Heap Height",
@@ -1441,11 +1528,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 89,
-        "course": "2110211",
+        "id": "89",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q3a_heap_node_relation",
         "name": "Heap Node Relation",
@@ -1457,11 +1545,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 90,
-        "course": "2110211",
+        "id": "90",
+        "courseCode": "2110211",
         "group": "d60",
         "code": "d60_q2_heap_height",
         "name": "Heap Height",
@@ -1473,11 +1562,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 91,
-        "course": "2110211",
+        "id": "91",
+        "courseCode": "2110211",
         "group": "d57",
         "code": "d57_q2_kheap",
         "name": "K-Ary Heap",
@@ -1489,11 +1579,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 92,
-        "course": "2110211",
+        "id": "92",
+        "courseCode": "2110211",
         "group": "ds",
         "code": "ds03_heap_erase",
         "name": "Heap Erase",
@@ -1505,11 +1596,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 93,
-        "course": "2110211",
+        "id": "93",
+        "courseCode": "2110211",
         "group": "d62",
         "code": "d62_q3a_heap_descendant",
         "name": "Heap Descendant",
@@ -1521,11 +1613,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 94,
-        "course": "2110211",
+        "id": "94",
+        "courseCode": "2110211",
         "group": "d59",
         "code": "d59_q2_heap_find",
         "name": "Heap Find",
@@ -1537,11 +1630,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 95,
-        "course": "2110211",
+        "id": "95",
+        "courseCode": "2110211",
         "group": "d58",
         "code": "d58_q2_hequal",
         "name": "Heap Equality",
@@ -1553,11 +1647,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 96,
-        "course": "2110211",
+        "id": "96",
+        "courseCode": "2110211",
         "group": "ds",
         "code": "ds03_heap_order",
         "name": "Heap Ordering",
@@ -1569,11 +1664,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 97,
-        "course": "2110211",
+        "id": "97",
+        "courseCode": "2110211",
         "group": "d58",
         "code": "d58_q2_custom",
         "name": "Custom Order",
@@ -1585,11 +1681,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 98,
-        "course": "2110211",
+        "id": "98",
+        "courseCode": "2110211",
         "group": "d57",
         "code": "d57_q2_heap_order2",
         "name": "Heap Ordering 2",
@@ -1601,11 +1698,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 99,
-        "course": "2110211",
+        "id": "99",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q3a_heap_relation_2",
         "name": "Heap Node Relation 2",
@@ -1617,11 +1715,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 100,
-        "course": "2110211",
+        "id": "100",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q3b_heap_change",
         "name": "Heap Change Value",
@@ -1633,11 +1732,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 101,
-        "course": "2110211",
+        "id": "101",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q3a_rank_in_heap",
         "name": "Rank in Heap",
@@ -1649,11 +1749,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 102,
-        "course": "2110211",
+        "id": "102",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q3b_heap_check",
         "name": "Heap Check",
@@ -1665,11 +1766,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 103,
-        "course": "2110211",
+        "id": "103",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q3b_heap_level",
         "name": "Heap Level",
@@ -1681,11 +1783,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 104,
-        "course": "2110211",
+        "id": "104",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q3a_heap_kth",
         "name": "Heap K-th",
@@ -1697,11 +1800,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 105,
-        "course": "2110263",
+        "id": "105",
+        "courseCode": "2110263",
         "group": "diglab",
         "code": "diglab_07_05",
         "name": "Digital: Simulation 07 - 05",
@@ -1713,11 +1817,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 106,
-        "course": "2110263",
+        "id": "106",
+        "courseCode": "2110263",
         "group": "diglab",
         "code": "diglab_07_04",
         "name": "Digital: Simulation 07 - 04",
@@ -1729,11 +1834,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 107,
-        "course": "2110263",
+        "id": "107",
+        "courseCode": "2110263",
         "group": "diglab",
         "code": "diglab_07_03",
         "name": "Digital: Simulation 07 - 03",
@@ -1745,11 +1851,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 108,
-        "course": "2110263",
+        "id": "108",
+        "courseCode": "2110263",
         "group": "diglab",
         "code": "diglab_07_02",
         "name": "Digital: Simulation 07 - 02",
@@ -1761,11 +1868,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 109,
-        "course": "2110263",
+        "id": "109",
+        "courseCode": "2110263",
         "group": "diglab",
         "code": "diglab_07_01",
         "name": "Digital: Simulation 07 - 01",
@@ -1777,11 +1885,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 110,
-        "course": "2110211",
+        "id": "110",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q4a_list_reverse",
         "name": "List Reverse",
@@ -1793,11 +1902,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 111,
-        "course": "2110211",
+        "id": "111",
+        "courseCode": "2110211",
         "group": "d58",
         "code": "d58_q3_list_replace",
         "name": "List Replace",
@@ -1809,11 +1919,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 112,
-        "course": "2110211",
+        "id": "112",
+        "courseCode": "2110211",
         "group": "d57",
         "code": "d57_q3_zuma",
         "name": "Zuma",
@@ -1825,11 +1936,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 113,
-        "course": "2110211",
+        "id": "113",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q4a_list_merge",
         "name": "List Merge",
@@ -1841,11 +1953,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 114,
-        "course": "2110211",
+        "id": "114",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q4b_list_extract",
         "name": "List Extract",
@@ -1857,11 +1970,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 115,
-        "course": "2110211",
+        "id": "115",
+        "courseCode": "2110211",
         "group": "d61",
         "code": "d61_q2_splitlist",
         "name": "Split List",
@@ -1873,11 +1987,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 116,
-        "course": "2110211",
+        "id": "116",
+        "courseCode": "2110211",
         "group": "d59",
         "code": "d59_q3_list_split",
         "name": "List Split",
@@ -1889,11 +2004,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 117,
-        "course": "2110211",
+        "id": "117",
+        "courseCode": "2110211",
         "group": "ds",
         "code": "ds04_playlist",
         "name": "Playlist Management",
@@ -1905,11 +2021,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 118,
-        "course": "2110211",
+        "id": "118",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q4a_list_check",
         "name": "List check",
@@ -1921,11 +2038,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 119,
-        "course": "2110211",
+        "id": "119",
+        "courseCode": "2110211",
         "group": "d60",
         "code": "d60_q3_lremove_all",
         "name": "List Remove All",
@@ -1937,11 +2055,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 120,
-        "course": "2110211",
+        "id": "120",
+        "courseCode": "2110211",
         "group": "d57",
         "code": "d57_q3_shift",
         "name": "Shift",
@@ -1953,11 +2072,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 121,
-        "course": "2110211",
+        "id": "121",
+        "courseCode": "2110211",
         "group": "d57",
         "code": "d57_q1_sparse",
         "name": "Sparse Graph",
@@ -1969,11 +2089,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 122,
-        "course": "2110211",
+        "id": "122",
+        "courseCode": "2110211",
         "group": "d57",
         "code": "d57_q1_dense",
         "name": "Dense Graph",
@@ -1985,11 +2106,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 123,
-        "course": "2110263",
+        "id": "123",
+        "courseCode": "2110263",
         "group": "diglab",
         "code": "diglab_08_05",
         "name": "Digital: Simulation 08 - 05",
@@ -2001,11 +2123,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 124,
-        "course": "2110263",
+        "id": "124",
+        "courseCode": "2110263",
         "group": "diglab",
         "code": "diglab_08_04",
         "name": "Digital: Simulation 08 - 04",
@@ -2017,11 +2140,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 125,
-        "course": "2110263",
+        "id": "125",
+        "courseCode": "2110263",
         "group": "diglab",
         "code": "diglab_08_03",
         "name": "Digital: Simulation 08 - 03",
@@ -2033,11 +2157,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 126,
-        "course": "2110263",
+        "id": "126",
+        "courseCode": "2110263",
         "group": "diglab",
         "code": "diglab_08_02",
         "name": "Digital: Simulation 08 - 02",
@@ -2049,11 +2174,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 127,
-        "course": "2110263",
+        "id": "127",
+        "courseCode": "2110263",
         "group": "diglab",
         "code": "diglab_08_01",
         "name": "Digital: Simulation 08 - 01",
@@ -2065,11 +2191,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 128,
-        "course": "2110211",
+        "id": "128",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q4b_shallowest",
         "name": "Shallowest Leaf",
@@ -2081,11 +2208,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 129,
-        "course": "2110211",
+        "id": "129",
+        "courseCode": "2110211",
         "group": "d60",
         "code": "d60_q3_same_tree",
         "name": "ต้นไม้เหมือน",
@@ -2097,11 +2225,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 130,
-        "course": "2110211",
+        "id": "130",
+        "courseCode": "2110211",
         "group": "d63",
         "code": "d63_q4a_leaves_count",
         "name": "Leaves Count",
@@ -2113,11 +2242,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 131,
-        "course": "2110211",
+        "id": "131",
+        "courseCode": "2110211",
         "group": "d64",
         "code": "d64_q4a_subtree",
         "name": "Subtree Extract",
@@ -2129,11 +2259,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 132,
-        "course": "2110211",
+        "id": "132",
+        "courseCode": "2110211",
         "group": "d59",
         "code": "d59_q3_bst_split",
         "name": "BST Split",
@@ -2145,11 +2276,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 133,
-        "course": "2110211",
+        "id": "133",
+        "courseCode": "2110211",
         "group": "d58",
         "code": "d58_q3_unary",
         "name": "Count Unary",
@@ -2161,11 +2293,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 134,
-        "course": "2110211",
+        "id": "134",
+        "courseCode": "2110211",
         "group": "ds",
         "code": "ds04_best_bst",
         "name": "Optimal Binary Search Tree",
@@ -2177,11 +2310,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 135,
-        "course": "2110211",
+        "id": "135",
+        "courseCode": "2110211",
         "group": "d65",
         "code": "d65_q4a_bst_at_level",
         "name": "BST at level",
@@ -2193,11 +2327,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 136,
-        "course": "2110211",
+        "id": "136",
+        "courseCode": "2110211",
         "group": "d61",
         "code": "d61_q2_imbalance",
         "name": "Imbalance",
@@ -2209,11 +2344,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 137,
-        "course": "2110211",
+        "id": "137",
+        "courseCode": "2110211",
         "group": "d66",
         "code": "d66_q1c_company_department",
         "name": "Company Department",
@@ -2225,11 +2361,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 138,
-        "course": "2110211",
+        "id": "138",
+        "courseCode": "2110211",
         "group": "d66",
         "code": "d66_q2b_stack_reverse",
         "name": "Stack Reverse",
@@ -2241,11 +2378,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 139,
-        "course": "2110211",
+        "id": "139",
+        "courseCode": "2110211",
         "group": "d66",
         "code": "d66_q3a_queue_vertical_split",
         "name": "Queue Vertical Split",
@@ -2257,11 +2395,12 @@
         "scoreSelf": 3,
         "difficultySelf": 4,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 140,
-        "course": "2110211",
+        "id": "140",
+        "courseCode": "2110211",
         "group": "d66",
         "code": "d66_q3a_kheap_check",
         "name": "K-ary Heap Check",
@@ -2273,11 +2412,12 @@
         "scoreSelf": 0,
         "difficultySelf": 0,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     },
     {
-        "id": 141,
-        "course": "2110263",
+        "id": "141",
+        "courseCode": "2110263",
         "group": "diglab",
         "code": "diglab_09_01",
         "name": "Digital: Simulation 09 - Vending Machine",
@@ -2289,6 +2429,7 @@
         "scoreSelf": 0,
         "difficultySelf": 0,
         "emojis": [],
-        "emojisSelf": []
+        "emojisSelf": [],
+        "order": 1
     }
 ]

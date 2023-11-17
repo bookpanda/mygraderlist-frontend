@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import '@styles/globals.css';
 import React from 'react';
-import { DataContextProvider } from '@/context/DataProvider';
+import { DataContextProvider } from '@/context/data/DataProvider';
 import { OpenContextProvider } from '@/context/OpenProvider';
 import { Toaster } from '@/components/ui/toaster';
 import { AuthContextProvider } from '@/context/AuthProvider';

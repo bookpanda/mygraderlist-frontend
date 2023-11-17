@@ -1,6 +1,6 @@
 'use client';
 
-import { useDataContext } from '@/context/DataContext';
+import { useDataContext } from '@/context/data/DataContext';
 import { CourseSelect } from './CourseSelect';
 import { Text } from '@/components/custom';
 import Image from 'next/image';
@@ -27,7 +27,7 @@ export const SideBar = () => {
                         >
                             <Image
                                 src={require(
-                                    `@images/courses/${c.course}/icon.webp`
+                                    `@images/courses/${c.courseCode}/icon.webp`
                                 )}
                                 alt="data-struct"
                                 width={60}
@@ -38,7 +38,8 @@ export const SideBar = () => {
                                 <Text
                                     variant="p1"
                                     className={clsx(
-                                        currentCourse?.course === c.course
+                                        currentCourse?.courseCode ===
+                                            c.courseCode
                                             ? 'text-green'
                                             : 'text-white'
                                     )}
@@ -46,7 +47,7 @@ export const SideBar = () => {
                                     {c.name}
                                 </Text>
                                 <Text variant="p2" className="text-gray-text">
-                                    {c.course !== 'liked' && c.course}
+                                    {c.courseCode !== 'liked' && c.courseCode}
                                 </Text>
                             </div>
                         </div>

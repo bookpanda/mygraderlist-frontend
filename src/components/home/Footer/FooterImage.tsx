@@ -24,9 +24,11 @@ export const FooterImage: FC<FooterImageProps> = ({ problem }) => {
             <Image
                 src={
                     problem.group === ''
-                        ? require(`@images/courses/${problem.course}/icon.webp`)
+                        ? require(
+                              `@images/courses/${problem.courseCode}/icon.webp`
+                          )
                         : require(
-                              `@images/courses/${problem.course}/${problem.group}/${problem.code}.webp`
+                              `@images/courses/${problem.courseCode}/${problem.group}/${problem.code}.webp`
                           )
                 }
                 width={60}

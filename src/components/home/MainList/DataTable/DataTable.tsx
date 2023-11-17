@@ -20,7 +20,7 @@ import {
     TableHeader,
     TableRow,
 } from '@/components/ui/table';
-import { useDataContext } from '@/context/DataContext';
+import { useDataContext } from '@/context/data/DataContext';
 import { Problem } from '@/types/problem';
 import clsx from 'clsx';
 import { MoreHorizontal } from 'lucide-react';
@@ -133,7 +133,7 @@ export function DataTable<TData, TValue>({
                                     {row.getVisibleCells().map((cell, idx) => {
                                         const id = cell.id.split('_')[1];
                                         let className = '';
-                                        if (id === 'id') {
+                                        if (id === 'order') {
                                             className = clsx(
                                                 'w-1',
                                                 data.code ===

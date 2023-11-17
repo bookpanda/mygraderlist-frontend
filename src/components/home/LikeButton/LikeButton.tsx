@@ -1,13 +1,13 @@
 'use client';
 
-import { useDataContext } from '@/context/DataContext';
+import { useDataContext } from '@/context/data/DataContext';
 import { HeartIcon, HeartFilledIcon } from '@radix-ui/react-icons';
 import clsx from 'clsx';
 import { FC } from 'react';
 
 interface LikeButtonProps {
-    heart: number;
-    id: number;
+    heart: string | null | undefined;
+    id: string;
     width?: number;
     show?: boolean;
 }
@@ -16,7 +16,7 @@ export const LikeButton: FC<LikeButtonProps> = ({ heart, id, width, show }) => {
     const { like, unlike } = useDataContext();
     return (
         <>
-            {heart === 0 ? (
+            {!heart ? (
                 show && (
                     <HeartIcon
                         className={clsx(

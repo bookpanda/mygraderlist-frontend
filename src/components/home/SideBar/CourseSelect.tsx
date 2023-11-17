@@ -5,9 +5,9 @@ import {
     TooltipProvider,
     TooltipTrigger,
 } from '@/components/ui/tooltip';
-import { useDataContext } from '@/context/DataContext';
+import { useDataContext } from '@/context/data/DataContext';
 import { useOpenContext } from '@/context/OpenContext';
-import { Course } from '@/types/problem';
+import { Course } from '@/types/course';
 import { FC } from 'react';
 
 interface CourseSelectProps {
@@ -35,7 +35,7 @@ export const CourseSelect: FC<CourseSelectProps> = ({ course }) => {
                         <b>{course.name}</b>
                     </Text>
                     <Text variant="p3" className="text-gray-text">
-                        {course.course !== 'liked' && course.course}
+                        {course.courseCode !== 'liked' && course.courseCode}
                     </Text>
                 </TooltipContent>
             </Tooltip>

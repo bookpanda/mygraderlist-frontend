@@ -1,13 +1,8 @@
 'use client';
 
 import { Text } from '@/components/custom';
-import {
-    Dialog,
-    DialogContent,
-    DialogHeader,
-    DialogTitle,
-} from '@/components/ui/dialog';
-import { useDataContext } from '@/context/DataContext';
+import { Dialog, DialogContent } from '@/components/ui/dialog';
+import { useDataContext } from '@/context/data/DataContext';
 import { useOpenContext } from '@/context/OpenContext';
 import Image from 'next/image';
 import { LikeButton } from '../LikeButton/LikeButton';
@@ -30,10 +25,10 @@ export const EditModal = () => {
                             src={
                                 c.group === ''
                                     ? require(
-                                          `@images/courses/${c.course}/icon.webp`
+                                          `@images/courses/${c.courseCode}/icon.webp`
                                       )
                                     : require(
-                                          `@images/courses/${c.course}/${c.group}/${c.code}.webp`
+                                          `@images/courses/${c.courseCode}/${c.group}/${c.code}.webp`
                                       )
                             }
                             width={200}
@@ -53,7 +48,7 @@ export const EditModal = () => {
                                 variant="p2"
                                 className="mb-4 mt-1 text-gray-text drop-shadow-2xl"
                             >
-                                {c.course}
+                                {c.courseCode}
                             </Text>
                             <LikeButton heart={c.heart} id={c.id} show />
                         </div>
@@ -65,10 +60,10 @@ export const EditModal = () => {
                             src={
                                 c.group === ''
                                     ? require(
-                                          `@images/courses/${c.course}/icon.webp`
+                                          `@images/courses/${c.courseCode}/icon.webp`
                                       )
                                     : require(
-                                          `@images/courses/${c.course}/${c.group}/${c.code}.webp`
+                                          `@images/courses/${c.courseCode}/${c.group}/${c.code}.webp`
                                       )
                             }
                             style={{ objectFit: 'cover', width: '80%' }}
@@ -88,7 +83,7 @@ export const EditModal = () => {
                                     variant="p2"
                                     className="mb-4 mt-1 text-gray-text drop-shadow-2xl"
                                 >
-                                    {c.course}
+                                    {c.courseCode}
                                 </Text>
                             </div>
                             <LikeButton heart={c.heart} id={c.id} show />
