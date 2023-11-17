@@ -6,7 +6,7 @@ import clsx from 'clsx';
 import { FC } from 'react';
 
 interface LikeButtonProps {
-    heart: number;
+    heart: string | null | undefined;
     id: string;
     width?: number;
     show?: boolean;
@@ -16,7 +16,7 @@ export const LikeButton: FC<LikeButtonProps> = ({ heart, id, width, show }) => {
     const { like, unlike } = useDataContext();
     return (
         <>
-            {heart === 0 ? (
+            {!heart ? (
                 show && (
                     <HeartIcon
                         className={clsx(

@@ -15,10 +15,10 @@ export const accumProblems = (
     problems?.forEach((problem) => {
         const heart =
             likes?.length === 0
-                ? 0
+                ? undefined
                 : likes?.find((like) => like.problemId === problem.id)
-                ? 1
-                : 0;
+                ? likes.find((like) => like.problemId === problem.id)?.id
+                : undefined;
 
         const _scoreSelf =
             userRatings?.length === 0
@@ -55,7 +55,11 @@ export const accumProblems = (
             userEmojis?.length === 0
                 ? []
                 : userEmojis?.filter((emoji) => emoji.problemId === problem.id);
-        const emojisSelf = _emojisSelf?.map((emoji) => emoji.emoji) ?? [];
+        const emojisSelf =
+            _emojisSelf?.map((emoji) => ({
+                emoji: emoji.emoji,
+                id: emoji.id,
+            })) ?? [];
 
         const _ratings = ratings?.filter(
             (rating) => rating.problemId === problem.id
@@ -70,6 +74,10 @@ export const accumProblems = (
         );
         const difficulty = _difficulty ? _difficulty / numDifficulty : 0;
 
+        const ratingId = _ratings?.find(
+            (rating) => rating.problemId === problem.id
+        )?.id;
+
         const newProblem: Problem = {
             ...problem,
             score,
@@ -77,6 +85,7 @@ export const accumProblems = (
             difficulty,
             numDifficulty,
             heart,
+            ratingId,
             scoreSelf,
             difficultySelf,
             emojis: emojisProblem,

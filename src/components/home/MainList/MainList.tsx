@@ -12,7 +12,7 @@ export const MainList = () => {
     const { isProblemModalOpen } = useOpenContext();
     const currentProblems =
         currentCourse?.courseCode === 'liked'
-            ? problems?.filter((p) => p.heart === 1)
+            ? problems?.filter((p) => p.heart)
             : problems?.filter(
                   (p) => p.courseCode === currentCourse?.courseCode
               );

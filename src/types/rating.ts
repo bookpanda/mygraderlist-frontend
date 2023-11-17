@@ -1,5 +1,5 @@
 export type IRatings = {
-    id: number;
+    id: string;
     score: number;
     difficulty: number;
     problemId: string;

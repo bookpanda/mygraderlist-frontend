@@ -1,5 +1,5 @@
 export type IEmojis = {
-    id: number;
+    id: string;
     emoji: string;
     problemId: string;
     userId: string;

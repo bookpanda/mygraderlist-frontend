@@ -14,16 +14,17 @@ export type Problem = {
     code: string;
     name: string;
     order: number;
+    heart: string | null | undefined;
+    ratingId: string | null | undefined;
     score: number;
     numScore: number;
     difficulty: number;
     numDifficulty: number;
-    heart: number;
     scoreSelf: number;
     difficultySelf: number;
     emojis: {
         emoji: string;
         count: number;
     }[];
-    emojisSelf: string[];
+    emojisSelf: { emoji: string; id: string }[];
 };

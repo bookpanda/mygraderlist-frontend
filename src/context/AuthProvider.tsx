@@ -13,8 +13,10 @@ import { exchangeGoogleCodeForToken, getGoogleLoginUrl } from '@/api/auth';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { getUserProfile } from '@/api/user';
 import { IUser } from '@/types/user';
+import { useDataContext } from './DataContext';
 
 export const AuthContextProvider = ({ children }: PropsWithChildren) => {
+    const { clearAuthData, fetchData } = useDataContext();
     const searchParams = useSearchParams();
     const router = useRouter();
     const [isAuth, setIsAuth] = useState(false);
@@ -51,6 +53,7 @@ export const AuthContextProvider = ({ children }: PropsWithChildren) => {
                 localStorage.setItem('token', JSON.stringify(token));
                 setIsAuth(true);
                 auth();
+                await fetchData();
                 router.push('/');
             } catch {
                 // toast({
@@ -60,7 +63,7 @@ export const AuthContextProvider = ({ children }: PropsWithChildren) => {
                 // });
             }
         },
-        [router, auth]
+        [router, auth, fetchData]
     );
 
     useEffect(() => {
@@ -77,9 +80,13 @@ export const AuthContextProvider = ({ children }: PropsWithChildren) => {
     }, []);
 
     const logout = useCallback(() => {
+        console.log('logout');
         localStorage.clear();
         setIsAuth(false);
-    }, []);
+        setUser(null);
+        clearAuthData();
+        router.refresh();
+    }, [clearAuthData, router]);
 
     const value = useMemo(
         () => ({ isAuth, login, logout, user }),
