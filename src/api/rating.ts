@@ -55,7 +55,7 @@ export const updateRating = async (
 ): Promise<IRating> => {
     let res: AxiosResponse;
     try {
-        res = await apiClient.post<IRating>(`/rating/${id}`, {
+        res = await apiClient.put<IRating>(`/rating/${id}`, {
             score: rating.score,
             difficulty: rating.difficulty,
         });
@@ -67,7 +67,7 @@ export const updateRating = async (
         throw new Error('No Response from Server');
     }
 
-    if (res.status !== 201) {
+    if (res.status !== 200) {
         throw new Error(res.data.message);
     }
 

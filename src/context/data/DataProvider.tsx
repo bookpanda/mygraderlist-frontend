@@ -16,6 +16,7 @@ import { accumProblems } from '@/utils/accumProblems';
 import { useAuthContext } from '../AuthContext';
 import { handleCreateLike, handleDeleteLike } from './like';
 import { handleCreateEmoji, handleDeleteEmoji } from './emoji';
+import { handleRating } from './rating';
 
 export const DataContextProvider = ({ children }: PropsWithChildren) => {
     const { toast } = useToast();
@@ -139,25 +140,24 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
         setProblems(() => newProblems);
     };
 
-    const submitRating = (id: string, score: number, difficulty: number) => {
+    const submitRating = async (
+        id: string,
+        score: number,
+        difficulty: number
+    ) => {
         if (!currentProblem || !problems) return;
-        const newProblems = problems.map((p) => {
-            if (p.id === id) {
-                const { newScore, newNumScore, newDiff, newNumDiff } =
-                    calculateRating(p, score, difficulty);
+        if (!user) {
+            login();
+            return;
+        }
 
-                return {
-                    ...p,
-                    score: newScore,
-                    numScore: newNumScore,
-                    difficulty: newDiff,
-                    numDifficulty: newNumDiff,
-                    scoreSelf: score,
-                    difficultySelf: difficulty,
-                };
-            }
-            return p;
-        });
+        const newProblems = await handleRating(
+            id,
+            user,
+            score,
+            difficulty,
+            problems
+        );
         setProblems(() => newProblems);
     };
 
