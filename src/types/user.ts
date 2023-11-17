@@ -1,5 +1,5 @@
 export type IUser = {
-    id: number;
+    id: string;
     username: string;
     email: string;
     password: string;

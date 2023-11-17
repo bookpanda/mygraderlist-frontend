@@ -3,3 +3,8 @@ export type ILikes = {
     problemId: string;
     userId: string;
 }[];
+
+export type LikeDto = {
+    ProblemID: string;
+    UserID: string;
+};
