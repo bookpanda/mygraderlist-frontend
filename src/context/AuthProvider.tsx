@@ -5,41 +5,44 @@ import {
     useCallback,
     useEffect,
     useMemo,
+    useRef,
     useState,
 } from 'react';
 import { AuthContext } from './AuthContext';
 import { exchangeGoogleCodeForToken, getGoogleLoginUrl } from '@/api/auth';
 import { useRouter, useSearchParams } from 'next/navigation';
+import { getUserProfile } from '@/api/user';
+import { IUser } from '@/types/user';
 
 export const AuthContextProvider = ({ children }: PropsWithChildren) => {
     const searchParams = useSearchParams();
     const router = useRouter();
     const [isAuth, setIsAuth] = useState(false);
-    // const isFetching = useRef(false);
+    const [user, setUser] = useState<IUser | null>(null);
+    const isFetching = useRef(false);
 
-    // const auth = useCallback(async () => {
-    //     if (isFetching.current) {
-    //         return;
-    //     }
-    //     isFetching.current = true;
+    const auth = useCallback(async () => {
+        if (isFetching.current) {
+            return;
+        }
+        isFetching.current = true;
 
-    //     const token = localStorage.getItem('token');
-    //     if (!token) {
-    //         setIsAuth(false);
-    //     }
-    //     const user = await getUserProfile();
-    //     if (user) setIsAuth(true);
-    //     else setIsAuth(false);
-
-    //     isFetching.current = false;
-    // }, []);
-
-    useEffect(() => {
         const token = localStorage.getItem('token');
         if (!token) {
             setIsAuth(false);
-        } else setIsAuth(true);
+        }
+        const user = await getUserProfile();
+        if (user) {
+            setIsAuth(true);
+            setUser(user);
+        } else setIsAuth(false);
+
+        isFetching.current = false;
     }, []);
+
+    useEffect(() => {
+        auth();
+    }, [auth]);
 
     const handleLogin = useCallback(
         async (code: string) => {
@@ -47,6 +50,7 @@ export const AuthContextProvider = ({ children }: PropsWithChildren) => {
                 const token = await exchangeGoogleCodeForToken(code);
                 localStorage.setItem('token', JSON.stringify(token));
                 setIsAuth(true);
+                auth();
                 router.push('/');
             } catch {
                 // toast({
@@ -56,7 +60,7 @@ export const AuthContextProvider = ({ children }: PropsWithChildren) => {
                 // });
             }
         },
-        [router]
+        [router, auth]
     );
 
     useEffect(() => {
@@ -78,8 +82,8 @@ export const AuthContextProvider = ({ children }: PropsWithChildren) => {
     }, []);
 
     const value = useMemo(
-        () => ({ isAuth, login, logout }),
-        [isAuth, login, logout]
+        () => ({ isAuth, login, logout, user }),
+        [isAuth, login, logout, user]
     );
 
     return (

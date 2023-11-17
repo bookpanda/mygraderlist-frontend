@@ -1,8 +1,9 @@
+import { Text } from '@/components/custom';
 import { useAuthContext } from '@/context/AuthContext';
 import { User2, LogIn } from 'lucide-react';
 
 export const Login = () => {
-    const { login, logout, isAuth } = useAuthContext();
+    const { login, logout, isAuth, user } = useAuthContext();
 
     const handleClick = () => {
         if (isAuth) {
@@ -13,9 +14,12 @@ export const Login = () => {
     };
 
     return (
-        <div className="z-10 flex justify-end">
+        <div className="z-10 flex items-center justify-end">
+            <Text variant="p1" className="mr-3 text-white">
+                {isAuth ? user?.username : 'Login'}
+            </Text>
             <div
-                className="bg-gray-60060 rounded-full p-2"
+                className="rounded-full bg-gray-60060 p-2"
                 onClick={handleClick}
             >
                 {isAuth ? (
