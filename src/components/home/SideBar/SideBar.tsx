@@ -1,6 +1,6 @@
 'use client';
 
-import { useDataContext } from '@/context/DataContext';
+import { useDataContext } from '@/context/data/DataContext';
 import { CourseSelect } from './CourseSelect';
 import { Text } from '@/components/custom';
 import Image from 'next/image';

@@ -5,7 +5,7 @@ import {
     TooltipProvider,
     TooltipTrigger,
 } from '@/components/ui/tooltip';
-import { useDataContext } from '@/context/DataContext';
+import { useDataContext } from '@/context/data/DataContext';
 import { useOpenContext } from '@/context/OpenContext';
 import { Course } from '@/types/course';
 import { FC } from 'react';

@@ -1,6 +1,6 @@
 'use client';
 
-import { useDataContext } from '@/context/DataContext';
+import { useDataContext } from '@/context/data/DataContext';
 import { DataTable } from './DataTable/DataTable';
 import { columns } from './DataTable/columns';
 import { Header } from './Header/Header';

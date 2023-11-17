@@ -3,7 +3,7 @@
 import { useOpenContext } from '@/context/OpenContext';
 import EmojiPicker, { EmojiClickData } from 'emoji-picker-react';
 import Draggable from 'react-draggable';
-import { useDataContext } from '@/context/DataContext';
+import { useDataContext } from '@/context/data/DataContext';
 import { useEffect } from 'react';
 
 export const EmojiModal = () => {

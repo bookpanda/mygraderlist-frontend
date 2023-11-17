@@ -7,13 +7,14 @@ import { useToast } from '@/components/ui/use-toast';
 import { calculateRating } from '@/utils/calculateRating';
 import { getAllProblems } from '@/api/problem';
 import { getAllCourses } from '@/api/course';
-import { getUserLikes, likeProblem, unlikeProblem } from '@/api/like';
+import { getUserLikes, unlikeProblem } from '@/api/like';
 import { getAllRatings, getUserRatings } from '@/api/rating';
 import { getAllEmojis, getUserEmojis } from '@/api/emoji';
 import { Course } from '@/types/course';
 import { sortCourses } from '@/utils/sortCourses';
 import { accumProblems } from '@/utils/accumProblems';
-import { useAuthContext } from './AuthContext';
+import { useAuthContext } from '../AuthContext';
+import { handleLike, handleUnlike } from './like';
 
 export const DataContextProvider = ({ children }: PropsWithChildren) => {
     const { toast } = useToast();
@@ -72,23 +73,14 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
             );
     }, [problems, currentProblem?.id]);
 
-    const like = async (id: string) => {
+    const like = async (problemId: string) => {
         if (!currentProblem || !problems) return;
         if (!user) {
             login();
             return;
         }
 
-        const createdLike = await likeProblem({
-            ProblemID: id,
-            UserID: user.id,
-        });
-        const newProblems = problems.map((p) => {
-            if (p.id === id) {
-                return { ...p, heart: createdLike.id };
-            }
-            return p;
-        });
+        const newProblems = await handleLike(problemId, user, problems);
         setProblems(newProblems);
         toast({
             title: 'Added to favourites',
@@ -96,21 +88,14 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
         });
     };
 
-    const unlike = async (id: string) => {
+    const unlike = async (problemId: string) => {
         if (!currentProblem || !problems) return;
         if (!user) {
             login();
             return;
         }
-        const likeId = problems.find((p) => p.id === id)?.heart;
-        if (!likeId) return;
-        await unlikeProblem(likeId);
-        const newProblems = problems.map((p) => {
-            if (p.id === id) {
-                return { ...p, heart: undefined };
-            }
-            return p;
-        });
+
+        const newProblems = await handleUnlike(problemId, problems);
         setProblems(newProblems);
         toast({
             title: 'Removed from favourites',

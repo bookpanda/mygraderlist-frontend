@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import { FC } from 'react';
 import { Emoji } from './Emoji';
 import { AddEmoji } from './AddEmoji';
-import { useDataContext } from '@/context/DataContext';
+import { useDataContext } from '@/context/data/DataContext';
 
 interface EmojiRowProps {
     id: string;

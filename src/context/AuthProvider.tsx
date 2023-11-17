@@ -13,7 +13,7 @@ import { exchangeGoogleCodeForToken, getGoogleLoginUrl } from '@/api/auth';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { getUserProfile } from '@/api/user';
 import { IUser } from '@/types/user';
-import { useDataContext } from './DataContext';
+import { useDataContext } from './data/DataContext';
 
 export const AuthContextProvider = ({ children }: PropsWithChildren) => {
     const { clearAuthData, fetchData } = useDataContext();

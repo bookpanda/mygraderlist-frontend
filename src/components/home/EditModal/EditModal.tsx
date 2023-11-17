@@ -2,7 +2,7 @@
 
 import { Text } from '@/components/custom';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
-import { useDataContext } from '@/context/DataContext';
+import { useDataContext } from '@/context/data/DataContext';
 import { useOpenContext } from '@/context/OpenContext';
 import Image from 'next/image';
 import { LikeButton } from '../LikeButton/LikeButton';

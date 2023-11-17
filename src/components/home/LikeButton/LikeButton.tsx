@@ -1,6 +1,6 @@
 'use client';
 
-import { useDataContext } from '@/context/DataContext';
+import { useDataContext } from '@/context/data/DataContext';
 import { HeartIcon, HeartFilledIcon } from '@radix-ui/react-icons';
 import clsx from 'clsx';
 import { FC } from 'react';

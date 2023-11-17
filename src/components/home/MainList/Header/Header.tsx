@@ -2,7 +2,7 @@
 
 import { Text } from '@/components/custom';
 import { CourseIcon } from '../../../custom/CourseIcon';
-import { useDataContext } from '@/context/DataContext';
+import { useDataContext } from '@/context/data/DataContext';
 import { Login } from './Login';
 
 export const Header = () => {

@@ -1,7 +1,7 @@
 'use client';
 
 import { RoundDiv, Text } from '@/components/custom';
-import { useDataContext } from '@/context/DataContext';
+import { useDataContext } from '@/context/data/DataContext';
 import { useOpenContext } from '@/context/OpenContext';
 import { MoreHorizontal, X } from 'lucide-react';
 import Image from 'next/image';
