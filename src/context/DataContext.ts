@@ -14,6 +14,8 @@ export interface DataContextProps {
     addEmoji: (id: string, emoji: string) => void;
     removeEmoji: (id: string, emoji: string) => void;
     submitRating: (id: string, score: number, difficulty: number) => void;
+    fetchData: () => void;
+    clearAuthData: () => void;
 }
 
 export const DataContext = createContext<DataContextProps>({
@@ -28,6 +30,8 @@ export const DataContext = createContext<DataContextProps>({
     addEmoji: () => {},
     removeEmoji: () => {},
     submitRating: () => {},
+    fetchData: () => {},
+    clearAuthData: () => {},
 });
 
 export const useDataContext = () => useContext(DataContext);

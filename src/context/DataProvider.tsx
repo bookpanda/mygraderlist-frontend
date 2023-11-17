@@ -7,51 +7,63 @@ import { useToast } from '@/components/ui/use-toast';
 import { calculateRating } from '@/utils/calculateRating';
 import { getAllProblems } from '@/api/problem';
 import { getAllCourses } from '@/api/course';
-import { getUserLikes } from '@/api/like';
+import { getUserLikes, likeProblem, unlikeProblem } from '@/api/like';
 import { getAllRatings, getUserRatings } from '@/api/rating';
 import { getAllEmojis, getUserEmojis } from '@/api/emoji';
 import { Course } from '@/types/course';
 import { sortCourses } from '@/utils/sortCourses';
 import { accumProblems } from '@/utils/accumProblems';
-import problemsData from '@public/problems.json';
-import coursesData from '@public/courses.json';
+import { useAuthContext } from './AuthContext';
 
 export const DataContextProvider = ({ children }: PropsWithChildren) => {
     const { toast } = useToast();
+    const { user, login } = useAuthContext();
     const [currentProblem, setCurrentProblem] = useState<Problem | null>(null);
     const [problems, setProblems] = useState<Problem[] | null>(null);
     const [courses, setCourses] = useState<Course[] | null>(null);
     const [currentCourse, setCurrentCourse] = useState<Course | null>(null);
 
-    useEffect(() => {
-        async function fetchData() {
-            const resCourses = await getAllCourses();
-            const resProblems = await getAllProblems();
-            const resRatings = await getAllRatings();
-            const resUserRatings = await getUserRatings();
-            const resEmojis = await getAllEmojis();
-            const resUserEmojis = await getUserEmojis();
-            const resUserLikes = await getUserLikes();
+    const fetchData = async () => {
+        const resCourses = await getAllCourses();
+        const resProblems = await getAllProblems();
+        const resRatings = await getAllRatings();
+        const resUserRatings = await getUserRatings();
+        const resEmojis = await getAllEmojis();
+        const resUserEmojis = await getUserEmojis();
+        const resUserLikes = await getUserLikes();
 
-            const problemsData = accumProblems(
-                resProblems,
-                resRatings,
-                resUserRatings,
-                resEmojis,
-                resUserEmojis,
-                resUserLikes
-            );
-            problemsData.sort((a, b) => b.order - a.order);
-            setProblems(problemsData);
-            sortCourses(resCourses);
-            setCourses(resCourses);
-            if (resCourses) setCurrentCourse(resCourses[1]);
-        }
-        fetchData();
+        const problemsData = accumProblems(
+            resProblems,
+            resRatings,
+            resUserRatings,
+            resEmojis,
+            resUserEmojis,
+            resUserLikes
+        );
+        problemsData.sort((a, b) => b.order - a.order);
         setProblems(problemsData);
-        setCourses(coursesData);
-        setCurrentCourse(coursesData[1]);
+        sortCourses(resCourses);
+        setCourses(resCourses);
+        if (resCourses) setCurrentCourse(resCourses[1]);
+    };
+
+    useEffect(() => {
+        fetchData();
     }, []);
+
+    const clearAuthData = () => {
+        if (!problems) return;
+        setProblems(() =>
+            problems.map((p) => ({
+                ...p,
+                heart: undefined,
+                ratingId: undefined,
+                emojisSelf: [],
+                scoreSelf: 0,
+                difficultySelf: 0,
+            }))
+        );
+    };
 
     useEffect(() => {
         if (problems)
@@ -60,11 +72,20 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
             );
     }, [problems, currentProblem?.id]);
 
-    const like = (id: string) => {
+    const like = async (id: string) => {
         if (!currentProblem || !problems) return;
+        if (!user) {
+            login();
+            return;
+        }
+
+        const createdLike = await likeProblem({
+            ProblemID: id,
+            UserID: user.id,
+        });
         const newProblems = problems.map((p) => {
             if (p.id === id) {
-                return { ...p, heart: 1 };
+                return { ...p, heart: createdLike.id };
             }
             return p;
         });
@@ -75,11 +96,18 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
         });
     };
 
-    const unlike = (id: string) => {
+    const unlike = async (id: string) => {
         if (!currentProblem || !problems) return;
+        if (!user) {
+            login();
+            return;
+        }
+        const likeId = problems.find((p) => p.id === id)?.heart;
+        if (!likeId) return;
+        await unlikeProblem(likeId);
         const newProblems = problems.map((p) => {
             if (p.id === id) {
-                return { ...p, heart: 0 };
+                return { ...p, heart: undefined };
             }
             return p;
         });
@@ -92,7 +120,7 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
 
     const addEmoji = (id: string, emoji: string) => {
         if (!currentProblem || !problems) return;
-        if (currentProblem.emojisSelf.includes(emoji)) return;
+        if (currentProblem.emojisSelf.find((eS) => eS.emoji === emoji)) return;
         if (currentProblem.emojis.length >= 10) return;
         const currentCount =
             currentProblem.emojis.find((e) => e.emoji === emoji)?.count ?? 0;
@@ -119,7 +147,7 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
                 return {
                     ...p,
                     emojis: newEmojis.filter((e) => e.count > 0),
-                    emojisSelf: [...p.emojisSelf, emoji],
+                    emojisSelf: [...p.emojisSelf, { emoji, id }], //i change id for emoji id
                 };
             }
             return p;
@@ -146,7 +174,7 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
                 return {
                     ...p,
                     emojis: newEmojis.filter((e) => e.count > 0),
-                    emojisSelf: p.emojisSelf.filter((e) => e !== emoji),
+                    emojisSelf: p.emojisSelf.filter((e) => e.emoji !== emoji),
                 };
             }
             return p;
@@ -190,6 +218,8 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
                 addEmoji,
                 removeEmoji,
                 submitRating,
+                fetchData,
+                clearAuthData,
             }}
         >
             {children}
