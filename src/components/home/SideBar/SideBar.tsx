@@ -5,6 +5,7 @@ import { CourseSelect } from './CourseSelect';
 import { Text } from '@/components/custom';
 import Image from 'next/image';
 import clsx from 'clsx';
+import { Skeleton } from '@/components/ui/skeleton';
 
 export const SideBar = () => {
     const { courses, currentCourse, setCurrentCourse } = useDataContext();
@@ -12,7 +13,17 @@ export const SideBar = () => {
     return (
         <>
             <div className="no-scrollbar hidden flex-none flex-col items-center space-y-3 overflow-scroll rounded-lg bg-gray-600 p-2 xl:flex">
-                {courses?.map((c) => <CourseSelect key={c.name} course={c} />)}
+                {courses ? (
+                    courses?.map((c) => (
+                        <CourseSelect key={c.name} course={c} />
+                    ))
+                ) : (
+                    <>
+                        <Skeleton style={{ width: 60, height: 60 }} />
+                        <Skeleton style={{ width: 60, height: 60 }} />
+                        <Skeleton style={{ width: 60, height: 60 }} />
+                    </>
+                )}
             </div>
             <div className="no-scrollbar block w-full space-y-4 overflow-scroll rounded-lg bg-gray-600 px-4 py-2 xl:hidden">
                 <Text variant="h3" className="mt-8 text-white">

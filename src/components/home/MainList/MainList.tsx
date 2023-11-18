@@ -6,6 +6,7 @@ import { columns } from './DataTable/columns';
 import { Header } from './Header/Header';
 import { useOpenContext } from '@/context/OpenContext';
 import clsx from 'clsx';
+import { nullColor } from '@/constants/nullColor';
 
 export const MainList = () => {
     const { problems, currentCourse } = useDataContext();
@@ -28,7 +29,9 @@ export const MainList = () => {
             <div
                 className="absolute h-2/3 w-full"
                 style={{
-                    backgroundImage: `linear-gradient(to bottom, ${c?.color}, ${c?.color}00)`,
+                    backgroundImage: `linear-gradient(to bottom, ${
+                        c ? c.color : nullColor
+                    }, ${c ? c.color : nullColor}00)`,
                 }}
             />
             <Header />
