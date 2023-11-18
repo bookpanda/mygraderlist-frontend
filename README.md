@@ -26,4 +26,4 @@ pnpm dev
 ```
 
 Open [http://localhost:3001](http://localhost:3001) with your browser to see the result.
-You would see the app as an empty app. To see the app with data, you need to run the [https://github.com/bookpanda/mygraderlist-gateway](backend server).
+You would see the app as an empty app. To see the app with data, you need to run the [MyGraderList gateway server](https://github.com/bookpanda/mygraderlist-gateway).
