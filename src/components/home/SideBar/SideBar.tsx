@@ -8,6 +8,7 @@ import clsx from 'clsx';
 import { Skeleton } from '@/components/ui/skeleton';
 
 export const SideBar = () => {
+    const n = 3;
     const { courses, currentCourse, setCurrentCourse } = useDataContext();
 
     return (
@@ -19,9 +20,12 @@ export const SideBar = () => {
                     ))
                 ) : (
                     <>
-                        <Skeleton style={{ width: 60, height: 60 }} />
-                        <Skeleton style={{ width: 60, height: 60 }} />
-                        <Skeleton style={{ width: 60, height: 60 }} />
+                        {[...Array(n)].map((i) => (
+                            <Skeleton
+                                key={i}
+                                style={{ width: 60, height: 60 }}
+                            />
+                        ))}
                     </>
                 )}
             </div>
@@ -29,7 +33,7 @@ export const SideBar = () => {
                 <Text variant="h3" className="mt-8 text-white">
                     Courses
                 </Text>
-                {courses &&
+                {courses ? (
                     courses.map((c) => (
                         <div
                             className="flex space-x-3"
@@ -62,7 +66,17 @@ export const SideBar = () => {
                                 </Text>
                             </div>
                         </div>
-                    ))}
+                    ))
+                ) : (
+                    <>
+                        {[...Array(n)].map((i) => (
+                            <Skeleton
+                                key={i}
+                                style={{ width: 60, height: 60 }}
+                            />
+                        ))}
+                    </>
+                )}
             </div>
         </>
     );
